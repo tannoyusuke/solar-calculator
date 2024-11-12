@@ -1,10 +1,12 @@
 import React from 'react';
 
-export const Input = ({ value, onChange, className = '', type = 'text' }) => (
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  className?: string;
+}
+
+export const Input: React.FC<InputProps> = ({ className = '', ...props }) => (
   <input
-    type={type}
-    value={value}
-    onChange={onChange}
+    {...props}
     className={`input ${className}`}
   />
 );

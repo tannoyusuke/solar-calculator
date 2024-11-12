@@ -200,9 +200,7 @@ const SolarInvestmentCalculator = () => {
                 type="number"
                 step="0.1"
                 value={remainingYears}
-                onChange={(e) =>
-                  setRemainingYears(Number(e.target.value))
-                }
+                onChange={(e) => setRemainingYears(Number(e.target.value))}
                 className="text-right"
               />
             </div>
