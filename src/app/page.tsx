@@ -7,7 +7,7 @@ import { Label } from '@/components/ui/label';
 
 const SolarInvestmentCalculator = () => {
   // Format number with commas for display
-  const formatNumber = (num) => {
+  const formatNumber = (num: number) => {
     return new Intl.NumberFormat('ja-JP').format(Math.round(num));
   };
 
