@@ -1,0 +1,239 @@
+{
+    "navigation": {
+        "about": {
+            "title": "企業情報",
+            "items": {
+                "philosophy": "企業理念",
+                "company": "会社概要",
+                "access": "アクセス"
+            }
+        },
+        "business": {
+            "title": "事業案内",
+            "items": {
+                "services": "インベストメント・コンサルティング",
+                "portfolio": "ポートフォリオ",
+                "caseStudy": "実績紹介"
+            }
+        },
+        "members": "メンバー",
+        "recruit": {
+            "title": "採用情報",
+            "items": {
+                "future": "未来へのビジョン",
+                "careers": "キャリア・評価報酬制度",
+                "persona": "求める人物像",
+                "roles": "募集要項"
+            }
+        },
+        "news": "お知らせ",
+        "contact": "CONTACT"
+    },
+    "footer": {
+        "vision": "意志ある挑戦を創造し、\n世界で戦える事業を創造する。",
+        "corporate_business": "企業情報・事業案内",
+        "office": "OFFICE",
+        "address": [
+            "〒105-0014",
+            "東京都港区芝3-1-14",
+            "芝公園阪神ビル5階"
+        ],
+        "contact": "お問い合わせ",
+        "privacy": "PRIVACY POLICY"
+    },
+    "home": {
+        "hero": {
+            "title": "TRY to",
+            "titleHighlight": "All.",
+            "subtitle": "挑戦をカルチャーに。",
+            "description": [
+                "最新のテクノロジーと圧倒的な実行力を融合し、",
+                "未踏の事業領域を開拓する。",
+                "",
+                "私たちは単なるアドバイザリーの枠を超え、",
+                "自らリスクを取り、すべての挑戦を具現化する",
+                "次世代の事業運営会社です。"
+            ],
+            "scroll": "Scroll to Explore"
+        },
+        "whoWeAre": {
+            "section_title": "WHO WE ARE",
+            "title_line1": "コンサルティングから、",
+            "title_line2": "事業運営会社へ。",
+            "description": "私たちは単なる外部アドバイザーではありません。<br/>コンサルティングフィーを前提とした契約に加え、自らも事業リスクを取り、<br/><strong class=\"text-white font-medium\">レベニューシェアモデル</strong> や <strong class=\"text-white font-medium\">事業投資</strong> を通じて<br/>クライアントと同じ立場で結果にコミットしています。<br /><br />だからこそ、私たちのコンサルティングには圧倒的な当事者意識と、実践から得たリアルな知見が宿ります。<br/>「やったことがない人間のアドバイス」ではなく、<br/><strong class=\"text-white font-medium\">「自ら事業を動かす人間の提案」</strong>。<br/>それが、普通のコンサルティングファームとは決定的に異なる私たちの価値です。<br /><br />現在では自らの事業と投資先の成長に直接コミットする真の事業運営会社として、日々新たな挑戦を生み出しています。",
+            "advisory": {
+                "title": "ADVISORY",
+                "desc": "国内外のビジネス課題を解決する、高度な知的専門サービス。<br/>M&Aから事業再生まで、すべての挑戦の基盤となるナレッジを提供します。"
+            },
+            "investment": {
+                "title": "INVESTMENT & OPERATION",
+                "desc": "自ら資金を投じ、ハンズオンで事業を牽引。<br/>PE/PIPES/インフラファンドの運営や、プリンシパル投資を通じて、<br/>企業の企業価値をダイレクトに向上させます。"
+            }
+        },
+        "latestNews": {
+            "section_title": "LATEST NEWS",
+            "description": "Tryfunds Groupからの<br />最新のお知らせ",
+            "view_all": "VIEW ALL NEWS"
+        },
+        "ourPhilosophy": {
+            "section_title": "OUR PHILOSOPHY",
+            "headline": "意志ある挑戦を創造する。",
+            "description": "<p>私たちは顧客の本気の挑戦を支援するだけでなく、<br class=\"hidden md:block\" />自らも確固たる意志を持ち、誰よりも最前線の「挑戦者」として活動し続けます。</p><br/><p>顧客の事業責任者と共に <strong class=\"text-white font-bold\">Envision</strong> ＝さらに高いビジョンを描き、目指すべき頂点を再定義する。<br class=\"hidden md:block\" />そして、その実現に不可欠な「ミッシングパーツ（資金、人材、テクノロジー、ネットワークなど）」を当社が直接補完し、かつてないスケールでの事業成長へと挑戦させます。</p>"
+        },
+        "trackRecord": {
+            "section_title": "TRACK RECORD",
+            "stats_value": "1,000",
+            "stats_unit1": "プロジェクト超",
+            "stats_unit2": "の支援実績",
+            "description": "創業から14年で、戦略アドバイザリー、M&Aアドバイザリー、世界58カ国への進出支援、新規事業立案支援、DX／AI支援、ヘッドハンティング支援、コスト削減コンサルティングなど幅広い分野を網羅。<strong class=\"text-white font-medium block mt-4\">累計1,000プロジェクト以上の実績</strong>が、ハイブリッドモデルの圧倒的な推進力を証明しています。",
+            "button_portfolio": "PORTFOLIO",
+            "button_case_study": "CASE STUDY",
+            "records": [
+                {
+                    "value": "2,000",
+                    "unit": "億円超",
+                    "label": "出資先合計時価総額",
+                    "description": "コンサルティングおよび投資先企業の圧倒的な成長と価値創造を実現。"
+                },
+                {
+                    "value": "1",
+                    "unit": "社",
+                    "label": "ユニコーン企業創出",
+                    "description": "出資先に対するコンサルティング提供から、評価額10億ドル超の企業群へと育成。"
+                },
+                {
+                    "value": "1,500",
+                    "unit": "億円超",
+                    "label": "インフラファンド",
+                    "description": "国内外の社会基盤を支えるエネルギープロジェクトにおけるAM総額。"
+                },
+                {
+                    "value": "100",
+                    "unit": "億円超",
+                    "label": "PE/PIPESファンド",
+                    "description": "未上場および上場企業へのグロース投資・バイアウト投資ファンドの運用。"
+                }
+            ]
+        },
+        "uniqueValueProposition": {
+            "section_title": "独自のアプローチ",
+            "title_line1": "なぜ、私たちが選ばれるのか。",
+            "title_line2": "唯一無二のハイブリッドモデル",
+            "description": "一般的なコンサルティングファームや投資ファンドとは一線を画す、圧倒的な実行力とコミットメント。",
+            "cards": [
+                {
+                    "label": "01",
+                    "title": "当事者としての「リスク」を負う",
+                    "description": "通常のアドバイザリー業務（フィービジネス）に留まらず、自らプリンシパル投資やレベニューシェアを実行。アドバイザーではなく「共同事業者」として、結果に直接コミットします。",
+                    "image": "/uvp_street_smart_cliff.png"
+                },
+                {
+                    "label": "02",
+                    "title": "強力な「ミッシングパーツ補完機能」",
+                    "description": "企業が成長を遂げるために不足するリソース——資金調達、経営人材の派遣、グローバルネットワークへの接続、DX/AI技術、M&Aの実行力——を包括的に調達・提供する機能を自社内に保有。単なる紹介ではなく、自社のプロフェッショナル集団が直接現場に入り込み、不足するピースを埋め、事業の完成形へと導きます。",
+                    "image": "/images/uvp_missing_parts.png",
+                    "details": [
+                        {
+                            "key": "資金",
+                            "value": "ファンド運用・プリンシパル投資による直接資金供給"
+                        },
+                        {
+                            "key": "人材",
+                            "value": "CxOクラスの経営人材を即座にアサイン・派遣"
+                        },
+                        {
+                            "key": "ネットワーク",
+                            "value": "世界58ヶ国のアライアンスを活用した事業機会創出"
+                        },
+                        {
+                            "key": "技術",
+                            "value": "DX/AI・デジタル変革の設計と実装支援"
+                        }
+                    ]
+                },
+                {
+                    "label": "03",
+                    "title": "世界を繋ぐ「強力なネットワーク」",
+                    "description": "世界58ヶ国以上に広がるアライアンスと情報網。これらをフル活用し、国境を越えた事業成長の機会を発見し、現実のものとします。投資先・クライアント双方に対し、グローバル規模でのバリューアップを実現する唯一無二の基盤です。",
+                    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
+                }
+            ]
+        },
+        "valuesStrength": {
+            "section_title": "提供価値",
+            "headline": "共に事業を成長させるための<br />3つの価値行動",
+            "description": "私たちは単なる外部アドバイザーではありません。クライアントとリスクを共有し、圧倒的な当事者意識で事業価値の最大化にコミットします。",
+            "cards": [
+                {
+                    "num": "01",
+                    "title": "世界基準で\n事業機会を切り拓く",
+                    "description": "グローバルな視点を持ち、国境を越えた事業成長の機会を発見し、現実のものとします。"
+                },
+                {
+                    "num": "02",
+                    "title": "枠にとらわれず挑戦し、\n主体者としてやりきる",
+                    "description": "前例や既存の枠組みにとらわれず、当事者意識を持って事業の成功まで並走します。"
+                },
+                {
+                    "num": "03",
+                    "title": "チームワークで\n未踏の高みを目指す",
+                    "description": "多様なプロフェッショナルが結集し、個の足し算を超えた圧倒的な成果を生み出します。"
+                }
+            ]
+        },
+        "services": {
+            "section_title": "事業領域",
+            "headline": "ビジネスを牽引し、<br className=\"md:hidden\" />挑戦を形にする3つの柱",
+            "view_details": "詳細を見る",
+            "cards": [
+                {
+                    "title": "Fund AM",
+                    "tag": "Investment & Operation",
+                    "description": "国内外のインフラ関連スタートアップへの投資および、PEファンド/PIPESファンドの運用を通じた企業価値向上。",
+                    "metrics": [
+                        "インフラファンド",
+                        "PE/PIPES",
+                        "ハンズオン投資"
+                    ],
+                    "url_hash": "investment-operation"
+                },
+                {
+                    "title": "Hands-on",
+                    "tag": "Principal",
+                    "description": "自らリスクを取り、自社経営陣やプロフェッショナル人材を直接派遣するハンズオン型の事業再生・成長支援。",
+                    "metrics": [
+                        "CxO派遣",
+                        "事業再生",
+                        "グロース"
+                    ],
+                    "url_hash": "principal"
+                },
+                {
+                    "title": "Consulting",
+                    "tag": "Advisory",
+                    "description": "戦略立案からM&A、デジタル変革まで。高度な知見とグローバルネットワークを駆使した企業変革アドバイザリー。",
+                    "metrics": [
+                        "事業戦略",
+                        "M&A",
+                        "海外進出"
+                    ],
+                    "url_hash": "advisory"
+                }
+            ]
+        }
+    },
+    "shared": {
+        "conversionCTA": {
+            "corporate_label": "Corporate Information",
+            "corporate_title": "会社概要・プロジェクト事例",
+            "corporate_desc": "Tryfundsの事業内容や、1000以上の支援実績から抜粋した具体的なプロジェクト事例をご紹介します。",
+            "btn_document": "DOWNLOAD DOCUMENT",
+            "btn_projects": "VIEW PROJECTS",
+            "recruit_label": "Join Our Team",
+            "recruit_title": "JOIN OUR TRY",
+            "recruit_desc": "共に前人未到の事業を成し遂げる仲間を募集しています。これからのキャリアや我々の挑戦について、まずは情報交換からはじめませんか。",
+            "btn_careers": "CAREERS / RECRUIT",
+            "btn_interview": "CASUAL INTERVIEW"
+        }
+    }
+}

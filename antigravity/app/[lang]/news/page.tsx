@@ -2,13 +2,16 @@ import { newsData } from "@/data/news";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
+import { getDictionary } from "@/lib/dictionary";
+import { Locale } from "@/lib/i18n-config";
 
 export const metadata = {
     title: "News | Tryfunds",
     description: "Tryfunds Groupの最新ニュースとお知らせ",
 };
 
-export default function NewsPage() {
+export default async function NewsPage({ params: { lang } }: { params: { lang: Locale } }) {
+    const dict = await getDictionary(lang);
     // Sort all news by date descending
     const allNews = [...newsData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -56,7 +59,7 @@ export default function NewsPage() {
 
             </div>
 
-            <ConversionCTA />
+            <ConversionCTA dict={dict.shared?.conversionCTA} />
         </main>
     );
 }

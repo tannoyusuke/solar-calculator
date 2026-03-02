@@ -2,34 +2,8 @@
 
 import { motion } from "framer-motion";
 
-const records = [
-    {
-        value: "2,000",
-        unit: "億円超",
-        label: "出資先合計時価総額",
-        description: "コンサルティングおよび投資先企業の圧倒的な成長と価値創造を実現。"
-    },
-    {
-        value: "1",
-        unit: "社",
-        label: "ユニコーン企業創出",
-        description: "出資先に対するコンサルティング提供から、評価額10億ドル超の企業群へと育成。"
-    },
-    {
-        value: "1,500",
-        unit: "億円超",
-        label: "インフラファンド",
-        description: "国内外の社会基盤を支えるエネルギープロジェクトにおけるAM総額。"
-    },
-    {
-        value: "100",
-        unit: "億円超",
-        label: "PE/PIPESファンド",
-        description: "未上場および上場企業へのグロース投資・バイアウト投資ファンドの運用。"
-    }
-];
-
-export function TrackRecord() {
+export function TrackRecord({ dict }: { dict: any }) {
+    const records = dict.records || [];
     return (
         <section className="relative py-32 bg-background overflow-hidden border-t border-white/5">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[800px] bg-primary/5 blur-[200px] pointer-events-none" />
@@ -44,7 +18,7 @@ export function TrackRecord() {
                 >
                     <div className="inline-flex items-center gap-4 mb-6">
                         <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">TRACK RECORD</h2>
+                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">{dict.section_title}</h2>
                     </div>
                 </motion.div>
 
@@ -58,24 +32,24 @@ export function TrackRecord() {
                 >
                     <div>
                         <h3 className="text-5xl md:text-7xl font-display font-medium tracking-tighter mb-4 text-white drop-shadow-md leading-tight">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-corp-gray">1,000</span>
-                            <span className="text-3xl md:text-4xl text-white tracking-widest ml-2">プロジェクト超</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-corp-gray">{dict.stats_value}</span>
+                            <span className="text-3xl md:text-4xl text-white tracking-widest ml-2">{dict.stats_unit1}</span>
                             <br className="hidden md:block" />
-                            <span className="text-3xl md:text-5xl text-white tracking-widest mt-2 block">の支援実績</span>
+                            <span className="text-3xl md:text-5xl text-white tracking-widest mt-2 block">{dict.stats_unit2}</span>
                         </h3>
                     </div>
                     <div className="border-l border-white/10 pl-8 lg:pl-12">
-                        <p className="text-gray-300 font-sans tracking-widest leading-loose md:text-lg mb-8">
-                            創業から14年で、戦略アドバイザリー、M&Aアドバイザリー、世界58カ国への進出支援、新規事業立案支援、DX／AI支援、ヘッドハンティング支援、コスト削減コンサルティングなど幅広い分野を網羅。
-                            <strong className="text-white font-medium block mt-4">累計1,000プロジェクト以上の実績</strong>が、ハイブリッドモデルの圧倒的な推進力を証明しています。
-                        </p>
+                        <p
+                            className="text-gray-300 font-sans tracking-widest leading-loose md:text-lg mb-8"
+                            dangerouslySetInnerHTML={{ __html: dict.description }}
+                        />
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a href="/portfolio" className="inline-flex items-center justify-center gap-2 bg-white/5 border border-white/20 hover:bg-white hover:text-black transition-all duration-300 px-6 py-3 font-display tracking-widest text-sm text-white group">
-                                PORTFOLIO
+                                {dict.button_portfolio}
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </a>
                             <a href="/case-study" className="inline-flex items-center justify-center gap-2 bg-white/5 border border-white/20 hover:bg-white hover:text-black transition-all duration-300 px-6 py-3 font-display tracking-widest text-sm text-white group">
-                                CASE STUDY
+                                {dict.button_case_study}
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </a>
                         </div>
@@ -93,7 +67,7 @@ export function TrackRecord() {
                     }}
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
                 >
-                    {records.map((record, i) => (
+                    {records.map((record: any, i: number) => (
                         <motion.div
                             key={i}
                             variants={{

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export function WhoWeAre() {
+export function WhoWeAre({ dict }: { dict: any }) {
     return (
         <section className="relative py-32 bg-background overflow-hidden">
             {/* Background glow */}
@@ -21,25 +21,16 @@ export function WhoWeAre() {
                 >
                     <div className="inline-flex items-center gap-4 mb-6">
                         <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">WHO WE ARE</h2>
+                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">{dict.section_title}</h2>
                     </div>
                     <h3 className="text-4xl md:text-5xl font-display font-medium tracking-widest mb-8 leading-tight text-white drop-shadow-lg">
-                        コンサルティングから、<br className="hidden md:block" />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">事業運営会社へ。</span>
+                        {dict.title_line1}<br className="hidden md:block" />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">{dict.title_line2}</span>
                     </h3>
-                    <p className="text-gray-400 leading-loose tracking-wide font-sans text-lg">
-                        私たちは単なる外部アドバイザーではありません。
-                        コンサルティングフィーを前提とした契約に加え、自らも事業リスクを取り、
-                        <strong className="text-white font-medium">レベニューシェアモデル</strong> や <strong className="text-white font-medium">事業投資</strong> を通じて
-                        クライアントと同じ立場で結果にコミットしています。
-                        <br /><br />
-                        だからこそ、私たちのコンサルティングには圧倒的な当事者意識と、実践から得たリアルな知見が宿ります。
-                        「やったことがない人間のアドバイス」ではなく、
-                        <strong className="text-white font-medium">「自ら事業を動かす人間の提案」</strong>。
-                        それが、普通のコンサルティングファームとは決定的に異なる私たちの価値です。
-                        <br /><br />
-                        現在では自らの事業と投資先の成長に直接コミットする真の事業運営会社として、日々新たな挑戦を生み出しています。
-                    </p>
+                    <p
+                        className="text-gray-400 leading-loose tracking-wide font-sans text-lg [&>strong]:text-white [&>strong]:font-medium"
+                        dangerouslySetInnerHTML={{ __html: dict.description }}
+                    />
                 </motion.div>
 
                 {/* Two Cards: Advisory & Investment */}
@@ -62,12 +53,12 @@ export function WhoWeAre() {
                     >
                         <div className="absolute top-0 left-0 w-0 h-[2px] bg-primary-light group-hover:w-full transition-all duration-700 ease-in-out" />
                         <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                        <h4 className="text-2xl font-display tracking-widest mb-4 text-white relative z-10">ADVISORY</h4>
+                        <h4 className="text-2xl font-display tracking-widest mb-4 text-white relative z-10">{dict.advisory.title}</h4>
                         <div className="w-12 h-px bg-primary/30 mb-6 group-hover:w-24 group-hover:bg-primary-light transition-all duration-500 relative z-10" />
-                        <p className="text-gray-400 text-sm tracking-wider mb-6 leading-relaxed relative z-10">
-                            国内外のビジネス課題を解決する、高度な知的専門サービス。
-                            M&Aから事業再生まで、すべての挑戦の基盤となるナレッジを提供します。
-                        </p>
+                        <p
+                            className="text-gray-400 text-sm tracking-wider mb-6 leading-relaxed relative z-10"
+                            dangerouslySetInnerHTML={{ __html: dict.advisory.desc }}
+                        />
                     </motion.div>
 
                     <motion.div
@@ -80,13 +71,12 @@ export function WhoWeAre() {
                         <div className="absolute top-0 left-0 w-0 h-[2px] bg-primary-light group-hover:w-full transition-all duration-700 ease-in-out" />
                         <div className="absolute top-0 right-0 w-64 h-64 bg-primary-dark/10 blur-[80px] group-hover:bg-primary-dark/20 transition-colors duration-700 pointer-events-none" />
 
-                        <h4 className="text-2xl font-display tracking-widest mb-4 text-white relative z-10">INVESTMENT & OPERATION</h4>
+                        <h4 className="text-2xl font-display tracking-widest mb-4 text-white relative z-10">{dict.investment.title}</h4>
                         <div className="w-12 h-px bg-primary/40 mb-6 group-hover:w-32 group-hover:bg-primary-light transition-all duration-500 relative z-10" />
-                        <p className="text-gray-300 text-sm tracking-wider mb-6 relative z-10 leading-relaxed">
-                            自ら資金を投じ、ハンズオンで事業を牽引。
-                            PE/PIPES/インフラファンドの運営や、プリンシパル投資を通じて、
-                            企業の企業価値をダイレクトに向上させます。
-                        </p>
+                        <p
+                            className="text-gray-300 text-sm tracking-wider mb-6 relative z-10 leading-relaxed"
+                            dangerouslySetInnerHTML={{ __html: dict.investment.desc }}
+                        />
                     </motion.div>
                 </motion.div>
             </div>

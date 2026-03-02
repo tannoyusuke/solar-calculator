@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { newsData } from "@/data/news";
 
-export function LatestNews() {
+export function LatestNews({ dict }: { dict: any }) {
     // Get top 3 latest news
     const latestNews = [...newsData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
 
@@ -17,11 +17,12 @@ export function LatestNews() {
                 <div className="md:w-1/4 pt-2">
                     <div className="inline-flex items-center gap-4 mb-4">
                         <div className="h-px w-8 bg-primary/50" />
-                        <h2 className="text-xs tracking-[0.3em] text-primary-light font-display uppercase">Latest News</h2>
+                        <h2 className="text-xs tracking-[0.3em] text-primary-light font-display uppercase">{dict.section_title}</h2>
                     </div>
-                    <p className="text-xs font-sans tracking-widest text-gray-500 mt-2 leading-relaxed hidden md:block">
-                        Tryfunds Groupからの<br />最新のお知らせ
-                    </p>
+                    <p
+                        className="text-xs font-sans tracking-widest text-gray-500 mt-2 leading-relaxed hidden md:block"
+                        dangerouslySetInnerHTML={{ __html: dict.description }}
+                    />
                 </div>
 
                 {/* News List (Right Column) */}
@@ -68,7 +69,7 @@ export function LatestNews() {
                             href="/news"
                             className="inline-flex items-center gap-2 text-xs font-display font-bold tracking-[0.2em] text-white/50 hover:text-white transition-colors group"
                         >
-                            VIEW ALL NEWS
+                            {dict.view_all}
                             <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </motion.div>

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { Dictionary } from "@/lib/dictionary";
 
-export function Footer() {
+export function Footer({ dict, lang }: { dict: Dictionary; lang: string }) {
     return (
         <footer className="bg-black/95 border-t border-white/10 pt-20 pb-10 w-full mt-auto relative overflow-hidden">
             {/* Decorative Glow */}
@@ -16,32 +17,34 @@ export function Footer() {
                                 TRYFUNDS
                             </span>
                         </Link>
-                        <p className="text-gray-400 text-sm md:text-base leading-relaxed tracking-wider font-sans max-w-sm">
-                            意志ある挑戦を創造し、<br />
-                            世界で戦える事業を創造する。
+                        <p className="text-gray-400 text-sm md:text-base leading-relaxed tracking-wider font-sans max-w-sm whitespace-pre-line">
+                            {dict.footer.vision}
                         </p>
                     </div>
 
                     {/* Quick Links */}
                     <div>
                         <h4 className="text-sm font-bold font-sans tracking-widest text-white mb-6">
-                            COMPANY
+                            {dict.footer.corporate_business}
                         </h4>
                         <ul className="space-y-4 font-sans text-sm tracking-wider">
                             <li>
-                                <Link href="/philosophy" className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">PHILOSOPHY</Link>
+                                <Link href={`/${lang}/philosophy`} className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">{dict.navigation.about.items.philosophy}</Link>
                             </li>
                             <li>
-                                <Link href="/company" className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">COMPANY</Link>
+                                <Link href={`/${lang}/company`} className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">{dict.navigation.about.items.company}</Link>
                             </li>
                             <li>
-                                <Link href="/services" className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">SERVICES</Link>
+                                <Link href={`/${lang}/services`} className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">{dict.navigation.business.items.services}</Link>
                             </li>
                             <li>
-                                <Link href="/track-record" className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">TRACK RECORD</Link>
+                                <Link href={`/${lang}/portfolio`} className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">{dict.navigation.business.items.portfolio}</Link>
                             </li>
                             <li>
-                                <Link href="/recruit" className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">RECRUIT</Link>
+                                <Link href={`/${lang}/case-study`} className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">{dict.navigation.business.items.caseStudy}</Link>
+                            </li>
+                            <li>
+                                <Link href={`/${lang}/recruit`} className="text-gray-400 hover:text-white transition-all hover:translate-x-1 inline-block">{dict.navigation.recruit.title}</Link>
                             </li>
                         </ul>
                     </div>
@@ -49,18 +52,18 @@ export function Footer() {
                     {/* Contact Info */}
                     <div>
                         <h4 className="text-sm font-bold font-sans tracking-widest text-white mb-6">
-                            OFFICE
+                            {dict.footer.office}
                         </h4>
                         <ul className="space-y-2 font-sans text-sm text-gray-400 tracking-wide mb-8">
-                            <li>〒105-0014</li>
-                            <li>東京都港区芝3-1-14</li>
-                            <li>芝公園阪神ビル5階</li>
+                            {dict.footer.address.map((line: string, idx: number) => (
+                                <li key={idx}>{line}</li>
+                            ))}
                         </ul>
                         <Link
-                            href="/contact"
+                            href={`/${lang}/contact`}
                             className="inline-flex items-center gap-2 border border-white/20 hover:border-white/50 bg-white/5 hover:bg-white/10 text-white text-xs font-bold tracking-widest px-6 py-3 transition-all hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] group"
                         >
-                            お問い合わせ <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                            {dict.footer.contact} <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                         </Link>
                     </div>
                 </div>
@@ -69,7 +72,7 @@ export function Footer() {
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between text-xs font-sans text-gray-500 tracking-widest">
                     <p>&copy; {new Date().getFullYear()} Tryfunds Inc. All Rights Reserved.</p>
                     <div className="flex gap-6 mt-4 md:mt-0">
-                        <Link href="/privacy" className="hover:text-white transition-colors">PRIVACY POLICY</Link>
+                        <Link href={`/${lang}/privacy`} className="hover:text-white transition-colors">{dict.footer.privacy}</Link>
                     </div>
                 </div>
             </div>

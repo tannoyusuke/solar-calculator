@@ -9,9 +9,12 @@ import { UniqueValueProposition } from "@/components/home/UniqueValueProposition
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
 import { LatestNews } from "@/components/home/LatestNews";
 import { HeroPortfolioSlider } from "@/components/home/HeroPortfolioSlider";
-import { MapPin } from "lucide-react";
+import { getDictionary } from "@/lib/dictionary";
+import type { Locale } from "@/lib/i18n-config";
 
-export default function Home() {
+export default async function Home({ params }: { params: { lang: Locale } }) {
+  const dict = await getDictionary(params.lang);
+
   return (
     <main className="flex min-h-screen flex-col w-full overflow-hidden">
       {/* Hero Section */}
@@ -46,23 +49,23 @@ export default function Home() {
 
           {/* Main Title */}
           <h1 className="text-6xl md:text-8xl lg:text-[8rem] font-display font-bold tracking-tighter mb-4 md:mb-6 leading-none text-white drop-shadow-2xl animate-fade-in-up relative mt-20">
-            TRY to <span className="text-gray-400">All.</span>
+            {dict.home.hero.title} <span className="text-gray-400">{dict.home.hero.titleHighlight}</span>
           </h1>
 
           <p className="text-xl md:text-3xl font-sans font-bold tracking-[0.3em] md:tracking-[0.4em] text-white animate-fade-in-up drop-shadow-md" style={{ animationDelay: '0.2s' }}>
-            挑戦をカルチャーに。
+            {dict.home.hero.subtitle}
           </p>
 
           {/* Description Paragraph */}
           <div className="mt-12 md:mt-16 animate-fade-in-up w-full max-w-3xl flex flex-col items-center" style={{ animationDelay: '0.4s' }}>
             <div className="w-8 h-px bg-white/40 mb-8" />
             <p className="text-xs md:text-sm text-gray-300 font-sans tracking-[0.15em] md:tracking-[0.2em] leading-[2.5] md:leading-loose text-center drop-shadow-sm">
-              最新のテクノロジーと圧倒的な実行力を融合し、<br className="hidden md:block" />
-              未踏の事業領域を開拓する。<br />
-              <br className="hidden md:block" />
-              私たちは単なるアドバイザリーの枠を超え、<br className="hidden md:block" />
-              自らリスクを取り、すべての挑戦を具現化する<br className="hidden md:block" />
-              次世代の事業運営会社です。
+              {dict.home.hero.description.map((line, i) => (
+                <span key={i}>
+                  {line}
+                  {i < dict.home.hero.description.length - 1 && <br className={i === 0 || i === 2 || i === 3 ? "hidden md:block" : ""} />}
+                </span>
+              ))}
             </p>
 
             {/* Hero Auto-scrolling Slider (Portfolio) */}
@@ -74,28 +77,28 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-12 right-6 md:right-12 hidden md:flex flex-col items-center animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[10px] font-display tracking-[0.3em] uppercase mb-6 text-white" style={{ writingMode: 'vertical-rl' }}>Scroll to Explore</span>
+          <span className="text-[10px] font-display tracking-[0.3em] uppercase mb-6 text-white" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
           <div className="w-[1px] h-20 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
         </div>
 
         {/* Mobile scroll indicator */}
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 md:hidden flex flex-col items-center animate-fade-in-up opacity-50" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[9px] font-display tracking-[0.3em] uppercase mb-3 text-white pl-[0.3em]">Scroll</span>
+          <span className="text-[9px] font-display tracking-[0.3em] uppercase mb-3 text-white pl-[0.3em]">{dict.home.hero.scroll}</span>
           <div className="w-[1px] h-10 bg-gradient-to-b from-white to-transparent" />
         </div>
       </section>
 
       {/* Main Content Sections */}
-      <WhoWeAre />
-      <LatestNews />
-      <OurPhilosophy />
-      <TrackRecord />
-      <UniqueValueProposition />
-      <ValuesStrength />
-      <Services />
+      <WhoWeAre dict={dict.home.whoWeAre} />
+      <LatestNews dict={dict.home.latestNews} />
+      <OurPhilosophy dict={dict.home.ourPhilosophy} />
+      <TrackRecord dict={dict.home.trackRecord} />
+      <UniqueValueProposition dict={dict.home.uniqueValueProposition} />
+      <ValuesStrength dict={dict.home.valuesStrength} />
+      <Services dict={dict.home.services} />
 
       {/* Conversion Section */}
-      <ConversionCTA />
+      <ConversionCTA dict={dict.shared?.conversionCTA} />
 
     </main>
   );

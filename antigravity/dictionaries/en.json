@@ -1,0 +1,239 @@
+{
+    "navigation": {
+        "about": {
+            "title": "ABOUT US",
+            "items": {
+                "philosophy": "Philosophy",
+                "company": "Company Profile",
+                "access": "Access"
+            }
+        },
+        "business": {
+            "title": "BUSINESS",
+            "items": {
+                "services": "Investment Consulting",
+                "portfolio": "Portfolio",
+                "caseStudy": "Track Record"
+            }
+        },
+        "members": "MEMBERS",
+        "recruit": {
+            "title": "RECRUIT",
+            "items": {
+                "future": "Future Vision",
+                "careers": "Careers & Compensation",
+                "persona": "Persona",
+                "roles": "Open Roles"
+            }
+        },
+        "news": "NEWS",
+        "contact": "CONTACT"
+    },
+    "footer": {
+        "vision": "Creating Willful Challenges.\nCreating Globally Competitive Businesses.",
+        "corporate_business": "Company & Business Info",
+        "office": "OFFICE",
+        "address": [
+            "105-0014",
+            "Shiba Park Hanshin Bldg 5F",
+            "3-1-14 Shiba, Minato-ku, Tokyo"
+        ],
+        "contact": "CONTACT US",
+        "privacy": "PRIVACY POLICY"
+    },
+    "home": {
+        "hero": {
+            "title": "TRY to",
+            "titleHighlight": "All.",
+            "subtitle": "Creating a Culture of Challenge.",
+            "description": [
+                "Fusing the latest technology with overwhelming execution power",
+                "to pioneer uncharted business domains.",
+                "",
+                "We go beyond the traditional advisory framework,",
+                "taking risks ourselves to manifest every challenge",
+                "as a next-generation business operating company."
+            ],
+            "scroll": "Scroll to Explore"
+        },
+        "whoWeAre": {
+            "section_title": "WHO WE ARE",
+            "title_line1": "From Consulting to a",
+            "title_line2": "Business Operating Company.",
+            "description": "We are not merely external advisors.<br/>In addition to consulting fee-based contracts, we take business risks ourselves,<br/>committing to results on the same level as our clients through <strong class=\"text-white font-medium\">revenue-share models</strong> and <strong class=\"text-white font-medium\">business investments</strong>.<br/><br/>This is exactly why our consulting embodies an overwhelming sense of ownership and real-world expertise gained from actual execution.<br/>We do not offer \"advice from those who have never done it,\" but rather <strong class=\"text-white font-medium\">\"proposals from those who run businesses themselves\"</strong>.<br/>This is our definitive value that completely sets us apart from ordinary consulting firms.<br/><br/>Today, as a true business operating company directly committed to the growth of our own businesses and investments, we generate new challenges every single day.",
+            "advisory": {
+                "title": "ADVISORY",
+                "desc": "Highly specialized intellectual services solving domestic and global business challenges.<br/>We provide the foundational knowledge for every challenge, from M&A to corporate turnaround."
+            },
+            "investment": {
+                "title": "INVESTMENT & OPERATION",
+                "desc": "Investing our own capital and driving business through a hands-on approach.<br/>We directly increase corporate value through the management of PE/PIPES/Infrastructure funds and principal investments."
+            }
+        },
+        "latestNews": {
+            "section_title": "LATEST NEWS",
+            "description": "The latest updates<br />from Tryfunds Group",
+            "view_all": "VIEW ALL NEWS"
+        },
+        "ourPhilosophy": {
+            "section_title": "OUR PHILOSOPHY",
+            "headline": "Creating Willful Challenges.",
+            "description": "<p>We not only support the serious challenges of our clients but also possess a firm will ourselves, continuously acting as front-line \"challengers\" harder than anyone else.</p><br/><p>Together with client business leaders, we <strong class=\"text-white font-bold\">Envision</strong>—painting an even higher vision and redefining the summit to aim for.<br class=\"hidden md:block\" />We then directly supplement the \"missing parts\" (capital, talent, technology, networks, etc.) essential for its realization, empowering them to pursue unprecedented scale in business growth.</p>"
+        },
+        "trackRecord": {
+            "section_title": "TRACK RECORD",
+            "stats_value": "1,000",
+            "stats_unit1": "Projects+",
+            "stats_unit2": "Supported",
+            "description": "Over 14 years since our founding, we have covered a wide range of fields including strategic advisory, M&A advisory, expansion support to 58 countries worldwide, new business planning, DX/AI support, executive search, and cost reduction consulting.<br/><strong class=\"text-white font-medium block mt-4\">Our track record of over 1,000 projects</strong> proves the overwhelming driving force of our hybrid model.",
+            "button_portfolio": "PORTFOLIO",
+            "button_case_study": "CASE STUDY",
+            "records": [
+                {
+                    "value": "200",
+                    "unit": "Billion JPY+",
+                    "label": "Total Portfolio Market Cap",
+                    "description": "Achieving overwhelming growth and value creation for consulting and portfolio companies."
+                },
+                {
+                    "value": "1",
+                    "unit": "Company",
+                    "label": "Unicorn Creation",
+                    "description": "Nurtured into a unicorn company valued at over $1 billion through our consulting."
+                },
+                {
+                    "value": "150",
+                    "unit": "Billion JPY+",
+                    "label": "Infrastructure Fund",
+                    "description": "Total AUM in energy projects supporting social infrastructure globally and domestically."
+                },
+                {
+                    "value": "10",
+                    "unit": "Billion JPY+",
+                    "label": "PE/PIPES Fund",
+                    "description": "Managing growth and buyout investment funds for listed and unlisted companies."
+                }
+            ]
+        },
+        "uniqueValueProposition": {
+            "section_title": "OUR UNIQUE APPROACH",
+            "title_line1": "Why We Are Chosen.",
+            "title_line2": "A One-of-a-Kind Hybrid Model",
+            "description": "Overwhelming execution power and commitment that sets us apart from ordinary consulting firms and investment funds.",
+            "cards": [
+                {
+                    "label": "01",
+                    "title": "Taking 'Risk' as a Principal",
+                    "description": "Going beyond standard advisory (fee-based business), we execute principal investments and revenue sharing ourselves. We commit to results directly, not as advisors, but as 'co-founders'.",
+                    "image": "/uvp_street_smart_cliff.png"
+                },
+                {
+                    "label": "02",
+                    "title": "Powerful 'Missing Part' Supplementation",
+                    "description": "We possess in-house capabilities to comprehensively procure and provide the resources missing for corporate growth—funding, management talent dispatch, global network access, DX/AI technology, and M&A execution. Rather than mere introductions, our professional group enters the field directly to fill the missing pieces and lead the business to completion.",
+                    "image": "/images/uvp_missing_parts.png",
+                    "details": [
+                        {
+                            "key": "Capital",
+                            "value": "Direct funding via fund management and principal investment"
+                        },
+                        {
+                            "key": "Talent",
+                            "value": "Immediate assignment of CxO-class management talent"
+                        },
+                        {
+                            "key": "Network",
+                            "value": "Creating business opportunities using alliances in 58 countries"
+                        },
+                        {
+                            "key": "Tech",
+                            "value": "Design and implementation support for DX/AI and digital transformation"
+                        }
+                    ]
+                },
+                {
+                    "label": "03",
+                    "title": "A 'Powerful Network' Connecting the World",
+                    "description": "Alliances and information networks spanning over 58 countries globally. We fully leverage these to discover and manifest opportunities for cross-border business growth. It is our unique foundation to realize global value-ups for both portfolios and clients.",
+                    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
+                }
+            ]
+        },
+        "valuesStrength": {
+            "section_title": "VALUE PROPOSITION",
+            "headline": "3 Value Behaviors<br />To Grow Businesses Together",
+            "description": "We are not merely external advisors. We share risks with our clients and commit to maximizing business value with an overwhelming sense of ownership.",
+            "cards": [
+                {
+                    "num": "01",
+                    "title": "Pioneering Business Opportunities\non a Global Standard",
+                    "description": "With a global perspective, we discover and realize opportunities for cross-border business growth."
+                },
+                {
+                    "num": "02",
+                    "title": "Challenging Beyond Boundaries\nand Executing as Principals",
+                    "description": "Unconstrained by precedents or existing frameworks, we run alongside you to business success with a strong sense of ownership."
+                },
+                {
+                    "num": "03",
+                    "title": "Aiming for Uncharted Heights\nThrough Teamwork",
+                    "description": "Diverse professionals gather to produce overwhelming results that transcend the simple addition of individuals."
+                }
+            ]
+        },
+        "services": {
+            "section_title": "BUSINESS DOMAINS",
+            "headline": "3 Pillars Driving Business and<br className=\"md:hidden\" />Shaping Challenges",
+            "view_details": "VIEW DETAILS",
+            "cards": [
+                {
+                    "title": "Fund AM",
+                    "tag": "Investment & Operation",
+                    "description": "Enhancing corporate value through investments in domestic and global infrastructure startups and the management of PE/PIPES funds.",
+                    "metrics": [
+                        "Infra Fund",
+                        "PE/PIPES",
+                        "Hands-on"
+                    ],
+                    "url_hash": "investment-operation"
+                },
+                {
+                    "title": "Hands-on",
+                    "tag": "Principal",
+                    "description": "Taking risks ourselves and directly dispatching our management and professional talent for hands-on business turnaround and growth support.",
+                    "metrics": [
+                        "CxO Dispatch",
+                        "Turnaround",
+                        "Growth"
+                    ],
+                    "url_hash": "principal"
+                },
+                {
+                    "title": "Consulting",
+                    "tag": "Advisory",
+                    "description": "From strategy and M&A to digital transformation. Corporate transformation advisory utilizing high-level expertise and global networks.",
+                    "metrics": [
+                        "Biz Strategy",
+                        "M&A",
+                        "Global Expansion"
+                    ],
+                    "url_hash": "advisory"
+                }
+            ]
+        }
+    },
+    "shared": {
+        "conversionCTA": {
+            "corporate_label": "Corporate Information",
+            "corporate_title": "Company Overview & Project Examples",
+            "corporate_desc": "Introducing Tryfunds' business details and specific project examples selected from our over 1,000 supported track records.",
+            "btn_document": "DOWNLOAD DOCUMENT",
+            "btn_projects": "VIEW PROJECTS",
+            "recruit_label": "Join Our Team",
+            "recruit_title": "JOIN OUR TRY",
+            "recruit_desc": "We are looking for members to accomplish unprecedented businesses together. Let's start by exchanging information about your future career and our challenges.",
+            "btn_careers": "CAREERS / RECRUIT",
+            "btn_interview": "CASUAL INTERVIEW"
+        }
+    }
+}

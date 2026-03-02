@@ -3,25 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const values = [
-    {
-        num: "01",
-        title: "世界基準で\n事業機会を切り拓く",
-        description: "グローバルな視点を持ち、国境を越えた事業成長の機会を発見し、現実のものとします。",
-    },
-    {
-        num: "02",
-        title: "枠にとらわれず挑戦し、\n主体者としてやりきる",
-        description: "前例や既存の枠組みにとらわれず、当事者意識を持って事業の成功まで並走します。",
-    },
-    {
-        num: "03",
-        title: "チームワークで\n未踏の高みを目指す",
-        description: "多様なプロフェッショナルが結集し、個の足し算を超えた圧倒的な成果を生み出します。",
-    },
-];
-
-export function ValuesStrength() {
+export function ValuesStrength({ dict }: { dict: any }) {
+    const values = dict.cards || [];
     return (
         <section className="relative py-32 bg-[#020202] overflow-hidden">
             {/* Decorative Lights */}
@@ -43,19 +26,20 @@ export function ValuesStrength() {
                     >
                         <div className="inline-flex items-center gap-4 mb-6">
                             <div className="h-px w-12 bg-primary/50" />
-                            <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">VALUES WE PROVIDE</h2>
+                            <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans">{dict.section_title}</h2>
                         </div>
-                        <p className="text-3xl md:text-5xl font-display font-medium tracking-tight mb-8 text-white drop-shadow-md leading-tight">
-                            共に事業を成長させるための<br />3つの価値行動
-                        </p>
+                        <p
+                            className="text-3xl md:text-5xl font-sans font-bold tracking-tight mb-8 text-white drop-shadow-md leading-tight"
+                            dangerouslySetInnerHTML={{ __html: dict.headline }}
+                        />
                         <p className="text-gray-400 font-sans leading-relaxed tracking-wide mb-8">
-                            私たちは単なる外部アドバイザーではありません。クライアントとリスクを共有し、圧倒的な当事者意識で事業価値の最大化にコミットします。
+                            {dict.description}
                         </p>
                     </motion.div>
 
                     {/* Scrolling Cards Column — number-based, no icons */}
                     <div className="lg:w-2/3 flex flex-col gap-8">
-                        {values.map((v, i) => (
+                        {values.map((v: any, i: number) => (
                             <motion.div
                                 key={i}
                                 initial={{ opacity: 0, y: 40 }}
@@ -99,15 +83,12 @@ export function ValuesStrength() {
                 >
                     {/* Content Side */}
                     <div className="p-10 md:p-16 lg:p-20 bg-gradient-to-br from-primary-dark/20 via-primary/10 to-transparent relative z-10 flex flex-col justify-center">
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display mb-6 inline-block border-b border-primary/30 pb-2">
-                            CORE STRENGTH
+                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans mb-6 inline-block border-b border-primary/30 pb-2">
+                            コアとなる強み
                         </h2>
-                        <h3 className="text-4xl md:text-6xl font-display font-medium tracking-widest mb-8 leading-tight text-white drop-shadow-lg">
-                            STRATEGIC <br /> PARTNERSHIP
-                        </h3>
-                        <p className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-corp-gray to-gray-400 tracking-wider font-sans mb-8 font-bold">
+                        <h3 className="text-3xl md:text-5xl font-sans font-bold tracking-widest mb-8 leading-tight text-white drop-shadow-lg leading-snug">
                             政権中枢から財閥トップへ至る<br className="hidden md:block" />真に強固なネットワーク
-                        </p>
+                        </h3>
                         <p className="text-gray-400 text-base leading-relaxed tracking-wide font-sans">
                             一般的に語られる表面的なグローバルネットワークとは一線を画す、圧倒的なアクセス権。
                             各国政権の中枢や現地財閥のトップ層と直結した「真に強いネットワーク」を保有しています。

@@ -1,11 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, Target, ArrowRight, Briefcase, ChevronRight } from "lucide-react";
+import { Users, Target, ArrowRight, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { RecruitSystem } from "@/components/recruit/RecruitSystem";
 import { RecruitRoles } from "@/components/recruit/RecruitRoles";
-import { RecruitPersona } from "@/components/recruit/RecruitPersona";
 
 export default function RecruitPage() {
     return (
@@ -33,9 +31,7 @@ export default function RecruitPage() {
                 </motion.div>
             </div>
 
-            {/* Injected Detailed HR and Roles sections */}
-            <RecruitPersona />
-            <RecruitSystem />
+            {/* Injected Detailed Roles section */}
             <RecruitRoles />
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 mt-24">

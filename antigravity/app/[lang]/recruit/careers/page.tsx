@@ -3,7 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ArrowDown } from "lucide-react";
 import Link from "next/link";
+import { CareersPlan } from "@/components/recruit/CareersPlan";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
+import { getDictionary } from "@/lib/dictionary";
+import { Locale } from "@/lib/i18n-config";
 
 const careerProgression = [
     {
@@ -68,17 +71,8 @@ const philosophyBlocks = [
     }
 ];
 
-const salaryData = [
-    { title: "Managing Director", range: "18,000 〜 20,000" },
-    { title: "Principal", range: "14,000 〜 16,000" },
-    { title: "Vice President", range: "11,000 〜 13,000" },
-    { title: "Engagement Manager", range: "9,000 〜 10,000" },
-    { title: "Senior Associate", range: "7,000 〜 8,000" },
-    { title: "Associate", range: "5,000 〜 6,000" },
-    { title: "Analyst", range: "4,200", single: true }
-];
-
-export default function CareersPage() {
+export default async function CareersPage({ params: { lang } }: { params: { lang: Locale } }) {
+    const dict = await getDictionary(lang);
     return (
         <div className="pt-32 pb-24 min-h-screen bg-background">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -214,7 +208,7 @@ export default function CareersPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="mb-32"
+                    className="mb-16"
                 >
                     <div className="mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold font-sans tracking-tight mb-8 text-white">
@@ -223,11 +217,11 @@ export default function CareersPage() {
 
                         {/* Compensation Formula Visual */}
                         <div className="flex flex-col md:flex-row items-center justify-center gap-4 bg-white/[0.03] border border-white/10 rounded-xl p-6 mb-12 shadow-[0_0_30px_rgba(0,136,163,0.1)]">
-                            <span className="text-sm md:text-base font-bold text-gray-300 uppercase tracking-widest whitespace-nowrap">固定給：Fixed Compensation<br /><span className="text-xs text-gray-500 font-normal">(Base)</span></span>
+                            <span className="text-sm md:text-base font-bold text-gray-300 tracking-widest whitespace-nowrap">固定給</span>
                             <span className="text-2xl text-primary font-light">＋</span>
-                            <span className="text-sm md:text-base font-bold text-white uppercase tracking-widest whitespace-nowrap">賞与：Variable Upside<br /><span className="text-xs text-primary/70 font-normal">(Bonus)</span></span>
+                            <span className="text-sm md:text-base font-bold text-white tracking-widest whitespace-nowrap">全社業績連動賞与</span>
                             <span className="text-2xl text-primary font-light">＋</span>
-                            <span className="text-sm md:text-base font-bold text-primary-light uppercase tracking-widest whitespace-nowrap drop-shadow-[0_0_8px_rgba(0,210,211,0.5)]">インセンティブ：Incentives<br /><span className="text-xs text-primary font-normal drop-shadow-none">(Bonus)</span></span>
+                            <span className="text-sm md:text-base font-bold text-primary-light tracking-widest whitespace-nowrap drop-shadow-[0_0_8px_rgba(0,210,211,0.5)]">特別インセンティブ（事業収益連動）</span>
                         </div>
 
                         <p className="text-gray-300 font-sans max-w-4xl leading-[2.2] text-sm md:text-base tracking-[0.02em]">
@@ -239,15 +233,13 @@ export default function CareersPage() {
                     <div className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="bg-[#0a0f12]/80 backdrop-blur-xl border border-white/10 p-8 rounded-2xl relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-48 h-48 bg-primary/10 rounded-full blur-3xl -z-10" />
-                            <h3 className="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">評価制度 (Evaluation System)</h3>
+                            <h3 className="text-xl font-bold text-white mb-6 border-b border-white/10 pb-4">評価制度</h3>
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="flex-1 bg-white/[0.03] p-4 text-center rounded-lg border border-white/5">
-                                    <p className="text-xs text-gray-400 mb-1">Performance</p>
+                                <div className="flex-1 bg-white/[0.03] p-4 text-center rounded-lg border border-white/5 flex items-center justify-center min-h-[64px]">
                                     <p className="font-bold text-white tracking-wide">成果に対する評価</p>
                                 </div>
                                 <span className="text-xl text-primary font-bold">＋</span>
-                                <div className="flex-1 bg-white/[0.03] p-4 text-center rounded-lg border border-white/5">
-                                    <p className="text-xs text-gray-400 mb-1">Leadership</p>
+                                <div className="flex-1 bg-white/[0.03] p-4 text-center rounded-lg border border-white/5 flex items-center justify-center min-h-[64px]">
                                     <p className="font-bold text-white tracking-wide">6つの要素による評価</p>
                                 </div>
                             </div>
@@ -263,14 +255,14 @@ export default function CareersPage() {
                                 <li className="flex items-start gap-4">
                                     <div className="w-2 h-2 rounded-full bg-white mt-2 shrink-0" />
                                     <div>
-                                        <p className="font-bold text-white text-base">Variable Upside (賞与)</p>
+                                        <p className="font-bold text-white text-base">全社業績連動賞与</p>
                                         <p className="text-sm text-gray-400 mt-1">全社収益に紐づく年次ボーナス。対象者全員に支給。</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <div className="w-2 h-2 rounded-full bg-primary-light shadow-[0_0_8px_rgba(0,210,211,0.8)] mt-2 shrink-0" />
                                     <div>
-                                        <p className="font-bold text-primary-light text-base drop-shadow-[0_0_5px_rgba(0,210,211,0.5)]">Massive Incentives (特別報酬)</p>
+                                        <p className="font-bold text-primary-light text-base drop-shadow-[0_0_5px_rgba(0,210,211,0.5)]">特別インセンティブ</p>
                                         <p className="text-sm text-gray-300 mt-1">ポートフォリオ事業収益およびEXIT報酬の一部還元。</p>
                                         <div className="mt-3 inline-block px-3 py-1 bg-primary/20 border border-primary/50 rounded text-xs font-bold text-white">
                                             対象: Driveの上位ランク以上
@@ -287,7 +279,7 @@ export default function CareersPage() {
                         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
                         <div className="mb-12 text-center">
-                            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-4">ランク別 報酬イメージ (Reward Ratio)</h3>
+                            <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-white mb-4">ランク別 報酬イメージ</h3>
                             <p className="text-sm md:text-base text-gray-400">ランクが上がるにつれ、青天井のアップサイド（インセンティブ）比率が飛躍的に高まる設計です。</p>
                         </div>
 
@@ -368,7 +360,8 @@ export default function CareersPage() {
                 </motion.div>
             </div>
 
-            <ConversionCTA />
+            <CareersPlan />
+            <ConversionCTA dict={dict.shared?.conversionCTA} />
         </div>
     );
 }

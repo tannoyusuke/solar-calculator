@@ -6,6 +6,8 @@ import Link from "next/link";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
 import { EnvisionGraphic } from "@/components/ui/EnvisionGraphic";
 import { ArrowRight } from "lucide-react";
+import { getDictionary } from "@/lib/dictionary";
+import { Locale } from "@/lib/i18n-config";
 
 const services = [
     {
@@ -52,7 +54,8 @@ const services = [
     }
 ];
 
-export default function ServicesPage() {
+export default async function ServicesPage({ params: { lang } }: { params: { lang: Locale } }) {
+    const dict = await getDictionary(lang);
     return (
         <div className="pt-32 pb-24 min-h-screen bg-background relative overflow-hidden">
             {/* Ambient Backgrounds */}
@@ -70,7 +73,7 @@ export default function ServicesPage() {
                 >
                     <div className="inline-flex items-center justify-center md:justify-start gap-4 mb-6 w-full md:w-auto">
                         <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">OUR SERVICES</h2>
+                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans">事業領域</h2>
                         <div className="h-px w-12 bg-primary/50 md:hidden" />
                     </div>
                     <h1 className="text-5xl md:text-7xl font-sans font-bold tracking-widest text-white mb-8 leading-tight drop-shadow-lg">
@@ -136,7 +139,7 @@ export default function ServicesPage() {
 
                         <div className="flex flex-col md:flex-row gap-12 items-start md:items-center relative z-10">
                             <div className="md:w-1/3">
-                                <h3 className="text-xs tracking-[0.3em] text-primary-light font-display mb-4 uppercase">Fee Model</h3>
+                                <h3 className="text-xs tracking-[0.3em] text-primary-light font-bold font-sans mb-4">フィー体系</h3>
                                 <h4 className="text-3xl md:text-4xl font-sans font-bold text-white mb-4 tracking-wide">
                                     事業成功への<br />コミットメント
                                 </h4>
@@ -180,7 +183,7 @@ export default function ServicesPage() {
                     <div className="flex flex-col mb-16">
                         <div className="flex items-center gap-4 mb-6">
                             <div className="h-px w-8 bg-white/20" />
-                            <h3 className="text-xl tracking-[0.2em] text-white font-display">CAPABILITIES</h3>
+                            <h3 className="text-xl tracking-[0.2em] text-white font-bold font-sans">提供機能</h3>
                         </div>
                         <h2 className="text-3xl md:text-5xl font-sans font-bold text-white leading-tight tracking-widest pl-12 border-l-2 border-primary-light">
                             できることが多いのではない。<br />
@@ -246,8 +249,8 @@ export default function ServicesPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
                         <Link href="/case-study" className="group block relative overflow-hidden bg-white/[0.02] border border-white/10 hover:border-primary/40 transition-all duration-500 p-12">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[50px] group-hover:bg-primary/30 transition-colors" />
-                            <h3 className="text-sm tracking-[0.3em] text-primary-light font-display uppercase mb-4">Client Stories</h3>
-                            <h4 className="text-3xl font-display font-bold text-white mb-6">Case Study</h4>
+                            <h3 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans mb-4">支援実績</h3>
+                            <h4 className="text-3xl font-sans font-bold text-white mb-6">実績紹介</h4>
                             <p className="text-gray-400 font-sans leading-relaxed mb-8">
                                 Tryfundsが介入し、非連続な成長と劇的なバリューアップを実現した企業の舞台裏をご紹介します。
                             </p>
@@ -271,7 +274,7 @@ export default function ServicesPage() {
                         </Link>
                     </div>
 
-                    <ConversionCTA />
+                    <ConversionCTA dict={dict.shared?.conversionCTA} />
                 </section>
 
             </div>

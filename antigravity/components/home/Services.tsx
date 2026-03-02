@@ -4,33 +4,17 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-export function Services() {
-    const services = [
-        {
-            title: "Fund AM",
-            tag: "Investment & Operation",
-            description: "国内外のインフラ関連スタートアップへの投資および、PEファンド/PIPESファンドの運用を通じた企業価値向上。",
-            metrics: ["インフラファンド", "PE/PIPES", "ハンズオン投資"],
-            bgImage: "bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80')]",
-            colSpan: "lg:col-span-8",
-        },
-        {
-            title: "Hands-on",
-            tag: "Principal",
-            description: "自らリスクを取り、自社経営陣やプロフェッショナル人材を直接派遣するハンズオン型の事業再生・成長支援。",
-            metrics: ["CxO派遣", "事業再生", "グロース"],
-            bgImage: "bg-[url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80')]",
-            colSpan: "lg:col-span-4",
-        },
-        {
-            title: "Consulting",
-            tag: "Advisory",
-            description: "戦略立案からM&A、デジタル変革まで。高度な知見とグローバルネットワークを駆使した企業変革アドバイザリー。",
-            metrics: ["事業戦略", "M&A", "海外進出"],
-            bgImage: "bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80')]",
-            colSpan: "lg:col-span-12",
-        }
+export function Services({ dict }: { dict: any }) {
+    const layoutDetails = [
+        { bgImage: "bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80')]", colSpan: "lg:col-span-8" },
+        { bgImage: "bg-[url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80')]", colSpan: "lg:col-span-4" },
+        { bgImage: "bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80')]", colSpan: "lg:col-span-12" }
     ];
+
+    const services = (dict.cards || []).map((card: any, i: number) => ({
+        ...card,
+        ...layoutDetails[i],
+    }));
 
     return (
         <section className="relative py-32 bg-[#050505] overflow-hidden">
@@ -47,12 +31,13 @@ export function Services() {
                 >
                     <div className="inline-flex items-center gap-4 justify-center mb-6">
                         <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display uppercase">Services</h2>
+                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans">{dict.section_title}</h2>
                         <div className="h-px w-12 bg-primary/50" />
                     </div>
-                    <p className="text-4xl md:text-5xl text-white font-display leading-tight tracking-widest font-medium drop-shadow-lg">
-                        ビジネスを牽引し、<br className="md:hidden" />挑戦を形にする3つの柱
-                    </p>
+                    <p
+                        className="text-4xl md:text-5xl text-white font-sans font-bold leading-tight tracking-widest drop-shadow-lg"
+                        dangerouslySetInnerHTML={{ __html: dict.headline }}
+                    />
                 </motion.div>
 
                 <motion.div
@@ -65,7 +50,7 @@ export function Services() {
                     }}
                     className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 >
-                    {services.map((service, i) => (
+                    {services.map((service: any, i: number) => (
                         <motion.div
                             key={i}
                             variants={{
@@ -75,7 +60,7 @@ export function Services() {
                             className="h-full"
                         >
                             <Link
-                                href={`/services#${service.tag.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
+                                href={`/services#${service.url_hash}`}
                                 className="group flex flex-col justify-between p-10 bg-white/[0.02] border border-white/10 hover:border-white/30 transition-all duration-500 hover:-translate-y-2 cursor-pointer h-full backdrop-blur-sm relative overflow-hidden hover:bg-white/[0.04] hover:shadow-[0_15px_40px_rgba(255,255,255,0.05)]"
                             >
                                 {/* Hover Glow Effect */}
@@ -93,7 +78,7 @@ export function Services() {
                                     </h3>
 
                                     <ul className="flex flex-wrap gap-2 mb-6">
-                                        {service.metrics.map((metric, idx) => (
+                                        {service.metrics.map((metric: any, idx: number) => (
                                             <li key={idx} className="text-[11px] font-sans text-primary-light border border-primary/30 px-2 py-1 bg-primary/5">
                                                 {metric}
                                             </li>
@@ -107,8 +92,8 @@ export function Services() {
                                     </p>
                                 </div>
 
-                                <div className="relative z-10 flex items-center text-sm font-display tracking-[0.2em] font-bold text-gray-500 group-hover:text-white transition-colors uppercase pt-6 border-t border-white/5">
-                                    Explore Details <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
+                                <div className="relative z-10 flex items-center text-sm font-bold tracking-[0.2em] text-gray-400 group-hover:text-white transition-colors pt-6 border-t border-white/5 font-sans">
+                                    {dict.view_details} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
                                 </div>
                             </Link>
                         </motion.div>

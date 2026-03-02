@@ -2,45 +2,55 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { Menu, X, ChevronDown, Globe } from "lucide-react";
 import clsx from "clsx";
 import { TryfundsLogo } from "@/components/ui/TryfundsLogo";
+import type { Dictionary } from "@/lib/dictionary";
 
-const navStructure = [
-    {
-        name: "ABOUT US",
-        subItems: [
-            { name: "Philosophy", href: "/philosophy" },
-            { name: "Company", href: "/company" },
-            { name: "Access", href: "/company#access" },
-        ]
-    },
-    {
-        name: "BUSINESS",
-        subItems: [
-            { name: "Services", href: "/services" },
-            { name: "Portfolio", href: "/portfolio" },
-            { name: "Case Study", href: "/case-study" },
-        ]
-    },
-    {
-        name: "MEMBER",
-        href: "/members"
-    },
-    {
-        name: "RECRUIT",
-        subItems: [
-            { name: "Future Vision", href: "/recruit/future" },
-            { name: "Careers & Philosophy", href: "/recruit/careers" },
-            { name: "Open Roles", href: "/recruit#open-roles" },
-        ]
-    },
-    { name: "NEWS", href: "/news" },
-];
-
-export function Header() {
+export function Header({ dict, lang }: { dict: Dictionary; lang: string }) {
+    const pathname = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleLangPath = () => {
+        if (!pathname) return '/';
+        const targetLang = lang === 'ja' ? 'en' : 'ja';
+        return pathname.replace(`/${lang}`, `/${targetLang}`);
+    };
+
+    const navStructure = [
+        {
+            name: dict.navigation.about.title,
+            subItems: [
+                { name: dict.navigation.about.items.philosophy, href: `/${lang}/philosophy` },
+                { name: dict.navigation.about.items.company, href: `/${lang}/company` },
+                { name: dict.navigation.about.items.access, href: `/${lang}/company#access` },
+            ]
+        },
+        {
+            name: dict.navigation.business.title,
+            subItems: [
+                { name: dict.navigation.business.items.services, href: `/${lang}/services` },
+                { name: dict.navigation.business.items.portfolio, href: `/${lang}/portfolio` },
+                { name: dict.navigation.business.items.caseStudy, href: `/${lang}/case-study` },
+            ]
+        },
+        {
+            name: dict.navigation.members,
+            href: `/${lang}/members`
+        },
+        {
+            name: dict.navigation.recruit.title,
+            subItems: [
+                { name: dict.navigation.recruit.items.future, href: `/${lang}/recruit/future` },
+                { name: dict.navigation.recruit.items.careers, href: `/${lang}/recruit/careers` },
+                { name: dict.navigation.recruit.items.persona, href: `/${lang}/recruit/persona` },
+                { name: dict.navigation.recruit.items.roles, href: `/${lang}/recruit#open-roles` },
+            ]
+        },
+        { name: dict.navigation.news, href: `/${lang}/news` },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -63,7 +73,7 @@ export function Header() {
             )}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-                <Link href="/" className="group relative flex items-center">
+                <Link href={`/${lang}`} className="group relative flex items-center">
                     <div className="absolute -inset-2 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
                     <TryfundsLogo className="h-6 md:h-7 relative z-10 transition-transform duration-300 group-hover:scale-105" />
                 </Link>
@@ -103,10 +113,18 @@ export function Header() {
                         </div>
                     ))}
                     <Link
-                        href="/contact"
+                        href={`/${lang}/contact`}
                         className="text-sm font-bold font-sans tracking-widest text-black bg-white/90 hover:bg-white px-8 py-3 transition-all hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] hover:-translate-y-0.5 border border-transparent ml-4"
                     >
-                        CONTACT
+                        {dict.navigation.contact}
+                    </Link>
+                    {/* Language Switcher */}
+                    <Link
+                        href={toggleLangPath()}
+                        className="ml-2 flex items-center gap-2 text-xs font-sans font-bold tracking-widest text-gray-400 hover:text-white transition-colors"
+                    >
+                        <Globe className="w-4 h-4" />
+                        {lang === 'ja' ? 'EN' : 'JP'}
                     </Link>
                 </nav>
 
@@ -154,12 +172,22 @@ export function Header() {
                             </div>
                         ))}
                         <Link
-                            href="/contact"
+                            href={`/${lang}/contact`}
                             onClick={closeMenu}
                             className="text-xl font-bold font-sans tracking-widest text-black bg-white px-12 py-4 transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] mt-8 animate-fade-in-up border border-transparent"
                             style={{ animationDelay: `${navStructure.length * 0.1}s` }}
                         >
-                            CONTACT
+                            {dict.navigation.contact}
+                        </Link>
+                        {/* Mobile Language Switcher */}
+                        <Link
+                            href={toggleLangPath()}
+                            onClick={closeMenu}
+                            className="mt-6 flex items-center gap-2 text-base font-sans font-bold tracking-widest text-gray-400 hover:text-white animate-fade-in-up"
+                            style={{ animationDelay: `${(navStructure.length + 1) * 0.1}s` }}
+                        >
+                            <Globe className="w-5 h-5" />
+                            {lang === 'ja' ? 'English (EN)' : 'Japanese (JP)'}
                         </Link>
                     </div>
                 )}

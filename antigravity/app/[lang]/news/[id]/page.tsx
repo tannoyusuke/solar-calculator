@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
+import { getDictionary } from "@/lib/dictionary";
+import { Locale } from "@/lib/i18n-config";
 
 export function generateStaticParams() {
     return newsData.map((news) => ({
@@ -19,7 +21,8 @@ export function generateMetadata({ params }: { params: { id: string } }) {
     };
 }
 
-export default function NewsDetailPage({ params }: { params: { id: string } }) {
+export default async function NewsDetailPage({ params }: { params: { id: string, lang: Locale } }) {
+    const dict = await getDictionary(params.lang);
     const news = newsData.find((n) => n.id === params.id);
 
     if (!news) {
@@ -70,7 +73,7 @@ export default function NewsDetailPage({ params }: { params: { id: string } }) {
                 </div>
             </div>
 
-            <ConversionCTA />
+            <ConversionCTA dict={dict.shared?.conversionCTA} />
         </main>
     );
 }

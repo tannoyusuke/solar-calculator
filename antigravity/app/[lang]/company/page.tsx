@@ -32,7 +32,7 @@ export default function AboutPage() {
                 >
                     <div className="inline-flex items-center gap-4 mb-6">
                         <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">COMPANY</h2>
+                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans">会社概要</h2>
                     </div>
                 </motion.div>
 
@@ -44,9 +44,9 @@ export default function AboutPage() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
-                        <h3 className="text-2xl font-display tracking-widest text-white mb-10 pb-4 border-b border-white/10 flex items-center gap-4">
+                        <h3 className="text-2xl font-sans font-bold tracking-widest text-white mb-10 pb-4 border-b border-white/10 flex items-center gap-4">
                             <div className="w-2 h-2 rounded-full bg-primary-light" />
-                            COMPANY PROFILE
+                            会社情報
                         </h3>
 
                         <dl className="grid grid-cols-1 gap-4 text-sm font-sans tracking-wide">
@@ -131,9 +131,9 @@ export default function AboutPage() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.3 }}
                     >
-                        <h3 className="text-2xl font-display tracking-widest text-white mb-10 pb-4 border-b border-white/10 flex items-center gap-4">
+                        <h3 className="text-2xl font-sans font-bold tracking-widest text-white mb-10 pb-4 border-b border-white/10 flex items-center gap-4">
                             <div className="w-2 h-2 rounded-full bg-primary-light" />
-                            HISTORY
+                            沿革
                         </h3>
 
                         <div className="relative pl-6 md:pl-8 border-l border-white/10 space-y-12">

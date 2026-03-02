@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_JP, Montserrat } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { getDictionary } from "@/lib/dictionary";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,13 +27,17 @@ export const metadata: Metadata = {
     "Tryfundsは、コンサルティング、投資、M&A、エグゼクティブサーチを通じ、「意志ある挑戦を創造し、世界で戦える事業を創造する」事業運営会社です。",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { lang: string };
 }>) {
+  const dict = await getDictionary(params.lang as import("@/lib/i18n-config").Locale);
+
   return (
-    <html lang="ja">
+    <html lang={params.lang}>
       <body
         className={cn(
           inter.variable,
@@ -41,9 +46,9 @@ export default function RootLayout({
           "antialiased min-h-screen font-sans bg-background text-foreground flex flex-col"
         )}
       >
-        <Header />
+        <Header dict={dict} lang={params.lang} />
         <main className="flex-grow">{children}</main>
-        <Footer />
+        <Footer dict={dict} lang={params.lang} />
       </body>
     </html>
   );

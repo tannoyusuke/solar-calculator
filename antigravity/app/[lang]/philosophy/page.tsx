@@ -169,8 +169,8 @@ export default function PhilosophyPage() {
                     <div className="mb-16 relative z-10">
                         <div className="inline-flex items-center gap-4 mb-4">
                             <div className="h-px w-8 bg-primary-light/50" />
-                            <h3 className="text-sm md:text-base text-primary-light font-display tracking-[0.2em] font-bold uppercase">
-                                VALUES WE PROVIDE
+                            <h3 className="text-sm md:text-base text-primary-light font-sans tracking-[0.2em] font-bold">
+                                提供価値
                             </h3>
                         </div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-sans font-bold tracking-widest text-white mb-6 leading-tight drop-shadow-md">
