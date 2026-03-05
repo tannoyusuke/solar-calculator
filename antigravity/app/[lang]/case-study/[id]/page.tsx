@@ -2,25 +2,58 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { caseStudies } from "@/data/caseStudies";
+import { getCaseStudiesData } from "@/lib/data";
+import { Locale } from "@/lib/i18n-config";
 import { notFound } from "next/navigation";
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { lang: Locale, id: string } }): Promise<Metadata> {
+    const caseStudies = getCaseStudiesData(params.lang);
     const study = caseStudies.find(s => s.id === params.id);
+
     if (!study) return { title: "Not Found" };
+
+    const title = `${study.title} | Tryfunds Case Study`;
+    const description = study.summary;
+
     return {
-        title: `${study.title} | Tryfunds Case Study`,
-        description: study.summary,
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: "article",
+            images: [
+                {
+                    url: study.image,
+                    width: 1200,
+                    height: 630,
+                    alt: study.title,
+                }
+            ]
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [study.image],
+        }
     };
 }
 
 export function generateStaticParams() {
-    return caseStudies.map((study) => ({
+    const jaParams = getCaseStudiesData("ja").map((study) => ({
+        lang: "ja",
         id: study.id,
     }));
+    const enParams = getCaseStudiesData("en").map((study) => ({
+        lang: "en",
+        id: study.id,
+    }));
+    return [...jaParams, ...enParams];
 }
 
-export default function CaseStudyDetail({ params }: { params: { id: string } }) {
+export default function CaseStudyDetail({ params }: { params: { lang: Locale, id: string } }) {
+    const caseStudies = getCaseStudiesData(params.lang);
     const study = caseStudies.find(s => s.id === params.id);
 
     if (!study) {
@@ -32,7 +65,7 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
             <div className="max-w-4xl mx-auto px-6 md:px-12">
 
                 {/* Back Link */}
-                <Link href="/case-study" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-12 text-sm tracking-widest font-sans">
+                <Link href={`/${params.lang}/case-study`} className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-12 text-sm tracking-widest font-sans">
                     <ArrowLeft size={16} />
                     BACK TO INDEX
                 </Link>
@@ -64,6 +97,7 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                         src={study.image}
                         alt={study.title}
                         fill
+                        unoptimized={true}
                         priority
                         className="object-cover"
                         sizes="(max-width: 1024px) 100vw, 1024px"
@@ -77,7 +111,7 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-6 tracking-wide flex items-center gap-4">
                             <span className="text-primary-light font-display text-sm tracking-[0.2em]">01</span>
-                            背景 / Background
+                            {params.lang === "en" ? "Background" : "背景 / Background"}
                         </h2>
                         <div className="w-8 h-px bg-white/20 mb-6" />
                         <p>{study.content.background}</p>
@@ -86,7 +120,7 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-6 tracking-wide flex items-center gap-4">
                             <span className="text-primary-light font-display text-sm tracking-[0.2em]">02</span>
-                            課題 / Challenges
+                            {params.lang === "en" ? "Challenges" : "課題 / Challenges"}
                         </h2>
                         <div className="w-8 h-px bg-white/20 mb-6" />
                         <p>{study.content.challenges}</p>
@@ -99,6 +133,7 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                                 src={study.articleImage}
                                 alt={`${study.client} Approach visualization`}
                                 fill
+                                unoptimized={true}
                                 className="object-cover"
                                 sizes="(max-width: 1024px) 100vw, 1024px"
                             />
@@ -109,7 +144,7 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                         <div className="absolute top-0 left-0 w-1 h-full bg-primary-light" />
                         <h2 className="text-2xl font-bold text-white mb-6 tracking-wide flex items-center gap-4">
                             <span className="text-primary-light font-display text-sm tracking-[0.2em]">03</span>
-                            アプローチ / Tryfunds Approach
+                            {params.lang === "en" ? "Tryfunds Approach" : "アプローチ / Tryfunds Approach"}
                         </h2>
                         <p className="relative z-10">{study.content.approach}</p>
                     </section>
@@ -117,7 +152,7 @@ export default function CaseStudyDetail({ params }: { params: { id: string } }) 
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-6 tracking-wide flex items-center gap-4">
                             <span className="text-primary-light font-display text-sm tracking-[0.2em]">04</span>
-                            成果と提供価値 / Outcome
+                            {params.lang === "en" ? "Outcome" : "成果と提供価値 / Outcome"}
                         </h2>
                         <div className="w-8 h-px bg-white/20 mb-6" />
                         <p className="mb-10">{study.content.outcome}</p>

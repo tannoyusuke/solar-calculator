@@ -1,4 +1,4 @@
-import { newsData } from "@/data/news";
+import { getNewsData } from "@/lib/data";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
@@ -12,6 +12,7 @@ export const metadata = {
 
 export default async function NewsPage({ params: { lang } }: { params: { lang: Locale } }) {
     const dict = await getDictionary(lang);
+    const newsData = getNewsData(lang);
     // Sort all news by date descending
     const allNews = [...newsData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
@@ -36,7 +37,7 @@ export default async function NewsPage({ params: { lang } }: { params: { lang: L
                     {allNews.map((item, i) => (
                         <Link
                             key={item.id}
-                            href={`/news/${item.id}`}
+                            href={`/${lang}/news/${item.id}`}
                             className="group flex flex-col md:flex-row md:items-center py-8 border-b border-white/10 hover:bg-white/[0.02] -mx-6 px-6 transition-colors duration-300"
                         >
                             <div className="flex items-center gap-4 mb-3 md:mb-0 md:w-64 shrink-0">

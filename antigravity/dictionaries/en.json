@@ -1,239 +1,995 @@
 {
-    "navigation": {
-        "about": {
-            "title": "ABOUT US",
-            "items": {
-                "philosophy": "Philosophy",
-                "company": "Company Profile",
-                "access": "Access"
-            }
-        },
-        "business": {
-            "title": "BUSINESS",
-            "items": {
-                "services": "Investment Consulting",
-                "portfolio": "Portfolio",
-                "caseStudy": "Track Record"
-            }
-        },
-        "members": "MEMBERS",
-        "recruit": {
-            "title": "RECRUIT",
-            "items": {
-                "future": "Future Vision",
-                "careers": "Careers & Compensation",
-                "persona": "Persona",
-                "roles": "Open Roles"
-            }
-        },
-        "news": "NEWS",
-        "contact": "CONTACT"
+  "navigation": {
+    "about": {
+      "title": "ABOUT US",
+      "items": {
+        "philosophy": "Philosophy",
+        "company": "Company Profile",
+        "access": "Access"
+      }
     },
-    "footer": {
-        "vision": "Creating Willful Challenges.\nCreating Globally Competitive Businesses.",
-        "corporate_business": "Company & Business Info",
-        "office": "OFFICE",
-        "address": [
-            "105-0014",
-            "Shiba Park Hanshin Bldg 5F",
-            "3-1-14 Shiba, Minato-ku, Tokyo"
-        ],
-        "contact": "CONTACT US",
-        "privacy": "PRIVACY POLICY"
+    "business": {
+      "title": "BUSINESS",
+      "items": {
+        "services": "Investment Consulting",
+        "portfolio": "Portfolio",
+        "caseStudy": "Track Record"
+      }
     },
-    "home": {
-        "hero": {
-            "title": "TRY to",
-            "titleHighlight": "All.",
-            "subtitle": "Creating a Culture of Challenge.",
-            "description": [
-                "Fusing the latest technology with overwhelming execution power",
-                "to pioneer uncharted business domains.",
-                "",
-                "We go beyond the traditional advisory framework,",
-                "taking risks ourselves to manifest every challenge",
-                "as a next-generation business operating company."
-            ],
-            "scroll": "Scroll to Explore"
+    "members": "MEMBERS",
+    "recruit": {
+      "title": "RECRUIT",
+      "items": {
+        "future": "Future Vision",
+        "careers": "Careers & Compensation",
+        "persona": "Persona",
+        "roles": "Open Roles"
+      }
+    },
+    "news": "NEWS",
+    "contact": "CONTACT"
+  },
+  "footer": {
+    "vision": "Creating Willful Challenges.\nCreating Globally Competitive Businesses.",
+    "corporate_business": "Company & Business Info",
+    "office": "OFFICE",
+    "address": [
+      "105-0014",
+      "Shiba Park Hanshin Bldg 5F",
+      "3-1-14 Shiba, Minato-ku, Tokyo"
+    ],
+    "contact": "CONTACT US",
+    "privacy": "PRIVACY POLICY"
+  },
+  "home": {
+    "hero": {
+      "title": "TRY to",
+      "titleHighlight": "All.",
+      "subtitle": "Creating a Culture of Challenge.",
+      "description": [
+        "Fusing the latest technology with overwhelming execution power",
+        "to pioneer uncharted business domains.",
+        "",
+        "We go beyond the traditional advisory framework,",
+        "taking risks ourselves to manifest every challenge",
+        "as a next-generation business operating company."
+      ],
+      "scroll": "Scroll to Explore"
+    },
+    "whoWeAre": {
+      "section_title": "WHO WE ARE",
+      "title_line1": "From Consulting to a",
+      "title_line2": "Business Operating Company.",
+      "description": "We are not merely external advisors.<br/>In addition to consulting fee-based contracts, we take business risks ourselves,<br/>committing to results on the same level as our clients through <strong class=\"text-white font-medium\">revenue-share models</strong> and <strong class=\"text-white font-medium\">business investments</strong>.<br/><br/>This is exactly why our consulting embodies an overwhelming sense of ownership and real-world expertise gained from actual execution.<br/>We do not offer \"advice from those who have never done it,\" but rather <strong class=\"text-white font-medium\">\"proposals from those who run businesses themselves\"</strong>.<br/>This is our definitive value that completely sets us apart from ordinary consulting firms.<br/><br/>Today, as a true business operating company directly committed to the growth of our own businesses and investments, we generate new challenges every single day.",
+      "advisory": {
+        "title": "ADVISORY",
+        "desc": "Highly specialized intellectual services solving domestic and global business challenges.<br/>We provide the foundational knowledge for every challenge, from M&A to corporate turnaround."
+      },
+      "investment": {
+        "title": "INVESTMENT & OPERATION",
+        "desc": "Investing our own capital and driving business through a hands-on approach.<br/>We directly increase corporate value through the management of PE/PIPES/Infrastructure funds and principal investments."
+      }
+    },
+    "latestNews": {
+      "section_title": "LATEST NEWS",
+      "description": "The latest updates<br />from Tryfunds Group",
+      "view_all": "VIEW ALL NEWS"
+    },
+    "ourPhilosophy": {
+      "section_title": "OUR PHILOSOPHY",
+      "headline": "Creating Willful Challenges.",
+      "description": "<p>We not only support the serious challenges of our clients but also possess a firm will ourselves, continuously acting as front-line \"challengers\" harder than anyone else.</p><br/><p>Together with client business leaders, we <strong class=\"text-white font-bold\">Envision</strong>—painting an even higher vision and redefining the summit to aim for.<br class=\"hidden md:block\" />We then directly supplement the \"missing parts\" (capital, talent, technology, networks, etc.) essential for its realization, empowering them to pursue unprecedented scale in business growth.</p>"
+    },
+    "trackRecord": {
+      "section_title": "TRACK RECORD",
+      "stats_value": "1,000",
+      "stats_unit1": "Projects+",
+      "stats_unit2": "Supported",
+      "description": "Over 14 years since our founding, we have covered a wide range of fields including strategic advisory, M&A advisory, expansion support to 58 countries worldwide, new business planning, DX/AI support, executive search, and cost reduction consulting.<br/><strong class=\"text-white font-medium block mt-4\">Our track record of over 1,000 projects</strong> proves the overwhelming driving force of our hybrid model.",
+      "button_portfolio": "PORTFOLIO",
+      "button_case_study": "CASE STUDY",
+      "records": [
+        {
+          "value": "200",
+          "unit": "Billion JPY+",
+          "label": "Total Portfolio Market Cap",
+          "description": "Achieving overwhelming growth and value creation for consulting and portfolio companies."
         },
-        "whoWeAre": {
-            "section_title": "WHO WE ARE",
-            "title_line1": "From Consulting to a",
-            "title_line2": "Business Operating Company.",
-            "description": "We are not merely external advisors.<br/>In addition to consulting fee-based contracts, we take business risks ourselves,<br/>committing to results on the same level as our clients through <strong class=\"text-white font-medium\">revenue-share models</strong> and <strong class=\"text-white font-medium\">business investments</strong>.<br/><br/>This is exactly why our consulting embodies an overwhelming sense of ownership and real-world expertise gained from actual execution.<br/>We do not offer \"advice from those who have never done it,\" but rather <strong class=\"text-white font-medium\">\"proposals from those who run businesses themselves\"</strong>.<br/>This is our definitive value that completely sets us apart from ordinary consulting firms.<br/><br/>Today, as a true business operating company directly committed to the growth of our own businesses and investments, we generate new challenges every single day.",
-            "advisory": {
-                "title": "ADVISORY",
-                "desc": "Highly specialized intellectual services solving domestic and global business challenges.<br/>We provide the foundational knowledge for every challenge, from M&A to corporate turnaround."
+        {
+          "value": "1",
+          "unit": "Company",
+          "label": "Unicorn Creation",
+          "description": "Nurtured into a unicorn company valued at over $1 billion through our consulting."
+        },
+        {
+          "value": "150",
+          "unit": "Billion JPY+",
+          "label": "Infrastructure Fund",
+          "description": "Total AUM in energy projects supporting social infrastructure globally and domestically."
+        },
+        {
+          "value": "10",
+          "unit": "Billion JPY+",
+          "label": "PE/PIPES Fund",
+          "description": "Managing growth and buyout investment funds for listed and unlisted companies."
+        }
+      ]
+    },
+    "uniqueValueProposition": {
+      "section_title": "OUR UNIQUE APPROACH",
+      "title_line1": "Why We Are Chosen.",
+      "title_line2": "A One-of-a-Kind Hybrid Model",
+      "description": "Overwhelming execution power and commitment that sets us apart from ordinary consulting firms and investment funds.",
+      "cards": [
+        {
+          "label": "01",
+          "title": "Taking 'Risk' as a Principal",
+          "description": "Going beyond standard advisory (fee-based business), we execute principal investments and revenue sharing ourselves. We commit to results directly, not as advisors, but as 'co-founders'.",
+          "image": "/uvp_street_smart_cliff.png"
+        },
+        {
+          "label": "02",
+          "title": "Powerful 'Missing Part' Supplementation",
+          "description": "We possess in-house capabilities to comprehensively procure and provide the resources missing for corporate growth—funding, management talent dispatch, global network access, DX/AI technology, and M&A execution. Rather than mere introductions, our professional group enters the field directly to fill the missing pieces and lead the business to completion.",
+          "image": "/images/uvp_missing_parts.png",
+          "details": [
+            {
+              "key": "Capital",
+              "value": "Direct funding via fund management and principal investment"
             },
-            "investment": {
-                "title": "INVESTMENT & OPERATION",
-                "desc": "Investing our own capital and driving business through a hands-on approach.<br/>We directly increase corporate value through the management of PE/PIPES/Infrastructure funds and principal investments."
+            {
+              "key": "Talent",
+              "value": "Immediate assignment of CxO-class management talent"
+            },
+            {
+              "key": "Network",
+              "value": "Creating business opportunities using alliances in 58 countries"
+            },
+            {
+              "key": "Tech",
+              "value": "Design and implementation support for DX/AI and digital transformation"
             }
+          ]
         },
-        "latestNews": {
-            "section_title": "LATEST NEWS",
-            "description": "The latest updates<br />from Tryfunds Group",
-            "view_all": "VIEW ALL NEWS"
-        },
-        "ourPhilosophy": {
-            "section_title": "OUR PHILOSOPHY",
-            "headline": "Creating Willful Challenges.",
-            "description": "<p>We not only support the serious challenges of our clients but also possess a firm will ourselves, continuously acting as front-line \"challengers\" harder than anyone else.</p><br/><p>Together with client business leaders, we <strong class=\"text-white font-bold\">Envision</strong>—painting an even higher vision and redefining the summit to aim for.<br class=\"hidden md:block\" />We then directly supplement the \"missing parts\" (capital, talent, technology, networks, etc.) essential for its realization, empowering them to pursue unprecedented scale in business growth.</p>"
-        },
-        "trackRecord": {
-            "section_title": "TRACK RECORD",
-            "stats_value": "1,000",
-            "stats_unit1": "Projects+",
-            "stats_unit2": "Supported",
-            "description": "Over 14 years since our founding, we have covered a wide range of fields including strategic advisory, M&A advisory, expansion support to 58 countries worldwide, new business planning, DX/AI support, executive search, and cost reduction consulting.<br/><strong class=\"text-white font-medium block mt-4\">Our track record of over 1,000 projects</strong> proves the overwhelming driving force of our hybrid model.",
-            "button_portfolio": "PORTFOLIO",
-            "button_case_study": "CASE STUDY",
-            "records": [
-                {
-                    "value": "200",
-                    "unit": "Billion JPY+",
-                    "label": "Total Portfolio Market Cap",
-                    "description": "Achieving overwhelming growth and value creation for consulting and portfolio companies."
-                },
-                {
-                    "value": "1",
-                    "unit": "Company",
-                    "label": "Unicorn Creation",
-                    "description": "Nurtured into a unicorn company valued at over $1 billion through our consulting."
-                },
-                {
-                    "value": "150",
-                    "unit": "Billion JPY+",
-                    "label": "Infrastructure Fund",
-                    "description": "Total AUM in energy projects supporting social infrastructure globally and domestically."
-                },
-                {
-                    "value": "10",
-                    "unit": "Billion JPY+",
-                    "label": "PE/PIPES Fund",
-                    "description": "Managing growth and buyout investment funds for listed and unlisted companies."
-                }
-            ]
-        },
-        "uniqueValueProposition": {
-            "section_title": "OUR UNIQUE APPROACH",
-            "title_line1": "Why We Are Chosen.",
-            "title_line2": "A One-of-a-Kind Hybrid Model",
-            "description": "Overwhelming execution power and commitment that sets us apart from ordinary consulting firms and investment funds.",
-            "cards": [
-                {
-                    "label": "01",
-                    "title": "Taking 'Risk' as a Principal",
-                    "description": "Going beyond standard advisory (fee-based business), we execute principal investments and revenue sharing ourselves. We commit to results directly, not as advisors, but as 'co-founders'.",
-                    "image": "/uvp_street_smart_cliff.png"
-                },
-                {
-                    "label": "02",
-                    "title": "Powerful 'Missing Part' Supplementation",
-                    "description": "We possess in-house capabilities to comprehensively procure and provide the resources missing for corporate growth—funding, management talent dispatch, global network access, DX/AI technology, and M&A execution. Rather than mere introductions, our professional group enters the field directly to fill the missing pieces and lead the business to completion.",
-                    "image": "/images/uvp_missing_parts.png",
-                    "details": [
-                        {
-                            "key": "Capital",
-                            "value": "Direct funding via fund management and principal investment"
-                        },
-                        {
-                            "key": "Talent",
-                            "value": "Immediate assignment of CxO-class management talent"
-                        },
-                        {
-                            "key": "Network",
-                            "value": "Creating business opportunities using alliances in 58 countries"
-                        },
-                        {
-                            "key": "Tech",
-                            "value": "Design and implementation support for DX/AI and digital transformation"
-                        }
-                    ]
-                },
-                {
-                    "label": "03",
-                    "title": "A 'Powerful Network' Connecting the World",
-                    "description": "Alliances and information networks spanning over 58 countries globally. We fully leverage these to discover and manifest opportunities for cross-border business growth. It is our unique foundation to realize global value-ups for both portfolios and clients.",
-                    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
-                }
-            ]
-        },
-        "valuesStrength": {
-            "section_title": "VALUE PROPOSITION",
-            "headline": "3 Value Behaviors<br />To Grow Businesses Together",
-            "description": "We are not merely external advisors. We share risks with our clients and commit to maximizing business value with an overwhelming sense of ownership.",
-            "cards": [
-                {
-                    "num": "01",
-                    "title": "Pioneering Business Opportunities\non a Global Standard",
-                    "description": "With a global perspective, we discover and realize opportunities for cross-border business growth."
-                },
-                {
-                    "num": "02",
-                    "title": "Challenging Beyond Boundaries\nand Executing as Principals",
-                    "description": "Unconstrained by precedents or existing frameworks, we run alongside you to business success with a strong sense of ownership."
-                },
-                {
-                    "num": "03",
-                    "title": "Aiming for Uncharted Heights\nThrough Teamwork",
-                    "description": "Diverse professionals gather to produce overwhelming results that transcend the simple addition of individuals."
-                }
-            ]
-        },
-        "services": {
-            "section_title": "BUSINESS DOMAINS",
-            "headline": "3 Pillars Driving Business and<br className=\"md:hidden\" />Shaping Challenges",
-            "view_details": "VIEW DETAILS",
-            "cards": [
-                {
-                    "title": "Fund AM",
-                    "tag": "Investment & Operation",
-                    "description": "Enhancing corporate value through investments in domestic and global infrastructure startups and the management of PE/PIPES funds.",
-                    "metrics": [
-                        "Infra Fund",
-                        "PE/PIPES",
-                        "Hands-on"
-                    ],
-                    "url_hash": "investment-operation"
-                },
-                {
-                    "title": "Hands-on",
-                    "tag": "Principal",
-                    "description": "Taking risks ourselves and directly dispatching our management and professional talent for hands-on business turnaround and growth support.",
-                    "metrics": [
-                        "CxO Dispatch",
-                        "Turnaround",
-                        "Growth"
-                    ],
-                    "url_hash": "principal"
-                },
-                {
-                    "title": "Consulting",
-                    "tag": "Advisory",
-                    "description": "From strategy and M&A to digital transformation. Corporate transformation advisory utilizing high-level expertise and global networks.",
-                    "metrics": [
-                        "Biz Strategy",
-                        "M&A",
-                        "Global Expansion"
-                    ],
-                    "url_hash": "advisory"
-                }
-            ]
+        {
+          "label": "03",
+          "title": "A 'Powerful Network' Connecting the World",
+          "description": "Alliances and information networks spanning over 58 countries globally. We fully leverage these to discover and manifest opportunities for cross-border business growth. It is our unique foundation to realize global value-ups for both portfolios and clients.",
+          "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800"
         }
+      ]
     },
-    "shared": {
-        "conversionCTA": {
-            "corporate_label": "Corporate Information",
-            "corporate_title": "Company Overview & Project Examples",
-            "corporate_desc": "Introducing Tryfunds' business details and specific project examples selected from our over 1,000 supported track records.",
-            "btn_document": "DOWNLOAD DOCUMENT",
-            "btn_projects": "VIEW PROJECTS",
-            "recruit_label": "Join Our Team",
-            "recruit_title": "JOIN OUR TRY",
-            "recruit_desc": "We are looking for members to accomplish unprecedented businesses together. Let's start by exchanging information about your future career and our challenges.",
-            "btn_careers": "CAREERS / RECRUIT",
-            "btn_interview": "CASUAL INTERVIEW"
+    "valuesStrength": {
+      "section_title": "VALUE PROPOSITION",
+      "headline": "3 Value Behaviors<br />To Grow Businesses Together",
+      "description": "We are not merely external advisors. We share risks with our clients and commit to maximizing business value with an overwhelming sense of ownership.",
+      "cards": [
+        {
+          "num": "01",
+          "title": "Pioneering Business Opportunities\non a Global Standard",
+          "description": "With a global perspective, we discover and realize opportunities for cross-border business growth."
+        },
+        {
+          "num": "02",
+          "title": "Challenging Beyond Boundaries\nand Executing as Principals",
+          "description": "Unconstrained by precedents or existing frameworks, we run alongside you to business success with a strong sense of ownership."
+        },
+        {
+          "num": "03",
+          "title": "Aiming for Uncharted Heights\nThrough Teamwork",
+          "description": "Diverse professionals gather to produce overwhelming results that transcend the simple addition of individuals."
         }
+      ]
+    },
+    "services": {
+      "section_title": "BUSINESS DOMAINS",
+      "headline": "3 Pillars Driving Business and<br className=\"md:hidden\" />Shaping Challenges",
+      "view_details": "VIEW DETAILS",
+      "cards": [
+        {
+          "title": "Fund AM",
+          "tag": "Investment & Operation",
+          "description": "Enhancing corporate value through investments in domestic and global infrastructure startups and the management of PE/PIPES funds.",
+          "metrics": [
+            "Infra Fund",
+            "PE/PIPES",
+            "Hands-on"
+          ],
+          "url_hash": "investment-operation"
+        },
+        {
+          "title": "Hands-on",
+          "tag": "Principal",
+          "description": "Taking risks ourselves and directly dispatching our management and professional talent for hands-on business turnaround and growth support.",
+          "metrics": [
+            "CxO Dispatch",
+            "Turnaround",
+            "Growth"
+          ],
+          "url_hash": "principal"
+        },
+        {
+          "title": "Consulting",
+          "tag": "Advisory",
+          "description": "From strategy and M&A to digital transformation. Corporate transformation advisory utilizing high-level expertise and global networks.",
+          "metrics": [
+            "Biz Strategy",
+            "M&A",
+            "Global Expansion"
+          ],
+          "url_hash": "advisory"
+        }
+      ]
     }
+  },
+  "shared": {
+    "conversionCTA": {
+      "corporate_label": "Corporate Information",
+      "corporate_title": "Company Overview & Project Examples",
+      "corporate_desc": "Introducing Tryfunds' business details and specific project examples selected from our over 1,000 supported track records.",
+      "btn_document": "DOWNLOAD DOCUMENT",
+      "btn_projects": "VIEW PROJECTS",
+      "recruit_label": "Join Our Team",
+      "recruit_title": "JOIN OUR TRY",
+      "recruit_desc": "We are looking for members to accomplish unprecedented businesses together. Let's start by exchanging information about your future career and our challenges.",
+      "btn_careers": "CAREERS / RECRUIT",
+      "btn_interview": "CASUAL INTERVIEW"
+    }
+  },
+  "company": {
+    "title": "Company Profile",
+    "info": {
+      "title": "Company Information",
+      "name_label": "Company Name",
+      "name_value": "Tryfunds Inc.",
+      "ceo_label": "CEO",
+      "ceo_value": "Yusuke Tanno, CEO",
+      "established_label": "Established",
+      "established_value": "September 19, 2012",
+      "capital_label": "Capital",
+      "capital_value": "158.28 Million JPY (Including capital reserve: As of March 2024)",
+      "employees_label": "Employees",
+      "employees_value": "50 (Group: 150)",
+      "hq_label": "Headquarters",
+      "hq_value": "5F, Shibakoen Hanshin Building, 3-1-14 Shiba, Minato-ku, Tokyo 105-0014",
+      "contact_label": "Contact",
+      "contact_value": "TEL : +81-3-6453-9008<br />FAX : +81-3-6453-9007",
+      "business_label": "Business",
+      "business_value": "<ol class=\"list-decimal pl-4 space-y-1\"><li>Operation of investment funds through subsidiaries, including business investments</li><li>M&A advisory and corporate partnership advisory services</li><li>Overseas expansion and business development support</li><li>Headhunting of management and global talent</li><li>Regional revitalization and business succession support</li></ol>",
+      "group_label": "Group Companies",
+      "group_value": "Tryfunds Investment Inc.<br />TF Power Inc.<br />TF Growth LLC<br />TF Ventures LLC<br />Ensenten Inc.<br />Ongaeshi Capital<br />Niigata Sustainable Regional Development Investment Limited Partnership",
+      "banks_label": "Banks",
+      "banks_value": "Mizuho Bank, Kobunecho Branch<br />Sumitomo Mitsui Banking Corporation, Hibiya Corporate Banking Dept. 2",
+      "licenses_label": "Licenses",
+      "licenses_value": "Real Estate Brokerage License: Governor of Tokyo (1) No. 112791<br />Paid Employment Placement Business License: 13-Yu-315351 (Held by subsidiary TFX Inc.)"
+    },
+    "history": {
+      "title": "History",
+      "events": [
+        {
+          "year": "2012.9",
+          "event": "Tryfunds Inc. Established (Yusuke Tanno, CEO)"
+        },
+        {
+          "year": "2013.6",
+          "event": "Started overseas expansion support business"
+        },
+        {
+          "year": "2018.2",
+          "event": "Capital & business alliance / Investment execution with General Oyster Inc."
+        },
+        {
+          "year": "2018.5",
+          "event": "Launched global M&A platform 'BIZIT M&A'"
+        },
+        {
+          "year": "2021.2",
+          "event": "Sold BIZIT Inc. to GCA Corporation"
+        },
+        {
+          "year": "2021.6",
+          "event": "TF Power Inc. Established (Affiliated Company)"
+        },
+        {
+          "year": "2021.12",
+          "event": "Capital participation and assumed Co-Representative position at Sustech Inc."
+        },
+        {
+          "year": "2022.4",
+          "event": "Started ONGAESHI Capital business"
+        },
+        {
+          "year": "2023.2",
+          "event": "Formed ONGAESHI Fund No. 1"
+        }
+      ]
+    }
+  },
+  "philosophy": {
+    "header": {
+      "title_en": "Our",
+      "title_highlight": "Philosophy",
+      "subtitle": "& Culture",
+      "tagline": "The Genesis of Our Challenge"
+    },
+    "block1": {
+      "philosophy_label": "Philosophy",
+      "headline": "Creating Purposeful<br class=\"hidden md:block\" />Challenges.",
+      "p1": "Turning 'we can do more' into conviction.<br class=\"hidden sm:block\" />Our goal is a society where anyone can take the first step towards a challenge.",
+      "p2": "To continue tackling society's challenges, we ourselves operate as frontline challengers, driving new value creation.",
+      "box_text": "We are never satisfied with the status quo and relentlessly <span class=\"text-white font-medium\">pursue</span> the enhancement of essential corporate value.<br /><br />Going beyond mere planning, we dive deep into the business and <span class=\"text-white font-medium\">drive execution hands-on</span>. Unbound by past successes, we bring truly necessary transformation to society.<br /><br /><span class=\"text-primary-light font-bold tracking-widest text-lg drop-shadow-md\">This is our mission.</span>"
+    },
+    "block2": {
+      "vision_label": "VISION",
+      "headline": "Make Challenges a Culture.",
+      "desc": "As a true 'Business Operating Company' with a sense of ownership, we continually tackle problem-solving across all corners of society. Without being constrained by the means of advisory, we complement the necessary missing pieces ourselves and step into uncharted territories. Everything we do is to make the dramatic evolution born from genuine challenges a societal norm."
+    },
+    "block3": {
+      "mission_label": "MISSION",
+      "headline": "Creating World-Class<br class=\"hidden lg:block\" />Businesses.",
+      "desc": "Viewing business from a borderless perspective, we deliver results with overwhelming quality and speed.<br />Fearing no failure, we constantly ask 'How can we do this?'. Shoulder-to-shoulder with executives, through business investment and hands-on support, we implement the next generation of industrial models into society."
+    },
+    "values": {
+      "label": "VALUES",
+      "headline": "3 Value Actions<br class=\"hidden md:block\" />to Grow<br class=\"md:hidden\" /> Businesses Together",
+      "desc": "We are not mere external advisors. We share risks with our clients and commit to maximizing business value with an overwhelming sense of ownership.",
+      "cards": [
+        {
+          "num": "01",
+          "title": "Pioneering Opportunities<br class=\"hidden md:block\" />on a Global Standard",
+          "desc": "With a global perspective, we discover opportunities for cross-border business growth and turn them into reality."
+        },
+        {
+          "num": "02",
+          "title": "Challenging the Status Quo,<br class=\"hidden md:block\" />Executing as Owners",
+          "desc": "Unbound by precedent or existing frameworks, we work alongside our clients through to business success with true ownership."
+        },
+        {
+          "num": "03",
+          "title": "Aiming for Uncharted Heights<br class=\"hidden md:block\" />Through Teamwork",
+          "desc": "Diverse professionals converge to generate overwhelming results that exceed the mere sum of individual efforts."
+        }
+      ]
+    },
+    "leadership": {
+      "label": "TRYFUNDS 6 LEADERSHIP PRINCIPLES",
+      "desc": "These guiding principles serve not only as evaluation metrics but also as the core axis of feedback in our performance management cycle.<br />Alongside high-level skills, we elevate the 'mindset' essential for management talent through these six dimensions.",
+      "principles": [
+        {
+          "title": "Innovative Thinking",
+          "desc": "Do you grasp global trends and leverage information gathering and ideation to present next-level business opportunities and surprising solutions?"
+        },
+        {
+          "title": "Passion for Business",
+          "desc": "Do you rightly understand industry structures and possess the business conceptualization skills to maximize customer value, along with the plausible process design skills to see it through to completion?"
+        },
+        {
+          "title": "Ability to Involve Others",
+          "desc": "Do you have the reliability to gain individual cooperation from clients and internal teams, and the recruiting/procurement capability to define and approach necessary talent (collaborators/hires)?"
+        },
+        {
+          "title": "Pioneer's Soul",
+          "desc": "Do you lead by example with a sense of mission, and even in unknown territories, strive to create a domain of first-class expertise through self-improvement and learning?"
+        },
+        {
+          "title": "Immersive Action",
+          "desc": "Have you set the highest goals exceeding expectations, and do you demonstrate through action the tenacity to push through with a 'last-man-standing' mentality in any difficult situation?"
+        },
+        {
+          "title": "Resolve for the High Road",
+          "desc": "Do you face matters fairly and squarely under any pressure, sincerely accepting advice from others with objective self-awareness, and continuing to grow?"
+        }
+      ]
+    }
+  },
+  "accessControl": {
+    "title": "ACCESS",
+    "hq": "Headquarters",
+    "copyAddress": "Copy Address",
+    "copied": "Copied!"
+  },
+  "trackRecordPage": {
+    "title": "TRACK RECORD",
+    "desc": "Introducing our unique track record,<br/>born from our commitment to the growth of our own businesses and investees."
+  },
+  "servicesPage": {
+    "header": {
+      "label": "BUSINESS DOMAINS",
+      "title": "Driving Business Evolution<br class=\"hidden md:block\" />Directly.",
+      "desc": "Going beyond the traditional advisory framework, Tryfunds<br class=\"hidden md:block\" />takes risks itself and drives corporate value enhancement as a business operator."
+    },
+    "envision": {
+      "label": "THE TRYFUNDS MODEL",
+      "title": "Envision &<br />Missing Parts Completion",
+      "p1": "At the core of our services is our unique business promotion model: <strong>\"Envision (Redefining Goals)\"</strong> and <strong>\"Missing Parts Completion\"</strong>.",
+      "p2": "First, we work with our clients to draw up a powerful vision and strategy (Envision) aimed at reaching higher altitudes, rather than just an extension of the status quo.",
+      "p3": "Then, to make that extraordinary goal a reality, we directly supply and complement the missing elements: <strong class=\"text-white\">[Capital] [Talent] [Network] [Technology]</strong>. By spinning this cycle at high speed, we bring discontinuous growth to our clients."
+    },
+    "fee": {
+      "label": "FEE STRUCTURE",
+      "title": "Commitment to<br />Business Success",
+      "p1": "Tryfunds places importance on its position not just as an external advisor, but as a joint business operator. Even when we operate a business ourselves, we launch projects primarily when we are confident in achieving solid results.",
+      "p2": "Therefore, in order to show our dedication to moving in the same direction towards business success, we actively adopt contract formats that share a portion of the fruits of success.",
+      "model1_title": "Base Fee + Upside Sharing:",
+      "model1_desc": "A performance-linked contract model where we receive the upside of business growth in the form of revenue share, profit share, or success fees, in addition to the basic man-month charge fee.",
+      "model2_title": "Base Fee + Equity / SO Sharing:",
+      "model2_desc": "In addition to the basic fee, we literally become \"crew members on the same ship\" with the client, engaging in hands-on support accompanied by capital participation through stock acquisition or SO (stock option) grants, depending on the project."
+    },
+    "capabilities": {
+      "label": "CAPABILITIES",
+      "title": "It's not about doing many things.<br />It's about doing everything necessary to win.",
+      "desc": "From strategy to execution, from finance to technology. We internalize all functions necessary for business growth and provide them seamlessly.",
+      "items": [
+        {
+          "title": "Investment & Incubation",
+          "subtitle": "Principal Investment / Fund Management",
+          "description": "We execute direct investments using our own capital and operate investment funds (PE/PIPES/Infrastructure funds) through our subsidiaries. Rather than mere asset management, we achieve dramatic corporate value enhancement for out investees through hands-on value-up utilizing our consulting knowledge.",
+          "tags": [
+            "Principal Investment",
+            "PE Fund",
+            "PIPES",
+            "Infrastructure Fund"
+          ]
+        },
+        {
+          "title": "Business Advisory & Strategy",
+          "subtitle": "Management Strategy & New Business Consulting",
+          "description": "We solve management issues by standing on the same level as the client's business leaders, armed with deep industry knowledge and execution capabilities. From launching new businesses to turnaround, we don't just formulate plans but intervene on the ground as stakeholders who \"drive the business ourselves\", committing strongly to results through revenue sharing and more.",
+          "tags": [
+            "Growth Strategy",
+            "Business Incubation",
+            "Turnaround",
+            "DX / AI"
+          ]
+        },
+        {
+          "title": "M&A Advisory",
+          "subtitle": "M&A & Partnership Support",
+          "description": "We support non-organic growth strategies to fill \"Missing Parts\" in business strategy. Driving our unique domestic and international network, we execute seamlessly from M&A sourcing to PMI to maximize business synergies, going beyond mere matching.",
+          "tags": [
+            "Sourcing",
+            "Execution",
+            "PMI",
+            "Alliance"
+          ]
+        },
+        {
+          "title": "Global Expansion",
+          "subtitle": "Overseas Expansion Support",
+          "description": "Based on our track record of supporting expansion into 58 countries, we strongly back the global challenges of Japanese companies. Leveraging our top-level network with local conglomerates and government agencies, we lead everything from market research to establishing local subsidiaries, cross-border M&A, and forming JVs with local partners.",
+          "tags": [
+            "Market Entry",
+            "Cross-border M&A",
+            "JV Setup",
+            "Global Strategy"
+          ]
+        },
+        {
+          "title": "Executive Search & HR",
+          "subtitle": "Executive & Global Talent Headhunting",
+          "description": "We swiftly complement the \"talent\" piece essential for a business breakthrough. We don't just stop at external procurement (RPO); if necessary, we directly dispatch CEO/COO-class personnel from our company. We support the construction of an organization that can run on its own, fundamentally lifting the client's execution capability.",
+          "tags": [
+            "Executive Search",
+            "RPO",
+            "Management Dispatch",
+            "Organization Building"
+          ]
+        },
+        {
+          "title": "Cost Reduction",
+          "subtitle": "Large-scale Cost Reduction & Procurement Optimization",
+          "description": "Going beyond BPR and DX, we achieve large-scale cost reductions by reformulating procurement strategies for materials and energy. We execute measures that directly lead to a dramatic improvement in profit margins by not only eliminating waste on the ground but radically reviewing the entire supply chain.",
+          "tags": [
+            "Cost Reduction",
+            "Procurement Optimization",
+            "BPR",
+            "Supply Chain"
+          ]
+        },
+        {
+          "title": "Marketing & PR Support",
+          "subtitle": "Marketing & PR Support",
+          "description": "We formulate and execute comprehensive marketing strategies to penetrate the market with superior technologies and services. From digital marketing to PR using mass media, we support the construction of optimal channels to maximize brand awareness and acquire customers.",
+          "tags": [
+            "Marketing Strategy",
+            "Public Relations",
+            "Brand Awareness",
+            "Digital Marketing"
+          ]
+        }
+      ]
+    },
+    "links": {
+      "cases": {
+        "label": "CASE STUDIES",
+        "title": "Track Record",
+        "desc": "Take a look behind the scenes at companies where Tryfunds has intervened and achieved discontinuous growth and dramatic value-up.",
+        "btn": "VIEW CASES"
+      },
+      "portfolio": {
+        "label": "INVESTMENT TRACK RECORD",
+        "title": "Portfolio",
+        "desc": "Discover our portfolio companies from joint businesses with clients and principal investments through our own funds.",
+        "btn": "VIEW PORTFOLIO"
+      }
+    }
+  },
+  "caseStudy": {
+    "title": "Materializing Earnest Challenges,<br class='md:hidden' />Together.",
+    "description": "Going beyond mere advisory, Tryfunds functions as a business operating company that shares the risks.\nDiscover stories of dramatic value creation, from launching startups to driving DX and corporate turnarounds for major enterprises.",
+    "ctaText": "These are just a fraction of the over 1,000 projects we have undertaken.<br class='hidden md:block' />For detailed corporate information and past track records, please request our company document.",
+    "ctaButton": "DOWNLOAD DOCUMENT",
+    "readStory": "READ STORY",
+    "all": "All",
+    "backToIndex": "BACK TO INDEX"
+  },
+  "projects": {
+    "title": "Project Cases",
+    "description": "Our track record of value creation through the 'Hybrid Model,' cultivated over 14 years since our founding across more than 1,000 projects. We introduce diverse examples ranging from client support to our own new business launches.",
+    "cases": [
+      {
+        "category": "M&A / PMI",
+        "title": "Cross-border M&A and Global PMI Support for a Major Manufacturer",
+        "description": "End-to-end support from strategy formulation to execution, including the dispatch of a local management layer."
+      }
+    ]
+  },
+  "members": {
+    "title": "PROFESSIONALS",
+    "subtitle": "Management Members",
+    "headerDesc": "The management members driving the operations of Tryfunds Group.<br class='hidden md:block' />Gathering talent with diverse, high-level expertise,<br />we materialzie earnest challenges together.",
+    "metaTitle": "Members | Tryfunds",
+    "metaDesc": "Introducing the professional members of the Tryfunds Group"
+  },
+  "news": {
+    "backToNews": "BACK TO NEWS LIST"
+  },
+  "jobs": {
+    "backToRoles": "Back to all roles",
+    "applyNow": "Apply Now",
+    "aboutTeam": "About the team",
+    "aboutRole": "About the role",
+    "goodFit": "You may be a good fit if you have:",
+    "niceToHave": "Nice to have:",
+    "excitedApply": "If you are excited by this role, we encourage you to apply!"
+  },
+  "recruit": {
+    "top": {
+      "title": "JOIN OUR TRY",
+      "subtitle": "Careers / Recruit",
+      "description": "Tryfunds is looking for ambitious individuals to accomplish unprecedented businesses together.<br class='hidden md:block' />We offer an environment where you can experience tremendous growth and launch businesses on a global scale.",
+      "actions": {
+        "document": {
+          "title": "Download Pitch Deck",
+          "description": "A recruitment pitch deck detailing salary structures, career paths, and specific project assignment examples.",
+          "btn": "DOWNLOAD PITCH"
+        },
+        "casual": {
+          "title": "Casual Interview",
+          "description": "Let's start with a casual chat. Employees active in the field will directly answer your questions and consult about your career.",
+          "btn": "REQUEST INTERVIEW"
+        },
+        "entry": {
+          "title": "Entry & Inquiry",
+          "description": "Please use this form to apply for the main selection process or for general inquiries regarding recruitment.",
+          "btn": "ENTRY & INQUIRY"
+        }
+      }
+    },
+    "roles": {
+      "subtitle": "Open Roles",
+      "title": "Join Tryfunds",
+      "description": "We are recruiting for a variety of positions, from the CEO Office, which plays a central role in management, to advisory and fund management roles that leverage specific expertise."
+    }
+  },
+  "persona": {
+    "header": {
+      "subtitle": "Persona",
+      "title": "Mindset of an<br class='md:hidden' />Entrepreneur",
+      "description": "Tryfunds is looking for individuals who not only possess consulting skills but also have an obsession with creating businesses from scratch and generating revenue. Here, we introduce the mindset we seek, the three phases of growth (Play/Drive/Lead), and the six leadership principles that form the core of our evaluations."
+    },
+    "mindset": {
+      "subtitle": "PERSONA",
+      "title": "We are looking for<br />those with an<br />'Entrepreneurial<br />Mindset'.",
+      "paragraphs": [
+        "Tryfunds seeks talent with relentless determination to see things through to the end, regardless of the domain.<br />Our model is not sustained by consulting fees alone, but is built on a portfolio predicated on business revenue.",
+        "That is why we need individuals who have mastered strategy and finance as basic protocols, and who possess a tenacity to face numbers and drive profit."
+      ],
+      "must": {
+        "title": "Must",
+        "items": [
+          "Ability to speak in numbers (Sales, Gross Profit, Collection, KPIs)",
+          "Self-driven capability to catch up (researching and advancing even in unknown fields)",
+          "Client-facing ability (capable of confronting decision-makers)",
+          "Follow-through (taking responsibility to the very end)"
+        ]
+      },
+      "niceToHave": {
+        "title": "Nice to have",
+        "items": [
+          "Strengths in Strategy, Finance, or Investment",
+          "Experience in overseas projects or working in English",
+          "Experience in P/L responsibility at a business corporation or launching new businesses",
+          "Exceptional sales and marketing track record at a business corporation"
+        ]
+      },
+      "negative": {
+        "title": "Not a Good Fit (Self-Screening)",
+        "items": [
+          "Wanting to finish by just creating a beautiful proposal",
+          "Wanting to fix the coverage area (weak at cross-domain tasks)",
+          "Valuing an explanation of the process over actual results",
+          "Prioritizing stability over an obsession with numbers"
+        ]
+      }
+    },
+    "system": {
+      "header": {
+        "subtitle": "HR System & Expectations",
+        "title": "HR System and Persona Match",
+        "description": "At Tryfunds, we define members' growth phases in three stages: 'Play', 'Drive', and 'Lead'. We evaluate and develop based on six leadership principles, tied to respective ranks (MD, Principal, etc.). While we primarily look at 'results', we place the highest importance on 'performance improvement' through feedback, thoroughly forging not only consulting skills, but the mindset of management and business development professionals."
+      },
+      "phases": [
+        {
+          "name": "Play",
+          "kanji": "(Learn)",
+          "roles": "Analyst / Associate / Senior Associate",
+          "items": [
+            "Can understand the client's essential challenges and propose impactful solutions via the shortest path.",
+            "Can continuously pursue self-improvement even in unknown territories, striving to become a leading expert."
+          ]
+        },
+        {
+          "name": "Drive",
+          "kanji": "(Break)",
+          "roles": "Engagement Manager / Vice President",
+          "items": [
+            "Can create and offer business models and new services that allow the target business to generate larger revenues.",
+            "Can take the lead in creating opportunities to challenge the unknown, inspiring and developing team members."
+          ]
+        },
+        {
+          "name": "Lead",
+          "kanji": "(Transcend)",
+          "roles": "Principal / Managing Director",
+          "items": [
+            "Can create unprecedented businesses and services that bring transformation to society.",
+            "Can create an environment where everyone involved in Tryfunds has a dream they want to accomplish with their life."
+          ]
+        }
+      ],
+      "principles": {
+        "title": "TRYFUNDS 6 LEADERSHIP PRINCIPLES",
+        "description": "These behavioral guidelines serve not only as evaluation metrics but also as the axis of feedback in our performance management cycle. Along with high-level skills, we elevate the 'mindset' indispensable for management personnel through these six axes.",
+        "items": [
+          {
+            "title": "Innovative Thinking",
+            "text": "Can you grasp global trends and use your information gathering and ideation skills to present business opportunities and surprising solutions that are a step ahead?"
+          },
+          {
+            "title": "Passion for Business",
+            "text": "Do you have the business conception skills to accurately understand industry structures and maximize client value, alongside the process design skills with high probability of completion?"
+          },
+          {
+            "title": "Ability to Involve People",
+            "text": "Do you possess the reliability to gain the cooperation of clients and internal staff as an individual, and the recruiting and procurement skills to define and approach necessary talent?"
+          },
+          {
+            "title": "Pioneer's Soul",
+            "text": "Are you leading by example with a sense of mission, constantly attempting to establish a domain of expertise through continuous self-improvement and learning, even in unknown fields?"
+          },
+          {
+            "title": "Absorbing Action",
+            "text": "Have you set the highest optimal goals exceeding expected standards, showing through actions the 'last-man-ship' to follow through regardless of the difficulty of the situation?"
+          },
+          {
+            "title": "Resolve to Take the High Road",
+            "text": "Are you growing steadily by facing matters fairly under any pressure, and sincerely accepting advice from others with objective self-awareness?"
+          }
+        ]
+      }
+    }
+  },
+  "careers": {
+    "header": {
+      "subtitle": "Careers & Philosophy",
+      "title": "True Career Path as a<br />Management Professional",
+      "description": "Are you satisfied with just being a highly-paid consultant, or will you elevate yourself to a management professional or fund manager who drives real business?<br />Through overwhelming professionalism and a 'hands-on grassroots' approach, Tryfunds develops absolute leader tiers capable of fighting in the real world.",
+      "backBtn": "Back to Recruit"
+    },
+    "flow": {
+      "title": "Play, Drive, Lead",
+      "description": "Through the three grades of Play, Drive, and Lead, members aim to elevate themselves to 'management professionals' who think and act on their own, lead teams, and ultimately bring transformation to business and society.",
+      "steps": [
+        {
+          "phase": "Play",
+          "sub": "(Learn)",
+          "roles": "ANALYST / ASSOCIATE / SENIOR ASSOCIATE",
+          "points": [
+            "Understand the client's essential challenges and propose impactful solutions via the shortest path.",
+            "Continuously pursue self-improvement even in unknown territories, striving to become a leading expert."
+          ]
+        },
+        {
+          "phase": "Drive",
+          "sub": "(Break)",
+          "roles": "ENGAGEMENT MANAGER / VICE PRESIDENT",
+          "points": [
+            "Create and offer business models and new services that allow the target business to generate larger revenues.",
+            "Take the lead in creating opportunities to challenge the unknown, inspiring and developing team members."
+          ]
+        },
+        {
+          "phase": "Lead",
+          "sub": "(Transcend)",
+          "roles": "PRINCIPAL / MANAGING DIRECTOR",
+          "points": [
+            "Create unprecedented businesses and services that bring transformation to society.",
+            "Create an environment where everyone involved with Tryfunds has a dream they want to accomplish with their life."
+          ]
+        }
+      ]
+    },
+    "philosophy": [
+      {
+        "num": "01",
+        "title": "Street Smart",
+        "subtitle": "Adaptation to Street Smart",
+        "description": "Up to the Associate level, structured inputs and meticulous skill-up support are guaranteed. However, from the Senior Associate level and above, a complete departure from 'Book Smart' theories is required. In a modern era marked by rapid change and brief strategy lifespans, adopting new technologies and making swift decisions dictate success. We aim to be a group of 'Street Smart' individuals who, even in unknown business territories, build hypotheses on their feet, relentlessly hunt for answers, and possess the 'savvy' and 'practical sense' to survive in the real world."
+      },
+      {
+        "num": "02",
+        "title": "Dual Job: Consulting & Business",
+        "subtitle": "Breaking the Consulting Dilemma",
+        "description": "In typical consulting firms, as skills and compensation increase, the 'opportunity to challenge a business yourself' is often not provided, leading to a dilemma of high pay without the ability to operate a business. Tryfunds provides an environment to experience both hands-on intervention as our own business and pure client services. We grant irreversible experience that transcends consulting and leads to true business management."
+      },
+      {
+        "num": "03",
+        "title": "Commitment to P&L & Market Cap",
+        "subtitle": "Commitment to P&L and Market Cap",
+        "description": "Beyond fee businesses based on delivering value to clients, in hands-on business turnarounds and our own investment projects, the direct impact on vivid corporate value—namely 'improvement of P&L' and 'significant increase in market capitalization'—is most heavily emphasized. Whether one has taken risks, assumed responsibility, and delivered fruits to the actual business is all that is evaluated, and this real-world environment is what nurtures the next generation of management."
+      },
+      {
+        "num": "04",
+        "title": "True Management Power",
+        "subtitle": "True Management: Leading Diverse Talent",
+        "description": "Management within a firm where only homogeneous and excellent professionals gather is entirely different from management in a business corporation. To enter a business corporation and make it function, a gritty leadership that involves and motivates members with diverse or no specialized backgrounds to produce results is essential. On the frontlines of Tryfunds, you cultivate 'deep insight into humans' and 'capability to intervene deep in organizations' needed to read the minds of people on the ground and get them to work earnestly."
+      },
+      {
+        "num": "05",
+        "title": "Frontlines Forging Cash and Grit",
+        "subtitle": "The Frontline forging Cash and Grit",
+        "description": "What ultimately dictates the survival of a company is the real metric of 'Cash'. In addition to acquiring basic advisory skills, you will accumulate management experience including frontline sales, marketing, and rigorous cash flow management to actually achieve value-up in business corporations. We believe that those who possess the 'planning ability' and 'overwhelming grit' to face unknown challenges amid highly uncertain rough seas—and yet not run away but sustain the company—are the ones who will shape the next world."
+      }
+    ],
+    "philosophy02Chart": {
+      "rewardPhase": "Reward of Job",
+      "rewardTitle": "Overwhelming Results",
+      "investmentPhase": "New Investment",
+      "investmentTitle": "A larger unknown territory",
+      "returnPhase": "Dramatic Return",
+      "returnTitle": "Experience and Massive Reward"
+    },
+    "compensation": {
+      "title": "Designing <span class='text-primary-light'>Limitless Returns</span> Based on Business Revenue",
+      "formula": {
+        "base": "Base Salary",
+        "bonus": "Company-Wide Performance Bonus",
+        "incentive": "Special Incentive (Business Revenue Linked)"
+      },
+      "description": "In addition to a base salary aligned with consulting industry standards, we prepare 'limitless upside (incentives)' directly linked to results as a business operator or investor. Usually, incentives in a consulting firm are allocated based on total company revenues, and in PE funds, the distribution of carry fees is standard. At our company, we offer further incentive distributions to personnel who make an impact on P&L with business revenue. This system enables support genuinely aligned with the client. Moving forward, by accumulating business success incentives, we aim to return compensation on par with global PE funds.",
+      "system": {
+        "title": "Evaluation System",
+        "part1": "Evaluated on Results",
+        "part2": "Evaluated by 6 Aspects",
+        "result": "Determination of Base Rank"
+      },
+      "conditions": {
+        "title": "Incentive Eligibility",
+        "items": [
+          {
+            "title": "Company-Wide Performance Bonus",
+            "desc": "Annual bonus linked to company revenue. Paid to all eligible staff."
+          },
+          {
+            "title": "Special Incentive",
+            "desc": "Partial return of portfolio business revenues and EXIT rewards.",
+            "badge": "Target: Upper Drive Ranks and above"
+          }
+        ]
+      },
+      "charts": {
+        "title": "Reward Image by Rank",
+        "description": "As rank increases, the ratio of limitless upside (incentives) is designed to jump dramatically.",
+        "items": [
+          {
+            "phase": "Play (Learn)",
+            "desc": "Member Tier",
+            "data": [
+              {
+                "label": "Base Salary",
+                "value": 90
+              },
+              {
+                "label": "Bonus",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "phase": "Drive (Break)",
+            "desc": "Manager & VP Tier",
+            "note": "*Upper Drive and above are incentive eligible",
+            "data": [
+              {
+                "label": "Base Salary",
+                "value": 80
+              },
+              {
+                "label": "Bonus",
+                "value": 10
+              },
+              {
+                "label": "Incentive",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "phase": "Lead (Transcend)",
+            "desc": "Mgmt/Partner Tier",
+            "data": [
+              {
+                "label": "Base Salary",
+                "value": 30
+              },
+              {
+                "label": "Bonus",
+                "value": 20
+              },
+              {
+                "label": "Incentive",
+                "value": 50
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "plan": {
+      "header": {
+        "subtitle": "Talent Development",
+        "title": "Career Plan & Talent Development"
+      },
+      "content": {
+        "p1": "We do not aim to create 'highly specialized consultants' with strengths in specific areas. In a fast-paced era, we aim to develop <strong class='text-white'>'true business leaders' who can make management decisions and construct operations from multifaceted perspectives such as global trends, finance, and technology.</strong> In this respect, we radically differ from existing fragmented competing consulting firms.",
+        "p2": "By engaging them on a practical level in services that directly complement a corporate's missing parts (procurement of funds, talent recruitment, the cultivation of global networks) beyond the scope of consulting duties, and in operations generating their own revenue (sales, marketing, alliance building), they are forged into human resources that possess overwhelming combat power in the field."
+      },
+      "cases": {
+        "title": "Promotion to Management & Fund Managers in as little as 3 years",
+        "description": "Tryfunds' biggest feature is the rapid pace of growth and the subsequent vastness of career opportunities. We prepare paths connecting you to appointment as our firm's business management or fund manager in as little as three years. Regardless of age or tenure, we provide tremendous opportunities to challenge.",
+        "list": [
+          {
+            "tag": "CASE 01",
+            "title": "Promoted to Fund Manager in Year 4",
+            "text": "Evaluated on overwhelming delivery track records in the strategic consulting department and the result of personally leading the discovering and closing of new investment projects, taking the post of manager of an internally operated fund at the unprecedented speed of four years after joining."
+          },
+          {
+            "tag": "CASE 02",
+            "title": "Youngest Selection for CXO of Investee Business",
+            "text": "After serving as Engagement Manager for several projects in the consulting department, elevated to the CEO tier of a group company in the AI tech sector, valued for deep knowledge of that technology and strong commitment. Becoming a model case embodying spin-offs & unicorn creation within the group."
+          }
+        ]
+      }
+    }
+  },
+  "future": {
+    "header": {
+      "backBtn": "Back to Recruit",
+      "subtitle": "Future Vision",
+      "title": "Turning Ambitions<br />into Value."
+    },
+    "manifesto": {
+      "p1": "Once, Japan stood at the center of the world.<br />Referred to as 'Japan as Number One', it drove the era with its economy and technology.<br />Later, its culture earned global acclaim as 'Cool Japan', drawing the world's attention.",
+      "p2": "However, how is Japan viewed today?<br />A country of maturity, stagnation, and risk aversion.<br />Remaining on an extension of past success experiences,<br />a presence taking a step back from global competition.",
+      "p3": "It is often spoken of in such ways.",
+      "p4": "But that is not the essence.",
+      "p5": "Japan still possesses world-class technology.<br />Overwhelming frontline capabilities (Genba power).<br />An accumulation of meticulous thinking and execution.<br />And without a doubt, companies and individuals with the potential to compete globally exist.",
+      "p6": "What is lacking is not capability.<br />It is will (意志).<br /><br />And a structure to turn that will into reality.",
+      "p7": "There are people with the resolve to win globally.<br />However, the functions to support that TRY with strategy, capital, organization, and implementation are insufficient.<br />Passion alone cannot win in the global market.<br />Without a structure, TRYs cannot be sustained.",
+      "p8": "That is why Tryfunds exists.",
+      "p9": "We do not leave TRYs to chance.<br />We transform will into strategy,<br />accelerate strategy with capital,<br />and design organizations equipped for execution.",
+      "p10": "Sometimes as investors,<br />sometimes as partners,<br />sometimes diving into the field as CxOs,<br />we take responsibility for results.",
+      "p11": "We don't just talk about aspirations;<br />we build globally winning companies together.",
+      "p12": "What we aim for is,<br />not mere consulting, nor mere investment.",
+      "p13": "It is producing talent that fights on global standards,<br />and creating companies that win on global standards.",
+      "p14": "Japan still holds potential.<br />Unpolished talent.<br />Unstructured intellect.<br />A will capable of changing the world.",
+      "p15": "Turning that will into a TRY.<br />Turning that TRY into victory."
+    },
+    "mission": {
+      "text": "Never leave a TRY solitary.<br />Make the TRY reproducible.<br />Structure the TRY.<br /><br />Turning Ambitions into Value.",
+      "sub": "That is the mission of Tryfunds."
+    },
+    "ourTry": {
+      "title": "Our Try",
+      "items": [
+        {
+          "num": "01",
+          "title": "Discovering and Re-growing 'Hidden Assets' across Japan",
+          "description": "Countless 'hidden assets' with world-class potential still exist across regions in Japan. High-quality agricultural and marine products nurtured by unique climates, traditional crafts passed down through generations, and the absolute pinnacle of niche top technologies held by regional SMEs. These are not merely local curiosities; they possess solid competitive advantages capable of fighting in the global market. We unearth these buried assets and, by combining them with strategy, capital, and the latest technology, stimulate robust re-growth, elevating them into global businesses that win on the world stage."
+        },
+        {
+          "num": "02",
+          "title": "Development of Authentic Regional Assets",
+          "description": "Japan breathes a unique history, culture, and natural foundation unparalleled in the world. However, much of it fails to exert its true value due to a lack of appropriate business models and marketing strategies. We redefine unexplored tourism resources and idiosyncratic cultural backgrounds, designing them not just to harvest inbound demand but as high-value-added experiences. While preserving the authenticity of regions, we create 'world-standard destinations' that become sustainable revenue bases."
+        },
+        {
+          "num": "03",
+          "title": "Discontinuous Business Development Leveraging Existing Strengths",
+          "description": "In an era where rapid changes in the external environment and technological evolution cause traditional business models to become rapidly obsolete, the 'expiration date of a business' is brought into question. Without breaking away from past success experiences and boldly restructuring the business portfolio, a company's survival is endangered. We identify the 'true core competencies' (technology, customer base, brand, etc.) accumulated over many years, hands-on execute discontinuous business development to divert them into entirely new markets and growth areas, powerfully driving a second founding."
+        },
+        {
+          "num": "04",
+          "title": "Growth Investment to Overcome Penny Stocks",
+          "description": "In Japan, numerous listed companies possess excellent technologies and services but fail to embark on overseas expansion or business development in peripheral areas due to a shrinking domestic market or lack of management resources. As a result, market capitalizations languish, failing to reflect true potential. We directly inject our own capital and professional talent into these listed companies. By complementing the 'missing parts' of management and taking the lead on bold global expansion and M&A, we realize drastic transformations of business models and significant enhancements of market capitalization (Value Up)."
+        },
+        {
+          "num": "05",
+          "title": "Updating Society and Creating Startups to Compete Globally",
+          "description": "Irreversible social challenges facing Japan—population decline, super-aging, and aging infrastructure—are conversely massive 'market opportunities' to be solved precisely through technology and new business models. We generate innovation starting from solving these challenges (updating society), launching businesses from scratch. Furthermore, by polishing these businesses in Japan—the 'advanced-challenge nation'—and deploying them to global markets facing similar issues, we cultivate independently growing mega-ventures capable of truly competing globally."
+        }
+      ]
+    }
+  },
+  "document": {
+    "header": {
+      "subtitle": "Document Request",
+      "title": "Download Corporate &<br class=\"hidden md:block\" />Project Overview",
+      "description": "We will send you documents outlining Tryfunds' business, achievements, and organizational culture.<br class=\"hidden md:block\" />Please fill out the required information and submit."
+    },
+    "info": {
+      "title": "Corporate Profile & Case Studies",
+      "description": "This document provides an in-depth look at specific project cases not disclosed on our official website, an explanation of our hybrid model mechanism, and the full view of our global network.",
+      "list": [
+        "Tryfunds Company Overview and History",
+        "Infrastructure/PE Fund Investment Cases",
+        "Process of Hands-on Business Turnaround",
+        "Project Overviews, etc."
+      ]
+    },
+    "form": {
+      "company": "Company Name",
+      "companyPlaceholder": "e.g., Tryfunds Inc.",
+      "department": "Department",
+      "departmentPlaceholder": "e.g., Corporate Planning Dept.",
+      "position": "Job Title",
+      "positionPlaceholder": "e.g., Director",
+      "purpose": "Purpose",
+      "purposes": [
+        "Considering internal problem solving / consulting requests",
+        "Considering business investment / M&A / fund contribution",
+        "Considering business alliances / partnerships",
+        "Other / Information gathering"
+      ],
+      "email": "Email",
+      "emailPlaceholder": "Please enter your corporate email address",
+      "freeText": "Free Text",
+      "freeTextPlaceholder": "Please enter any specific consultation details or background",
+      "submit": "SEND REQUEST",
+      "note": "By submitting, you agree to our Privacy Policy.<br />We may decline requests from competitors.",
+      "emailError": "Free email addresses (e.g., Gmail) are not accepted. Please enter a corporate domain email address.",
+      "success": "Submission simulation: Completed"
+    }
+  },
+  "contactForm": {
+    "title": "CONTACT",
+    "description": "Please feel free to contact us regarding new business creation, M&A, business investments, or any other inquiries.<br />Our representative will get back to you shortly.",
+    "form": {
+      "company": "Company Name",
+      "name": "Name",
+      "email": "Email Address",
+      "message": "Inquiry Content",
+      "submit": "Send Message"
+    }
+  }
 }

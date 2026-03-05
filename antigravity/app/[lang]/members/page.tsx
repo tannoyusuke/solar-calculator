@@ -1,13 +1,20 @@
-import { members } from "@/data/members";
+import { getMembersData } from "@/lib/data";
 import { MemberList } from "@/components/members/MemberList";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
+import { getDictionary } from "@/lib/dictionary";
+import { Locale } from "@/lib/i18n-config";
 
-export const metadata = {
-    title: "Members | Tryfunds",
-    description: "Tryfunds Groupのプロフェッショナルメンバーのご紹介",
-};
+export async function generateMetadata({ params: { lang } }: { params: { lang: Locale } }) {
+    const dict = await getDictionary(lang);
+    return {
+        title: dict.members.metaTitle,
+        description: dict.members.metaDesc,
+    };
+}
 
-export default function MembersPage() {
+export default async function MembersPage({ params: { lang } }: { params: { lang: Locale } }) {
+    const dict = await getDictionary(lang);
+    const membersData = getMembersData(lang);
     return (
         <main className="flex min-h-screen flex-col w-full bg-background pt-32">
 
@@ -18,22 +25,20 @@ export default function MembersPage() {
                     <div>
                         <div className="inline-flex items-center gap-4 mb-6 justify-center md:justify-start">
                             <div className="h-px w-12 bg-primary/50" />
-                            <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">Management Members</h2>
+                            <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">{dict.members.subtitle}</h2>
                         </div>
                         <h1 className="text-4xl md:text-6xl font-display font-medium tracking-tight">
-                            PROFESSIONALS
+                            {dict.members.title}
                         </h1>
                     </div>
-                    <div className="max-w-md text-sm text-gray-400 font-sans tracking-widest leading-relaxed text-center md:text-right">
-                        Tryfunds Groupの経営を牽引する、<br className="hidden md:block" />
-                        マネジメントメンバー。<br />
-                        それぞれ異なる高度な専門性を持つ人材が結集し、<br className="hidden md:block" />
-                        意志ある挑戦を共に実現します。
-                    </div>
+                    <div
+                        className="max-w-md text-sm text-gray-400 font-sans tracking-widest leading-relaxed text-center md:text-right"
+                        dangerouslySetInnerHTML={{ __html: dict.members.headerDesc }}
+                    />
                 </div>
 
                 {/* Member Grid */}
-                <MemberList members={members} />
+                <MemberList members={membersData} />
 
             </div>
 

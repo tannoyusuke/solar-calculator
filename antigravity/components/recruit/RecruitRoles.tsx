@@ -3,9 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { jobs } from "@/data/jobs";
+import { Locale } from "@/lib/i18n-config";
+import { Job } from "@/data/jobs.en";
 
-export function RecruitRoles() {
+export function RecruitRoles({ dict, jobs, lang }: { dict: any, jobs: Job[], lang: Locale }) {
     // Group jobs by department
     const departments = Array.from(new Set(jobs.map((job) => job.department)));
 
@@ -23,13 +24,13 @@ export function RecruitRoles() {
                 >
                     <div className="inline-flex items-center gap-4 mb-6">
                         <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary/80 font-display uppercase">Open Roles</h2>
+                        <h2 className="text-sm tracking-[0.3em] text-primary/80 font-display uppercase">{dict.subtitle}</h2>
                     </div>
                     <h3 className="text-4xl md:text-5xl font-display tracking-tight mb-8">
-                        Join Tryfunds
+                        {dict.title}
                     </h3>
                     <p className="text-gray-400 font-sans tracking-wide leading-relaxed text-lg">
-                        経営の中枢を担うCEO室から各専門性を活かしたアドバイザリー、ファンドマネジメントまで多様なポジションを募集しています。
+                        {dict.description}
                     </p>
                 </motion.div>
 
@@ -51,7 +52,7 @@ export function RecruitRoles() {
                             <div className="flex flex-col">
                                 {jobs.filter(j => j.department === dept).map((job) => (
                                     <Link
-                                        href={`/recruit/jobs/${job.id}`}
+                                        href={`/${lang}/recruit/jobs/${job.id}`}
                                         key={job.id}
                                         className="group flex flex-col sm:flex-row sm:items-center justify-between py-6 border-b border-white/5 hover:bg-white/[0.02] px-4 -mx-4 transition-colors duration-300"
                                     >

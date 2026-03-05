@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ScrollReveal";
 
 export function Services({ dict }: { dict: any }) {
     const layoutDetails = [
@@ -22,43 +22,23 @@ export function Services({ dict }: { dict: any }) {
             <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white/5 to-transparent pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="mb-20 text-center"
-                >
-                    <div className="inline-flex items-center gap-4 justify-center mb-6">
-                        <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans">{dict.section_title}</h2>
-                        <div className="h-px w-12 bg-primary/50" />
+                <ScrollReveal delay={0.1}>
+                    <div className="mb-20 text-center">
+                        <div className="inline-flex items-center gap-4 justify-center mb-6">
+                            <div className="h-px w-12 bg-primary/50" />
+                            <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans">{dict.section_title}</h2>
+                            <div className="h-px w-12 bg-primary/50" />
+                        </div>
+                        <p
+                            className="text-4xl md:text-5xl text-white font-sans font-bold leading-tight tracking-widest drop-shadow-lg"
+                            dangerouslySetInnerHTML={{ __html: dict.headline }}
+                        />
                     </div>
-                    <p
-                        className="text-4xl md:text-5xl text-white font-sans font-bold leading-tight tracking-widest drop-shadow-lg"
-                        dangerouslySetInnerHTML={{ __html: dict.headline }}
-                    />
-                </motion.div>
+                </ScrollReveal>
 
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, margin: "-50px" }}
-                    variants={{
-                        hidden: {},
-                        visible: { transition: { staggerChildren: 0.15 } }
-                    }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-8"
-                >
+                <StaggerContainer staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {services.map((service: any, i: number) => (
-                        <motion.div
-                            key={i}
-                            variants={{
-                                hidden: { opacity: 0, y: 40 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-                            }}
-                            className="h-full"
-                        >
+                        <StaggerItem key={i} className="h-full">
                             <Link
                                 href={`/services#${service.url_hash}`}
                                 className="group flex flex-col justify-between p-10 bg-white/[0.02] border border-white/10 hover:border-white/30 transition-all duration-500 hover:-translate-y-2 cursor-pointer h-full backdrop-blur-sm relative overflow-hidden hover:bg-white/[0.04] hover:shadow-[0_15px_40px_rgba(255,255,255,0.05)]"
@@ -96,9 +76,9 @@ export function Services({ dict }: { dict: any }) {
                                     {dict.view_details} <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
                                 </div>
                             </Link>
-                        </motion.div>
+                        </StaggerItem>
                     ))}
-                </motion.div>
+                </StaggerContainer>
             </div>
         </section>
     );

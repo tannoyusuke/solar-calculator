@@ -26,7 +26,8 @@ export function middleware(request: NextRequest) {
         pathname.startsWith('/images/') ||
         pathname.startsWith('/fonts/') ||
         pathname.startsWith('/api/') ||
-        pathname.startsWith('/_next/')
+        pathname.startsWith('/_next/') ||
+        pathname.match(/\.(png|jpe?g|svg|gif|webp|ico|woff2?|ttf|css|js)$/i)
     ) {
         return;
     }

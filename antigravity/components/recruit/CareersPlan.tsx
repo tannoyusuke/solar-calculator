@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { TrendingUp, Zap } from "lucide-react";
 
-export function CareersPlan() {
+export function CareersPlan({ dict }: { dict: any }) {
     return (
         <section className="py-24 border-t border-white/5 bg-background relative z-10">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -18,10 +18,10 @@ export function CareersPlan() {
                 >
                     <div className="inline-flex items-center gap-4 mb-6">
                         <div className="h-px w-12 bg-primary/50" />
-                        <h2 className="text-sm tracking-[0.3em] text-primary/80 font-display uppercase">Talent Development</h2>
+                        <h2 className="text-sm tracking-[0.3em] text-primary/80 font-display uppercase">{dict.header.subtitle}</h2>
                     </div>
                     <h3 className="text-3xl md:text-5xl font-sans font-bold tracking-tight mb-8">
-                        Career Plan & Talent Development
+                        {dict.header.title}
                     </h3>
                 </motion.div>
 
@@ -36,12 +36,8 @@ export function CareersPlan() {
                         transition={{ duration: 0.8 }}
                         className="lg:col-span-6 space-y-8 text-gray-400 font-sans tracking-wide leading-relaxed text-base md:text-lg"
                     >
-                        <p>
-                            当社は、特定領域に強みを持つ「専門性の高いコンサルタント」を創ることを目的としていません。スピード感の早い現代において、<strong className="text-white">海外動向、ファイナンス、テクノロジーといった多角的な目線で経営意思決定とオペレーション構築ができる「真のビジネスリーダー」</strong>の育成を目指しています。この点で、細分化された既存の競合コンサルティングファームとは大きく異なります。
-                        </p>
-                        <p>
-                            コンサルティング業務の枠を超え、企業のミッシングパーツを直接補完するサービス（資金調達、人材調達、グローバルネットワークの開拓）や、自ら数字を作る業務（営業・マーケティング、アライアンス構築）に実務レベルで従事させることで、現場で圧倒的な戦闘力を持つ人材へと鍛え上げます。
-                        </p>
+                        <p dangerouslySetInnerHTML={{ __html: dict.content.p1 }} />
+                        <p>{dict.content.p2}</p>
                     </motion.div>
 
                     {/* Right: Fast Track Cases */}
@@ -58,10 +54,10 @@ export function CareersPlan() {
 
                             <h4 className="text-2xl font-bold font-sans text-white mb-8 border-b border-white/10 pb-4 flex items-center gap-3">
                                 <TrendingUp className="text-primary-light w-6 h-6" />
-                                最短3年での経営陣・ファンドマネージャーへの登用
+                                {dict.cases.title}
                             </h4>
                             <p className="text-gray-300 font-sans mb-10 leading-relaxed text-sm">
-                                Tryfundsの最大の特徴は、成長のスピードとその後のキャリア機会の雄大さにあります。最短3年間で、自社の事業経営陣やファンドマネージャーとして抜擢するパスを用意しています。年齢や年次に関係なく、圧倒的な挑戦機会を提供します。
+                                {dict.cases.description}
                             </p>
 
                             {/* Case Studies */}
@@ -71,10 +67,10 @@ export function CareersPlan() {
                                         <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                                     </div>
                                     <h5 className="text-white font-bold font-sans mb-2 flex items-center gap-2">
-                                        <Zap className="w-4 h-4 text-primary" /> CASE 01: 入社4年目でファンドマネージャーへ
+                                        <Zap className="w-4 h-4 text-primary" /> {dict.cases.list[0].tag}: {dict.cases.list[0].title}
                                     </h5>
                                     <p className="text-gray-400 text-xs leading-relaxed">
-                                        戦略コンサルティング部門での圧倒的なデリバリー実績と、自ら新規投資案件の発掘・クロージングまでを主導した結果が評価され、入社4年目という異例のスピードで自社運営ファンドのマネージャーに就任。
+                                        {dict.cases.list[0].text}
                                     </p>
                                 </div>
 
@@ -83,10 +79,10 @@ export function CareersPlan() {
                                         <div className="w-2 h-2 bg-primary-light rounded-full animate-pulse" />
                                     </div>
                                     <h5 className="text-white font-bold font-sans mb-2 flex items-center gap-2">
-                                        <Zap className="w-4 h-4 text-primary-light" /> CASE 02: 最年少での投資先事業会社CXO抜擢
+                                        <Zap className="w-4 h-4 text-primary-light" /> {dict.cases.list[1].tag}: {dict.cases.list[1].title}
                                     </h5>
                                     <p className="text-gray-400 text-xs leading-relaxed">
-                                        コンサルティング部門にて複数プロジェクトのEngagement Managerを務めた後、そのテクノロジーへの深い知見と強力なコミットメントが評価され、AIテクノロジー領域のグループ会社のCEO層へ抜擢。グループ内でのスピンオフ＆ユニコーン創生を体現するモデルケースに。
+                                        {dict.cases.list[1].text}
                                     </p>
                                 </div>
                             </div>

@@ -23,8 +23,35 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Tryfunds | 意志ある挑戦を創造する",
-  description:
-    "Tryfundsは、コンサルティング、投資、M&A、エグゼクティブサーチを通じ、「意志ある挑戦を創造し、世界で戦える事業を創造する」事業運営会社です。",
+  description: "Tryfundsは、コンサルティング、投資、M&A、エグゼクティブサーチを通じ、「意志ある挑戦を創造し、世界で戦える事業を創造する」事業運営会社です。",
+  openGraph: {
+    title: "Tryfunds | 意志ある挑戦を創造する",
+    description: "Tryfundsは、コンサルティング、投資、M&A、エグゼクティブサーチを通じ、「意志ある挑戦を創造し、世界で戦える事業を創造する」事業運営会社です。",
+    url: "https://tryfunds.com",
+    siteName: "Tryfunds Group",
+    images: [
+      {
+        url: "/ogp-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tryfunds Group",
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tryfunds | 意志ある挑戦を創造する",
+    description: "Tryfundsは、コンサルティング、投資、M&A、エグゼクティブサーチを通じ、「意志ある挑戦を創造し、世界で戦える事業を創造する」事業運営会社です。",
+    images: ["/ogp-image.jpg"],
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default async function RootLayout({

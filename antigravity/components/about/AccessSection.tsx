@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Copy, Check, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
-export function AccessSection() {
+export function AccessSection({ dict }: { dict: any }) {
     const [copied, setCopied] = useState(false);
 
     const addressInfo = {
@@ -37,7 +37,7 @@ export function AccessSection() {
                 <div>
                     <h3 className="text-2xl font-display tracking-widest text-white flex items-center gap-4">
                         <MapPin className="w-5 h-5 text-primary-light" />
-                        ACCESS
+                        {dict.title}
                     </h3>
                 </div>
             </div>
@@ -47,7 +47,7 @@ export function AccessSection() {
                 {/* Text Info */}
                 <div className="lg:col-span-5 flex flex-col justify-center">
                     <div className="mb-8">
-                        <h4 className="text-lg font-sans font-bold text-white mb-2">本社（Headquarters）</h4>
+                        <h4 className="text-lg font-sans font-bold text-white mb-2">{dict.hq}</h4>
                         <div className="w-8 h-px bg-primary/50 mb-6" />
 
                         <div className="text-gray-300 font-sans tracking-widest leading-loose text-sm md:text-base">
@@ -64,12 +64,12 @@ export function AccessSection() {
                         {copied ? (
                             <>
                                 <Check className="w-4 h-4 text-green-400" />
-                                <span className="text-sm font-display tracking-widest text-green-400 font-bold uppercase">Copied!</span>
+                                <span className="text-sm font-display tracking-widest text-green-400 font-bold uppercase">{dict.copied}</span>
                             </>
                         ) : (
                             <>
                                 <Copy className="w-4 h-4 text-primary-light group-hover:scale-110 transition-transform" />
-                                <span className="text-sm font-display tracking-widest text-white uppercase text-center">Copy Address</span>
+                                <span className="text-sm font-display tracking-widest text-white uppercase text-center">{dict.copyAddress}</span>
                             </>
                         )}
                     </button>

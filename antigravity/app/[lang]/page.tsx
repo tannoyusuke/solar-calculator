@@ -70,7 +70,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
 
             {/* Hero Auto-scrolling Slider (Portfolio) */}
             <div className="w-[100vw] lg:w-[120vw] relative left-1/2 -translate-x-1/2 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-              <HeroPortfolioSlider />
+              <HeroPortfolioSlider lang={params.lang} />
             </div>
 
           </div>

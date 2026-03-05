@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { portfolioData } from "@/data/portfolio";
-import { caseStudies } from "@/data/caseStudies";
+import { getPortfolioData, getCaseStudiesData, getFullPortfolioList } from "@/lib/data";
+import { Locale } from "@/lib/i18n-config";
 
 type SliderItem = {
     id: string;
@@ -15,10 +15,14 @@ type SliderItem = {
     link: string;
 };
 
-export function HeroPortfolioSlider() {
+export function HeroPortfolioSlider({ lang }: { lang: Locale }) {
     const [shuffledItems, setShuffledItems] = useState<SliderItem[]>([]);
 
     useEffect(() => {
+        const portfolioData = getPortfolioData(lang);
+        const caseStudies = getCaseStudiesData(lang);
+        const portfolioListRaw = getFullPortfolioList(lang);
+
         // Transform and merge data
         const mappedPortfolio: SliderItem[] = portfolioData.map(p => ({
             id: `p-${p.id}`,
@@ -36,26 +40,18 @@ export function HeroPortfolioSlider() {
             link: `/case-study#${c.id}`
         }));
 
-        // Add the portfolio data defined in app/portfolio/page.tsx
-        const portfolioList: SliderItem[] = [
-            { name: "FTG Company", description: "世界にまたがる焼肉チェーンを展開", image: "/images/portfolio_shared_bg.png" },
-            { name: "General Oyster", description: "牡蠣の卸売およびチェーンを展開", image: "/images/portfolio_shared_bg.png" },
-            { name: "BIZIT", description: "世界最大級のM&A情報プラットフォームを運営", image: "/cs_ptf_bizit.png" },
-            { name: "九州医事新報社", description: "創刊60年を超える医療新聞を発行", image: "/images/portfolio_shared_bg.png" },
-            { name: "フィル・カンパニー", description: "駐車場での空中店舗事業を展開", image: "/cs_phil_company.png" },
-            { name: "Sustech", description: "再生可能エネルギー向けのAI事業", image: "/cs_sustech_ai.png" },
-            { name: "シエンシー", description: "障害福祉事業所向けオンライン研修サービス", image: "/images/portfolio_shared_bg.png" },
-            { name: "エスキャピタル", description: "再エネ・インフラ用リース会社", image: "/images/portfolio_shared_bg.png" },
-            { name: "Wanova", description: "日本の製品を海外展開する商社", image: "/images/portfolio_shared_bg.png" },
-            { name: "Pegasus Tech Ventures", description: "AUM3,000億円の米国VC", image: "/images/portfolio_shared_bg.png" },
-            { name: "ファルス", description: "新興国向けマイクロファイナンス事業", image: "/images/portfolio_shared_bg.png" },
-            { name: "Handson AI", description: "外国人向け教育ローンファイナンス事業", image: "/images/portfolio_shared_bg.png" },
-            { name: "エンセンテン", description: "PR＆クリエイティブ・エージェンシー", image: "/images/portfolio_shared_bg.png" }
-        ].map(p => ({
+        const getPortfolioImage = (name: string) => {
+            if (name === "BIZIT") return "/cs_ptf_bizit.png";
+            if (name === "フィル・カンパニー" || name === "Phil Company") return "/cs_phil_company.png";
+            if (name === "Sustech") return "/cs_sustech_ai.png";
+            return "/images/portfolio_shared_bg.png";
+        };
+
+        const portfolioList: SliderItem[] = portfolioListRaw.map(p => ({
             id: `ptf-${p.name}`,
             title: p.description, // Emphasize the "コト" (business/initiative)
             description: p.name,  // Secondary text is the portfolio name
-            image: p.image,
+            image: getPortfolioImage(p.name),
             link: "/portfolio"
         }));
 

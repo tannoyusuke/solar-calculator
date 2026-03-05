@@ -1,0 +1,72 @@
+[
+  {
+    "id": "recmed",
+    "name": "レクメド",
+    "file": "/logos/recmed.svg"
+  },
+  {
+    "id": "ftg",
+    "name": "FTG Company",
+    "file": "/logos/ftg.svg"
+  },
+  {
+    "id": "generaloyster",
+    "name": "General Oyster",
+    "file": "/logos/generaloyster.svg"
+  },
+  {
+    "id": "bizit",
+    "name": "BIZIT",
+    "file": "/logos/bizit.svg"
+  },
+  {
+    "id": "kyushuijishinpo",
+    "name": "九州医事新報社",
+    "file": "/logos/kyushuijishinpo.svg"
+  },
+  {
+    "id": "philcompany",
+    "name": "フィル・カンパニー",
+    "file": "/logos/philcompany.svg"
+  },
+  {
+    "id": "sustech",
+    "name": "Sustech",
+    "file": "/logos/sustech.svg"
+  },
+  {
+    "id": "shiency",
+    "name": "シエンシー",
+    "file": "/logos/shiency.svg"
+  },
+  {
+    "id": "scapital",
+    "name": "エスキャピタル",
+    "file": "/logos/scapital.svg"
+  },
+  {
+    "id": "wanova",
+    "name": "Wanova",
+    "file": "/logos/wanova.svg"
+  },
+  {
+    "id": "pegasus",
+    "name": "Pegasus Tech Ventures",
+    "file": "/logos/pegasus.svg"
+  },
+  {
+    "id": "phalus",
+    "name": "ファルス",
+    "file": "/logos/phalus.svg"
+  },
+  {
+    "id": "handsonai",
+    "name": "Handson AI",
+    "file": "/logos/handsonai.svg"
+  },
+  {
+    "id": "ensenten",
+    "name": "エンセンテン",
+    "file": "/logos/ensenten.svg"
+  }
+]

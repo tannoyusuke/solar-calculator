@@ -1,4 +1,4 @@
-import { newsData } from "@/data/news";
+import { getNewsData } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -7,22 +7,46 @@ import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/lib/i18n-config";
 
 export function generateStaticParams() {
-    return newsData.map((news) => ({
+    const jaParams = getNewsData("ja").map((news) => ({
+        lang: "ja",
         id: news.id,
     }));
+    const enParams = getNewsData("en").map((news) => ({
+        lang: "en",
+        id: news.id,
+    }));
+    return [...jaParams, ...enParams];
 }
 
-export function generateMetadata({ params }: { params: { id: string } }) {
+export async function generateMetadata({ params }: { params: { lang: Locale, id: string } }) {
+    const newsData = getNewsData(params.lang);
     const news = newsData.find((n) => n.id === params.id);
+
     if (!news) return { title: "News Not Found | Tryfunds" };
+
+    const title = `${news.title} | Tryfunds News`;
+    const description = news.content.substring(0, 120) + "...";
+
     return {
-        title: `${news.title} | Tryfunds News`,
-        description: news.content.substring(0, 100),
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: "article",
+            publishedTime: news.date.replace(/\./g, "-"),
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+        }
     };
 }
 
 export default async function NewsDetailPage({ params }: { params: { id: string, lang: Locale } }) {
     const dict = await getDictionary(params.lang);
+    const newsData = getNewsData(params.lang);
     const news = newsData.find((n) => n.id === params.id);
 
     if (!news) {
@@ -35,7 +59,7 @@ export default async function NewsDetailPage({ params }: { params: { id: string,
 
                 {/* Back Link */}
                 <Link
-                    href="/news"
+                    href={`/${params.lang}/news`}
                     className="inline-flex items-center gap-2 text-xs font-display font-medium tracking-widest text-gray-400 hover:text-white transition-colors mb-12 group"
                 >
                     <ArrowLeft className="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" />
@@ -65,10 +89,10 @@ export default async function NewsDetailPage({ params }: { params: { id: string,
 
                 <div className="mt-24 pt-12 border-t border-white/10">
                     <Link
-                        href="/news"
+                        href={`/${params.lang}/news`}
                         className="inline-flex items-center justify-center w-full md:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-sm font-display font-bold tracking-widest text-white transition-colors"
                     >
-                        NEWS一覧へ戻る
+                        {dict.news.backToNews}
                     </Link>
                 </div>
             </div>
