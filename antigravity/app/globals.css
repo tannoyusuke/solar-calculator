@@ -36,3 +36,17 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+@keyframes seamless-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-seamless-marquee {
+  animation: seamless-marquee 40s linear infinite;
+}

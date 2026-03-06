@@ -67,13 +67,12 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
                 </span>
               ))}
             </p>
-
-            {/* Hero Auto-scrolling Slider (Portfolio) */}
-            <div className="w-[100vw] lg:w-[120vw] relative left-1/2 -translate-x-1/2 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-              <HeroPortfolioSlider lang={params.lang} />
-            </div>
-
           </div>
+        </div>
+
+        {/* Hero Auto-scrolling Slider (Portfolio) - Positioned at bottom of screen, full width */}
+        <div className="absolute bottom-8 left-0 w-full animate-fade-in-up z-20" style={{ animationDelay: '0.6s' }}>
+          <HeroPortfolioSlider lang={params.lang} />
         </div>
 
         <div className="absolute bottom-12 right-6 md:right-12 hidden md:flex flex-col items-center animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default" style={{ animationDelay: '0.8s' }}>
