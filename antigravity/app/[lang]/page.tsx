@@ -37,10 +37,10 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
         </div>
 
-        <div className="z-10 text-center px-4 max-w-7xl mx-auto w-full flex flex-col items-center justify-center h-full relative">
+        <div className="z-10 text-center px-4 max-w-7xl mx-auto w-full flex flex-col items-center justify-center h-full relative pb-72 md:pb-[28vh]">
 
           {/* Decorative Side Element (Left Vertical Text) */}
-          <div className="absolute top-1/2 -translate-y-1/2 left-0 lg:left-8 hidden lg:flex flex-col items-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+          <div className="absolute top-[40%] md:top-1/2 -translate-y-1/2 left-0 lg:left-8 hidden lg:flex flex-col items-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
             <span className="text-[10px] tracking-[0.4em] text-white/40 font-display uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
               Advanced Consulting & Investment
             </span>
@@ -48,7 +48,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-6xl md:text-8xl lg:text-[8rem] font-display font-bold tracking-tighter mb-4 md:mb-6 leading-none text-white drop-shadow-2xl animate-fade-in-up relative mt-20">
+          <h1 className="text-6xl md:text-8xl lg:text-[8rem] font-display font-bold tracking-tighter mb-4 md:mb-6 leading-none text-white drop-shadow-2xl animate-fade-in-up relative mt-16 md:mt-20">
             {dict.home.hero.title} <span className="text-gray-400">{dict.home.hero.titleHighlight}</span>
           </h1>
 
@@ -57,8 +57,8 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
           </p>
 
           {/* Description Paragraph */}
-          <div className="mt-12 md:mt-16 animate-fade-in-up w-full max-w-3xl flex flex-col items-center" style={{ animationDelay: '0.4s' }}>
-            <div className="w-8 h-px bg-white/40 mb-8" />
+          <div className="mt-8 md:mt-12 animate-fade-in-up w-full max-w-3xl flex flex-col items-center" style={{ animationDelay: '0.4s' }}>
+            <div className="w-8 h-px bg-white/40 mb-6 md:mb-8" />
             <p className="text-xs md:text-sm text-gray-300 font-sans tracking-[0.15em] md:tracking-[0.2em] leading-[2.5] md:leading-loose text-center drop-shadow-sm">
               {dict.home.hero.description.map((line, i) => (
                 <span key={i}>
@@ -71,18 +71,19 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
         </div>
 
         {/* Hero Auto-scrolling Slider (Portfolio) - Positioned at bottom of screen, full width */}
-        <div className="absolute bottom-8 left-0 w-full animate-fade-in-up z-20" style={{ animationDelay: '0.6s' }}>
+        <div className="absolute bottom-6 md:bottom-8 left-0 w-full animate-fade-in-up z-20" style={{ animationDelay: '0.6s' }}>
           <HeroPortfolioSlider lang={params.lang} />
         </div>
 
-        <div className="absolute bottom-12 right-6 md:right-12 hidden md:flex flex-col items-center animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[10px] font-display tracking-[0.3em] uppercase mb-6 text-white" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
-          <div className="w-[1px] h-20 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
+        {/* Desktop scroll indicator */}
+        <div className="absolute bottom-48 md:bottom-[32vh] right-4 md:right-8 hidden md:flex flex-col items-center animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
+          <span className="text-[10px] font-display tracking-[0.3em] uppercase mb-4 text-white" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
+          <div className="w-[1px] h-16 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
         </div>
 
         {/* Mobile scroll indicator */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 md:hidden flex flex-col items-center animate-fade-in-up opacity-50" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[9px] font-display tracking-[0.3em] uppercase mb-3 text-white pl-[0.3em]">{dict.home.hero.scroll}</span>
+        <div className="absolute bottom-64 md:hidden flex flex-col items-center animate-fade-in-up opacity-50 z-30" style={{ animationDelay: '0.8s' }}>
+          <span className="text-[9px] font-display tracking-[0.3em] uppercase mb-2 text-white pl-[0.3em]">{dict.home.hero.scroll}</span>
           <div className="w-[1px] h-10 bg-gradient-to-b from-white to-transparent" />
         </div>
       </section>
