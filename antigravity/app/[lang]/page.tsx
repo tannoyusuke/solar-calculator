@@ -40,11 +40,11 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
         <div className="z-10 text-center px-4 max-w-7xl mx-auto w-full flex flex-col items-center justify-center h-full relative pb-72 md:pb-[28vh]">
 
           {/* Decorative Side Element (Left Vertical Text) */}
-          <div className="absolute top-[40%] md:top-1/2 -translate-y-1/2 left-0 lg:left-8 hidden lg:flex flex-col items-center gap-6 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-            <span className="text-[10px] tracking-[0.4em] text-white/40 font-display uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+          <div className="absolute top-1/2 -translate-y-1/2 left-4 lg:left-8 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-80" style={{ animationDelay: '0.6s' }}>
+            <span className="text-[10px] tracking-[0.4em] lg:tracking-[0.5em] text-white/50 font-display uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
               Advanced Consulting & Investment
             </span>
-            <div className="w-px h-24 bg-white/20" />
+            <div className="w-px h-16 md:h-24 bg-white/20" />
           </div>
 
           {/* Main Title */}
@@ -59,11 +59,11 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
           {/* Description Paragraph */}
           <div className="mt-8 md:mt-12 animate-fade-in-up w-full max-w-3xl flex flex-col items-center" style={{ animationDelay: '0.4s' }}>
             <div className="w-8 h-px bg-white/40 mb-6 md:mb-8" />
-            <p className="text-xs md:text-sm text-gray-300 font-sans tracking-[0.15em] md:tracking-[0.2em] leading-[2.5] md:leading-loose text-center drop-shadow-sm">
+            <p className="text-xs md:text-sm text-gray-300 font-sans tracking-[0.15em] md:tracking-[0.2em] leading-[2.5] md:leading-[2.8] text-center drop-shadow-sm">
               {dict.home.hero.description.map((line, i) => (
                 <span key={i}>
                   {line}
-                  {i < dict.home.hero.description.length - 1 && <br className={i === 0 || i === 2 || i === 3 ? "hidden md:block" : ""} />}
+                  {i < dict.home.hero.description.length - 1 && <br />}
                 </span>
               ))}
             </p>
@@ -76,15 +76,15 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
         </div>
 
         {/* Desktop scroll indicator */}
-        <div className="absolute bottom-48 md:bottom-[32vh] right-4 md:right-8 hidden md:flex flex-col items-center animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[10px] font-display tracking-[0.3em] uppercase mb-4 text-white" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
-          <div className="w-[1px] h-16 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
+        <div className="absolute bottom-[25vh] right-6 lg:right-10 hidden md:flex flex-col items-center animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
+          <span className="text-[10px] font-display tracking-[0.4em] uppercase mb-4 text-white" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
+          <div className="w-[1px] h-20 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
         </div>
 
         {/* Mobile scroll indicator */}
-        <div className="absolute bottom-64 md:hidden flex flex-col items-center animate-fade-in-up opacity-50 z-30" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[9px] font-display tracking-[0.3em] uppercase mb-2 text-white pl-[0.3em]">{dict.home.hero.scroll}</span>
-          <div className="w-[1px] h-10 bg-gradient-to-b from-white to-transparent" />
+        <div className="absolute bottom-[28vh] left-0 right-0 md:hidden flex flex-col items-center justify-center animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.8s' }}>
+          <span className="text-[9px] font-display tracking-[0.3em] uppercase mb-4 text-white text-center pl-[0.3em]">{dict.home.hero.scroll}</span>
+          <div className="w-[1px] h-12 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
         </div>
       </section>
 
