@@ -9,6 +9,7 @@ import { UniqueValueProposition } from "@/components/home/UniqueValueProposition
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
 import { LatestNews } from "@/components/home/LatestNews";
 import { HeroPortfolioSlider } from "@/components/home/HeroPortfolioSlider";
+import { HeroBackgroundSlider } from "@/components/home/HeroBackgroundSlider";
 import { getDictionary } from "@/lib/dictionary";
 import type { Locale } from "@/lib/i18n-config";
 
@@ -25,39 +26,24 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 blur-[100px] pointer-events-none animate-float" />
 
         <div className="absolute inset-0 w-full h-full z-[-2]">
-          <Image
-            src="/images/hero_bg_corporate.png"
-            alt="Tryfunds Corporate - Next Gen"
-            fill
-            sizes="100vw"
-            quality={100}
-            priority
-            className="object-cover object-center opacity-60 mix-blend-luminosity"
-          />
+          <HeroBackgroundSlider />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
         </div>
 
-        <div className="z-10 text-center px-4 max-w-7xl mx-auto w-full flex flex-col items-center justify-center h-full relative pb-72 md:pb-[28vh]">
+        <div className="z-10 text-left px-4 md:px-12 lg:px-24 max-w-[1600px] mx-auto w-full flex flex-col items-start justify-center h-full relative pb-48 md:pb-[20vh] pt-20">
 
-          {/* Main Title */}
-          <h1 className="text-6xl md:text-8xl lg:text-[8rem] font-display font-bold tracking-tighter mb-4 md:mb-6 leading-none text-white drop-shadow-2xl animate-fade-in-up relative mt-16 md:mt-20">
-            {dict.home.hero.title} <span className="text-gray-400">{dict.home.hero.titleHighlight}</span>
+          {/* Main Title - 1 Line "TRY to All" */}
+          <h1 className="text-[14vw] sm:text-8xl md:text-[8rem] lg:text-[10rem] xl:text-[12rem] font-sans font-bold tracking-tight mb-2 md:mb-6 leading-none text-white drop-shadow-2xl animate-fade-in-up relative whitespace-nowrap">
+            TRY to All
           </h1>
 
-          <p className="text-xl md:text-3xl font-sans font-bold tracking-[0.3em] md:tracking-[0.4em] text-white animate-fade-in-up drop-shadow-md" style={{ animationDelay: '0.2s' }}>
-            {dict.home.hero.subtitle}
-          </p>
-
-          {/* Description Paragraph */}
-          <div className="mt-8 md:mt-12 animate-fade-in-up w-full max-w-3xl flex flex-col items-center" style={{ animationDelay: '0.4s' }}>
-            <div className="w-8 h-px bg-white/40 mb-6 md:mb-8" />
-            <p className="text-xs md:text-sm text-gray-300 font-sans tracking-[0.15em] md:tracking-[0.2em] leading-[2.5] md:leading-[2.8] text-center drop-shadow-sm">
-              {dict.home.hero.description.map((line, i) => (
-                <span key={i}>
-                  {line}
-                  {i < dict.home.hero.description.length - 1 && <br />}
-                </span>
-              ))}
+          {/* Subtitles matching the exact reference */}
+          <div className="flex flex-col gap-1 md:gap-3 mt-2 md:mt-4 ml-1 md:ml-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-sans font-medium tracking-[0.15em] text-white drop-shadow-md uppercase">
+              EMPOWERING GLOBAL GROWTH.
+            </p>
+            <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-sans font-medium tracking-[0.15em] text-white drop-shadow-md uppercase">
+              INNOVATING FOR THE FUTURE.
             </p>
           </div>
         </div>
