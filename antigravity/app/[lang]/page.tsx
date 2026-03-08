@@ -68,17 +68,17 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
         </div>
 
         {/* Decorative Side Element (Left Vertical Text) */}
-        <div className="absolute top-1/2 -translate-y-1/2 left-4 md:left-8 lg:left-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.6s' }}>
+        <div className="absolute top-[40vh] -translate-y-1/2 left-4 md:left-8 lg:left-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.6s' }}>
           <span className="text-[10px] tracking-[0.4em] lg:tracking-[0.5em] text-white/50 font-display uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
             Advanced Consulting & Investment
           </span>
-          <div className="w-px h-24 md:h-32 bg-white/20" />
+          <div className="w-px h-16 md:h-24 bg-white/20" />
         </div>
 
         {/* Desktop scroll indicator - Centered vertically on right side to mirror left text */}
-        <div className="absolute top-1/2 -translate-y-1/2 right-4 md:right-8 lg:right-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
+        <div className="absolute top-[40vh] -translate-y-1/2 right-4 md:right-8 lg:right-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
           <span className="text-[10px] font-display tracking-[0.4em] lg:tracking-[0.5em] text-white uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
-          <div className="w-px h-24 md:h-32 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
+          <div className="w-px h-16 md:h-24 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
         </div>
 
         {/* Mobile scroll indicator */}
