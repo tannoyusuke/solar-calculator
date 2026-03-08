@@ -187,15 +187,15 @@
       "view_details": "詳細を見る",
       "cards": [
         {
-          "title": "Fund AM",
-          "tag": "Investment & Operation",
-          "description": "国内外のインフラ関連スタートアップへの投資および、PEファンド/PIPESファンドの運用を通じた企業価値向上。",
+          "title": "Consulting",
+          "tag": "Advisory",
+          "description": "戦略立案からM&A、デジタル変革まで。高度な知見とグローバルネットワークを駆使した企業変革アドバイザリー。",
           "metrics": [
-            "インフラファンド",
-            "PE/PIPES",
-            "ハンズオン投資"
+            "事業戦略",
+            "M&A",
+            "海外進出"
           ],
-          "url_hash": "investment-operation"
+          "url_hash": "advisory"
         },
         {
           "title": "Hands-on",
@@ -209,15 +209,15 @@
           "url_hash": "principal"
         },
         {
-          "title": "Consulting",
-          "tag": "Advisory",
-          "description": "戦略立案からM&A、デジタル変革まで。高度な知見とグローバルネットワークを駆使した企業変革アドバイザリー。",
+          "title": "Fund AM",
+          "tag": "Investment & Operation",
+          "description": "国内外のインフラ関連スタートアップへの投資および、PEファンド/PIPESファンドの運用を通じた企業価値向上。",
           "metrics": [
-            "事業戦略",
-            "M&A",
-            "海外進出"
+            "インフラファンド",
+            "PE/PIPES",
+            "ハンズオン投資"
           ],
-          "url_hash": "advisory"
+          "url_hash": "investment-operation"
         }
       ]
     }

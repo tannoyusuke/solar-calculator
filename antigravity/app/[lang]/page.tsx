@@ -39,14 +39,6 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
 
         <div className="z-10 text-center px-4 max-w-7xl mx-auto w-full flex flex-col items-center justify-center h-full relative pb-72 md:pb-[28vh]">
 
-          {/* Decorative Side Element (Left Vertical Text) */}
-          <div className="absolute top-1/2 -translate-y-1/2 left-4 lg:left-8 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-80" style={{ animationDelay: '0.6s' }}>
-            <span className="text-[10px] tracking-[0.4em] lg:tracking-[0.5em] text-white/50 font-display uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
-              Advanced Consulting & Investment
-            </span>
-            <div className="w-px h-16 md:h-24 bg-white/20" />
-          </div>
-
           {/* Main Title */}
           <h1 className="text-6xl md:text-8xl lg:text-[8rem] font-display font-bold tracking-tighter mb-4 md:mb-6 leading-none text-white drop-shadow-2xl animate-fade-in-up relative mt-16 md:mt-20">
             {dict.home.hero.title} <span className="text-gray-400">{dict.home.hero.titleHighlight}</span>
@@ -75,16 +67,24 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
           <HeroPortfolioSlider lang={params.lang} />
         </div>
 
-        {/* Desktop scroll indicator */}
-        <div className="absolute bottom-[25vh] right-6 lg:right-10 hidden md:flex flex-col items-center animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[10px] font-display tracking-[0.4em] uppercase mb-4 text-white" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
-          <div className="w-[1px] h-20 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
+        {/* Decorative Side Element (Left Vertical Text) */}
+        <div className="absolute top-1/2 -translate-y-1/2 left-4 md:left-8 lg:left-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.6s' }}>
+          <span className="text-[10px] tracking-[0.4em] lg:tracking-[0.5em] text-white/50 font-display uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+            Advanced Consulting & Investment
+          </span>
+          <div className="w-px h-24 md:h-32 bg-white/20" />
+        </div>
+
+        {/* Desktop scroll indicator - Centered vertically on right side to mirror left text */}
+        <div className="absolute top-1/2 -translate-y-1/2 right-4 md:right-8 lg:right-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
+          <span className="text-[10px] font-display tracking-[0.4em] lg:tracking-[0.5em] text-white uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
+          <div className="w-px h-24 md:h-32 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
         </div>
 
         {/* Mobile scroll indicator */}
-        <div className="absolute bottom-[28vh] left-0 right-0 md:hidden flex flex-col items-center justify-center animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[9px] font-display tracking-[0.3em] uppercase mb-4 text-white text-center pl-[0.3em]">{dict.home.hero.scroll}</span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
+        <div className="absolute bottom-[25vh] sm:bottom-[28vh] left-0 right-0 md:hidden flex flex-col items-center justify-center gap-4 animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.8s' }}>
+          <span className="text-[9px] font-display tracking-[0.3em] uppercase text-white text-center pl-[0.3em]">{dict.home.hero.scroll}</span>
+          <div className="w-px h-12 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
         </div>
       </section>
 
