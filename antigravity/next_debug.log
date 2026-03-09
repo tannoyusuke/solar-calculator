@@ -61,3 +61,14 @@ Failed to fetch news from microCMS, falling back to local data. Error: fetch API
  ✓ Compiled in 321ms (735 modules)
  ✓ Compiled in 275ms (735 modules)
  ✓ Compiled in 356ms (735 modules)
+ ✓ Compiled in 588ms (794 modules)
+ ✓ Compiled in 175ms (794 modules)
+ ✓ Compiled in 203ms (794 modules)
+ ✓ Compiled in 206ms (794 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1209ms (1755 modules)
+ GET /ja/recruit/persona 404 in 2ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 743ms (1745 modules)
+ ✓ Compiled in 1686ms (834 modules)
+ ✓ Compiled in 537ms (834 modules)

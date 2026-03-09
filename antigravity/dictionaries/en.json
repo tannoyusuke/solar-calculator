@@ -61,32 +61,32 @@
       "section_title": "WHO WE ARE",
       "title_line1": "From Consulting to a",
       "title_line2": "Business Operating Company.",
-      "description": "We are not merely external advisors.<br/>In addition to consulting fee-based contracts, we take business risks ourselves,<br/>committing to results on the same level as our clients through <strong class=\"text-white font-medium\">revenue-share models</strong> and <strong class=\"text-white font-medium\">business investments</strong>.<br/><br/>This is exactly why our consulting embodies an overwhelming sense of ownership and real-world expertise gained from actual execution.<br/>We do not offer \"advice from those who have never done it,\" but rather <strong class=\"text-white font-medium\">\"proposals from those who run businesses themselves\"</strong>.<br/>This is our definitive value that completely sets us apart from ordinary consulting firms.<br/><br/>Today, as a true business operating company directly committed to the growth of our own businesses and investments, we generate new challenges every single day.",
+      "description": "We are not merely external advisors.<br class='hidden md:block' />In addition to consulting fee-based contracts, we take business risks ourselves,<br class='hidden md:block' />committing to results on the same level as our clients through <strong class=\"text-white font-medium\">revenue-share models</strong> and <strong class=\"text-white font-medium\">business investments</strong>.<br /><br />This is exactly why our consulting embodies an overwhelming sense of ownership and real-world expertise gained from actual execution.<br class='hidden md:block' />We do not offer \"advice from those who have never done it,\" but rather <strong class=\"text-white font-medium\">\"proposals from those who run businesses themselves\"</strong>.<br class='hidden md:block' />This is our definitive value that completely sets us apart from ordinary consulting firms.<br /><br />Today, as a true business operating company directly committed to the growth of our own businesses and investments, we generate new challenges every single day.",
       "advisory": {
         "title": "ADVISORY",
-        "desc": "Highly specialized intellectual services solving domestic and global business challenges.<br/>We provide the foundational knowledge for every challenge, from M&A to corporate turnaround."
+        "desc": "Highly specialized intellectual services solving domestic and global business challenges.<br class='hidden md:block' />We provide the foundational knowledge for every challenge, from M&A to corporate turnaround."
       },
       "investment": {
         "title": "INVESTMENT & OPERATION",
-        "desc": "Investing our own capital and driving business through a hands-on approach.<br/>We directly increase corporate value through the management of PE/PIPES/Infrastructure funds and principal investments."
+        "desc": "Investing our own capital and driving business through a hands-on approach.<br class='hidden md:block' />We directly increase corporate value through the management of PE/PIPES/Infrastructure funds and principal investments."
       }
     },
     "latestNews": {
       "section_title": "LATEST NEWS",
-      "description": "The latest updates<br />from Tryfunds Group",
+      "description": "The latest updates<br class='hidden md:block' />from Tryfunds Group",
       "view_all": "VIEW ALL NEWS"
     },
     "ourPhilosophy": {
       "section_title": "OUR PHILOSOPHY",
       "headline": "Creating Willful Challenges.",
-      "description": "<p>We not only support the serious challenges of our clients but also possess a firm will ourselves, continuously acting as front-line \"challengers\" harder than anyone else.</p><br/><p>Together with client business leaders, we <strong class=\"text-white font-bold\">Envision</strong>—painting an even higher vision and redefining the summit to aim for.<br class=\"hidden md:block\" />We then directly supplement the \"missing parts\" (capital, talent, technology, networks, etc.) essential for its realization, empowering them to pursue unprecedented scale in business growth.</p>"
+      "description": "<p>We not only support the serious challenges of our clients but also possess a firm will ourselves, continuously acting as front-line \"challengers\" harder than anyone else.</p><br class='hidden md:block' /><p>Together with client business leaders, we <strong class=\"text-white font-bold\">Envision</strong>—painting an even higher vision and redefining the summit to aim for.<br class=\"hidden md:block\" />We then directly supplement the \"missing parts\" (capital, talent, technology, networks, etc.) essential for its realization, empowering them to pursue unprecedented scale in business growth.</p>"
     },
     "trackRecord": {
       "section_title": "TRACK RECORD",
       "stats_value": "1,000",
       "stats_unit1": "Projects+",
       "stats_unit2": "Supported",
-      "description": "Over 14 years since our founding, we have covered a wide range of fields including strategic advisory, M&A advisory, expansion support to 58 countries worldwide, new business planning, DX/AI support, executive search, and cost reduction consulting.<br/><strong class=\"text-white font-medium block mt-4\">Our track record of over 1,000 projects</strong> proves the overwhelming driving force of our hybrid model.",
+      "description": "Over 14 years since our founding, we have covered a wide range of fields including strategic advisory, M&A advisory, expansion support to 58 countries worldwide, new business planning, DX/AI support, executive search, and cost reduction consulting.<br class='hidden md:block' /><strong class=\"text-white font-medium block mt-4\">Our track record of over 1,000 projects</strong> proves the overwhelming driving force of our hybrid model.",
       "button_portfolio": "PORTFOLIO",
       "button_case_study": "CASE STUDY",
       "records": [
@@ -162,7 +162,7 @@
     },
     "valuesStrength": {
       "section_title": "VALUE PROPOSITION",
-      "headline": "3 Value Behaviors<br />To Grow Businesses Together",
+      "headline": "3 Value Behaviors<br class='hidden md:block' />To Grow Businesses Together",
       "description": "We are not merely external advisors. We share risks with our clients and commit to maximizing business value with an overwhelming sense of ownership.",
       "cards": [
         {
@@ -254,15 +254,15 @@
       "hq_label": "Headquarters",
       "hq_value": "5F, Shibakoen Hanshin Building, 3-1-14 Shiba, Minato-ku, Tokyo 105-0014",
       "contact_label": "Contact",
-      "contact_value": "TEL : +81-3-6453-9008<br />FAX : +81-3-6453-9007",
+      "contact_value": "TEL : +81-3-6453-9008<br class='hidden md:block' />FAX : +81-3-6453-9007",
       "business_label": "Business",
       "business_value": "<ol class=\"list-decimal pl-4 space-y-1\"><li>Operation of investment funds through subsidiaries, including business investments</li><li>M&A advisory and corporate partnership advisory services</li><li>Overseas expansion and business development support</li><li>Headhunting of management and global talent</li><li>Regional revitalization and business succession support</li></ol>",
       "group_label": "Group Companies",
-      "group_value": "Tryfunds Investment Inc.<br />TF Power Inc.<br />TF Growth LLC<br />TF Ventures LLC<br />Ensenten Inc.<br />Ongaeshi Capital<br />Niigata Sustainable Regional Development Investment Limited Partnership",
+      "group_value": "Tryfunds Investment Inc.<br class='hidden md:block' />TF Power Inc.<br class='hidden md:block' />TF Growth LLC<br class='hidden md:block' />TF Ventures LLC<br class='hidden md:block' />Ensenten Inc.<br class='hidden md:block' />Ongaeshi Capital<br class='hidden md:block' />Niigata Sustainable Regional Development Investment Limited Partnership",
       "banks_label": "Banks",
-      "banks_value": "Mizuho Bank, Kobunecho Branch<br />Sumitomo Mitsui Banking Corporation, Hibiya Corporate Banking Dept. 2",
+      "banks_value": "Mizuho Bank, Kobunecho Branch<br class='hidden md:block' />Sumitomo Mitsui Banking Corporation, Hibiya Corporate Banking Dept. 2",
       "licenses_label": "Licenses",
-      "licenses_value": "Real Estate Brokerage License: Governor of Tokyo (1) No. 112791<br />Paid Employment Placement Business License: 13-Yu-315351 (Held by subsidiary TFX Inc.)"
+      "licenses_value": "Real Estate Brokerage License: Governor of Tokyo (1) No. 112791<br class='hidden md:block' />Paid Employment Placement Business License: 13-Yu-315351 (Held by subsidiary TFX Inc.)"
     },
     "history": {
       "title": "History",
@@ -328,7 +328,7 @@
     "block3": {
       "mission_label": "MISSION",
       "headline": "Creating World-Class<br class=\"hidden lg:block\" />Businesses.",
-      "desc": "Viewing business from a borderless perspective, we deliver results with overwhelming quality and speed.<br />Fearing no failure, we constantly ask 'How can we do this?'. Shoulder-to-shoulder with executives, through business investment and hands-on support, we implement the next generation of industrial models into society."
+      "desc": "Viewing business from a borderless perspective, we deliver results with overwhelming quality and speed.<br class='hidden md:block' />Fearing no failure, we constantly ask 'How can we do this?'. Shoulder-to-shoulder with executives, through business investment and hands-on support, we implement the next generation of industrial models into society."
     },
     "values": {
       "label": "VALUES",
@@ -354,7 +354,7 @@
     },
     "leadership": {
       "label": "TRYFUNDS 6 LEADERSHIP PRINCIPLES",
-      "desc": "These guiding principles serve not only as evaluation metrics but also as the core axis of feedback in our performance management cycle.<br />Alongside high-level skills, we elevate the 'mindset' essential for management talent through these six dimensions.",
+      "desc": "These guiding principles serve not only as evaluation metrics but also as the core axis of feedback in our performance management cycle.<br class='hidden md:block' />Alongside high-level skills, we elevate the 'mindset' essential for management talent through these six dimensions.",
       "principles": [
         {
           "title": "Innovative Thinking",
@@ -391,7 +391,7 @@
   },
   "trackRecordPage": {
     "title": "TRACK RECORD",
-    "desc": "Introducing our unique track record,<br/>born from our commitment to the growth of our own businesses and investees."
+    "desc": "Introducing our unique track record,<br class='hidden md:block' />born from our commitment to the growth of our own businesses and investees."
   },
   "servicesPage": {
     "header": {
@@ -401,14 +401,14 @@
     },
     "envision": {
       "label": "THE TRYFUNDS MODEL",
-      "title": "Envision &<br />Missing Parts Completion",
+      "title": "Envision &<br class='hidden md:block' />Missing Parts Completion",
       "p1": "At the core of our services is our unique business promotion model: <strong>\"Envision (Redefining Goals)\"</strong> and <strong>\"Missing Parts Completion\"</strong>.",
       "p2": "First, we work with our clients to draw up a powerful vision and strategy (Envision) aimed at reaching higher altitudes, rather than just an extension of the status quo.",
       "p3": "Then, to make that extraordinary goal a reality, we directly supply and complement the missing elements: <strong class=\"text-white\">[Capital] [Talent] [Network] [Technology]</strong>. By spinning this cycle at high speed, we bring discontinuous growth to our clients."
     },
     "fee": {
       "label": "FEE STRUCTURE",
-      "title": "Commitment to<br />Business Success",
+      "title": "Commitment to<br class='hidden md:block' />Business Success",
       "p1": "Tryfunds places importance on its position not just as an external advisor, but as a joint business operator. Even when we operate a business ourselves, we launch projects primarily when we are confident in achieving solid results.",
       "p2": "Therefore, in order to show our dedication to moving in the same direction towards business success, we actively adopt contract formats that share a portion of the fruits of success.",
       "model1_title": "Base Fee + Upside Sharing:",
@@ -418,7 +418,7 @@
     },
     "capabilities": {
       "label": "CAPABILITIES",
-      "title": "It's not about doing many things.<br />It's about doing everything necessary to win.",
+      "title": "It's not about doing many things.<br class='hidden md:block' />It's about doing everything necessary to win.",
       "desc": "From strategy to execution, from finance to technology. We internalize all functions necessary for business growth and provide them seamlessly.",
       "items": [
         {
@@ -538,7 +538,7 @@
   "members": {
     "title": "PROFESSIONALS",
     "subtitle": "Management Members",
-    "headerDesc": "The management members driving the operations of Tryfunds Group.<br class='hidden md:block' />Gathering talent with diverse, high-level expertise,<br />we materialzie earnest challenges together.",
+    "headerDesc": "The management members driving the operations of Tryfunds Group.<br class='hidden md:block' />Gathering talent with diverse, high-level expertise,<br class='hidden md:block' />we materialzie earnest challenges together.",
     "metaTitle": "Members | Tryfunds",
     "metaDesc": "Introducing the professional members of the Tryfunds Group"
   },
@@ -591,9 +591,9 @@
     },
     "mindset": {
       "subtitle": "PERSONA",
-      "title": "We are looking for<br />those with an<br />'Entrepreneurial<br />Mindset'.",
+      "title": "We are looking for<br class='hidden md:block' />'Street Smart'<br class='hidden md:block' />professionals.",
       "paragraphs": [
-        "Tryfunds seeks talent with relentless determination to see things through to the end, regardless of the domain.<br />Our model is not sustained by consulting fees alone, but is built on a portfolio predicated on business revenue.",
+        "Tryfunds seeks talent with relentless determination to see things through to the end, regardless of the domain.<br class='hidden md:block' />While logical thinking skills (Book Smart) such as strategy and finance are a prerequisite, what we value even more is the overwhelming breakthrough power of being 'Street Smart'—finding a gritty path forward in the field and paving the way with quick wit even in unexpected situations.<br class='hidden md:block' />Our model is not sustained by consulting fees alone, but is built on a portfolio predicated on business revenue.",
         "That is why we need individuals who have mastered strategy and finance as basic protocols, and who possess a tenacity to face numbers and drive profit."
       ],
       "must": {
@@ -602,7 +602,8 @@
           "Ability to speak in numbers (Sales, Gross Profit, Collection, KPIs)",
           "Self-driven capability to catch up (researching and advancing even in unknown fields)",
           "Client-facing ability (capable of confronting decision-makers)",
-          "Follow-through (taking responsibility to the very end)"
+          "Follow-through (taking responsibility to the very end)",
+          "Street Smart (Breakthrough power to survive grittily and deliver results even in chaotic, answer-less environments)"
         ]
       },
       "niceToHave": {
@@ -694,8 +695,8 @@
   "careers": {
     "header": {
       "subtitle": "Careers & Philosophy",
-      "title": "True Career Path as a<br />Management Professional",
-      "description": "Are you satisfied with just being a highly-paid consultant, or will you elevate yourself to a management professional or fund manager who drives real business?<br />Through overwhelming professionalism and a 'hands-on grassroots' approach, Tryfunds develops absolute leader tiers capable of fighting in the real world.",
+      "title": "True Career Path as a<br class='hidden md:block' />Management Professional",
+      "description": "Are you satisfied with just being a highly-paid consultant, or will you elevate yourself to a management professional or fund manager who drives real business?<br class='hidden md:block' />Through overwhelming professionalism and a 'hands-on grassroots' approach, Tryfunds develops absolute leader tiers capable of fighting in the real world.",
       "backBtn": "Back to Recruit"
     },
     "flow": {
@@ -888,27 +889,27 @@
     "header": {
       "backBtn": "Back to Recruit",
       "subtitle": "Future Vision",
-      "title": "Turning Ambitions<br />into Value."
+      "title": "Turning Ambitions<br class='hidden md:block' />into Value."
     },
     "manifesto": {
-      "p1": "Once, Japan stood at the center of the world.<br />Referred to as 'Japan as Number One', it drove the era with its economy and technology.<br />Later, its culture earned global acclaim as 'Cool Japan', drawing the world's attention.",
-      "p2": "However, how is Japan viewed today?<br />A country of maturity, stagnation, and risk aversion.<br />Remaining on an extension of past success experiences,<br />a presence taking a step back from global competition.",
+      "p1": "Once, Japan stood at the center of the world.<br class='hidden md:block' />Referred to as 'Japan as Number One', it drove the era with its economy and technology.<br class='hidden md:block' />Later, its culture earned global acclaim as 'Cool Japan', drawing the world's attention.",
+      "p2": "However, how is Japan viewed today?<br class='hidden md:block' />A country of maturity, stagnation, and risk aversion.<br class='hidden md:block' />Remaining on an extension of past success experiences,<br class='hidden md:block' />a presence taking a step back from global competition.",
       "p3": "It is often spoken of in such ways.",
       "p4": "But that is not the essence.",
-      "p5": "Japan still possesses world-class technology.<br />Overwhelming frontline capabilities (Genba power).<br />An accumulation of meticulous thinking and execution.<br />And without a doubt, companies and individuals with the potential to compete globally exist.",
-      "p6": "What is lacking is not capability.<br />It is will (意志).<br /><br />And a structure to turn that will into reality.",
-      "p7": "There are people with the resolve to win globally.<br />However, the functions to support that TRY with strategy, capital, organization, and implementation are insufficient.<br />Passion alone cannot win in the global market.<br />Without a structure, TRYs cannot be sustained.",
+      "p5": "Japan still possesses world-class technology.<br class='hidden md:block' />Overwhelming frontline capabilities (Genba power).<br class='hidden md:block' />An accumulation of meticulous thinking and execution.<br class='hidden md:block' />And without a doubt, companies and individuals with the potential to compete globally exist.",
+      "p6": "What is lacking is not capability.<br class='hidden md:block' />It is will (意志).<br /><br />And a structure to turn that will into reality.",
+      "p7": "There are people with the resolve to win globally.<br class='hidden md:block' />However, the functions to support that TRY with strategy, capital, organization, and implementation are insufficient.<br class='hidden md:block' />Passion alone cannot win in the global market.<br class='hidden md:block' />Without a structure, TRYs cannot be sustained.",
       "p8": "That is why Tryfunds exists.",
-      "p9": "We do not leave TRYs to chance.<br />We transform will into strategy,<br />accelerate strategy with capital,<br />and design organizations equipped for execution.",
-      "p10": "Sometimes as investors,<br />sometimes as partners,<br />sometimes diving into the field as CxOs,<br />we take responsibility for results.",
-      "p11": "We don't just talk about aspirations;<br />we build globally winning companies together.",
-      "p12": "What we aim for is,<br />not mere consulting, nor mere investment.",
-      "p13": "It is producing talent that fights on global standards,<br />and creating companies that win on global standards.",
-      "p14": "Japan still holds potential.<br />Unpolished talent.<br />Unstructured intellect.<br />A will capable of changing the world.",
-      "p15": "Turning that will into a TRY.<br />Turning that TRY into victory."
+      "p9": "We do not leave TRYs to chance.<br class='hidden md:block' />We transform will into strategy,<br class='hidden md:block' />accelerate strategy with capital,<br class='hidden md:block' />and design organizations equipped for execution.",
+      "p10": "Sometimes as investors,<br class='hidden md:block' />sometimes as partners,<br class='hidden md:block' />sometimes diving into the field as CxOs,<br class='hidden md:block' />we take responsibility for results.",
+      "p11": "We don't just talk about aspirations;<br class='hidden md:block' />we build globally winning companies together.",
+      "p12": "What we aim for is,<br class='hidden md:block' />not mere consulting, nor mere investment.",
+      "p13": "It is producing talent that fights on global standards,<br class='hidden md:block' />and creating companies that win on global standards.",
+      "p14": "Japan still holds potential.<br class='hidden md:block' />Unpolished talent.<br class='hidden md:block' />Unstructured intellect.<br class='hidden md:block' />A will capable of changing the world.",
+      "p15": "Turning that will into a TRY.<br class='hidden md:block' />Turning that TRY into victory."
     },
     "mission": {
-      "text": "Never leave a TRY solitary.<br />Make the TRY reproducible.<br />Structure the TRY.<br /><br />Turning Ambitions into Value.",
+      "text": "Never leave a TRY solitary.<br class='hidden md:block' />Make the TRY reproducible.<br class='hidden md:block' />Structure the TRY.<br /><br />Turning Ambitions into Value.",
       "sub": "That is the mission of Tryfunds."
     },
     "ourTry": {
@@ -977,14 +978,14 @@
       "freeText": "Free Text",
       "freeTextPlaceholder": "Please enter any specific consultation details or background",
       "submit": "SEND REQUEST",
-      "note": "By submitting, you agree to our Privacy Policy.<br />We may decline requests from competitors.",
+      "note": "By submitting, you agree to our Privacy Policy.<br class='hidden md:block' />We may decline requests from competitors.",
       "emailError": "Free email addresses (e.g., Gmail) are not accepted. Please enter a corporate domain email address.",
       "success": "Submission simulation: Completed"
     }
   },
   "contactForm": {
     "title": "CONTACT",
-    "description": "We welcome discussions regarding challenges in uncharted business domains, M&A, and principal business investments or turnarounds.<br />Why not start a serious dialogue with us as a partner to leap your business forward?",
+    "description": "We welcome discussions regarding challenges in uncharted business domains, M&A, and principal business investments or turnarounds.<br class='hidden md:block' />Why not start a serious dialogue with us as a partner to leap your business forward?",
     "form": {
       "company": "Company Name",
       "name": "Name",

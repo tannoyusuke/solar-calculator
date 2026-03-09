@@ -61,25 +61,25 @@
       "section_title": "WHO WE ARE",
       "title_line1": "コンサルティングから、",
       "title_line2": "事業運営会社へ。",
-      "description": "私たちは単なる外部アドバイザーではありません。<br/>コンサルティングフィーを前提とした契約に加え、自らも事業リスクを取り、<br/><strong class=\"text-white font-medium\">レベニューシェアモデル</strong> や <strong class=\"text-white font-medium\">事業投資</strong> を通じて<br/>クライアントと同じ立場で結果にコミットしています。<br /><br />だからこそ、私たちのコンサルティングには圧倒的な当事者意識と、実践から得たリアルな知見が宿ります。<br/>「やったことがない人間のアドバイス」ではなく、<br/><strong class=\"text-white font-medium\">「自ら事業を動かす人間の提案」</strong>。<br/>それが、普通のコンサルティングファームとは決定的に異なる私たちの価値です。<br /><br />現在では自らの事業と投資先の成長に直接コミットする真の事業運営会社として、日々新たな挑戦を生み出しています。",
+      "description": "私たちは単なる外部アドバイザーではありません。<br class='hidden md:block' />コンサルティングフィーを前提とした契約に加え、自らも事業リスクを取り、<br class='hidden md:block' /><strong class=\"text-white font-medium\">レベニューシェアモデル</strong> や <strong class=\"text-white font-medium\">事業投資</strong> を通じて<br class='hidden md:block' />クライアントと同じ立場で結果にコミットしています。<br /><br />だからこそ、私たちのコンサルティングには圧倒的な当事者意識と、実践から得たリアルな知見が宿ります。<br class='hidden md:block' />「やったことがない人間のアドバイス」ではなく、<br class='hidden md:block' /><strong class=\"text-white font-medium\">「自ら事業を動かす人間の提案」</strong>。<br class='hidden md:block' />それが、普通のコンサルティングファームとは決定的に異なる私たちの価値です。<br /><br />現在では自らの事業と投資先の成長に直接コミットする真の事業運営会社として、日々新たな挑戦を生み出しています。",
       "advisory": {
         "title": "ADVISORY",
-        "desc": "国内外のビジネス課題を解決する、高度な知的専門サービス。<br/>M&Aから事業再生まで、すべての挑戦の基盤となるナレッジを提供します。"
+        "desc": "国内外のビジネス課題を解決する、高度な知的専門サービス。<br class='hidden md:block' />M&Aから事業再生まで、すべての挑戦の基盤となるナレッジを提供します。"
       },
       "investment": {
         "title": "INVESTMENT & OPERATION",
-        "desc": "自ら資金を投じ、ハンズオンで事業を牽引。<br/>PE/PIPES/インフラファンドの運営や、プリンシパル投資を通じて、<br/>企業の企業価値をダイレクトに向上させます。"
+        "desc": "自ら資金を投じ、ハンズオンで事業を牽引。<br class='hidden md:block' />PE/PIPES/インフラファンドの運営や、プリンシパル投資を通じて、<br class='hidden md:block' />企業の企業価値をダイレクトに向上させます。"
       }
     },
     "latestNews": {
       "section_title": "LATEST NEWS",
-      "description": "Tryfunds Groupからの<br />最新のお知らせ",
+      "description": "Tryfunds Groupからの<br class='hidden md:block' />最新のお知らせ",
       "view_all": "VIEW ALL NEWS"
     },
     "ourPhilosophy": {
       "section_title": "OUR PHILOSOPHY",
       "headline": "意志ある挑戦を創造する。",
-      "description": "<p>私たちは顧客の本気の挑戦を支援するだけでなく、<br class=\"hidden md:block\" />自らも確固たる意志を持ち、誰よりも最前線の「挑戦者」として活動し続けます。</p><br/><p>顧客の事業責任者と共に <strong class=\"text-white font-bold\">Envision</strong> ＝さらに高いビジョンを描き、目指すべき頂点を再定義する。<br class=\"hidden md:block\" />そして、その実現に不可欠な「ミッシングパーツ（資金、人材、テクノロジー、ネットワークなど）」を当社が直接補完し、かつてないスケールでの事業成長へと挑戦させます。</p>"
+      "description": "<p>私たちは顧客の本気の挑戦を支援するだけでなく、<br class=\"hidden md:block\" />自らも確固たる意志を持ち、誰よりも最前線の「挑戦者」として活動し続けます。</p><br class='hidden md:block' /><p>顧客の事業責任者と共に <strong class=\"text-white font-bold\">Envision</strong> ＝さらに高いビジョンを描き、目指すべき頂点を再定義する。<br class=\"hidden md:block\" />そして、その実現に不可欠な「ミッシングパーツ（資金、人材、テクノロジー、ネットワークなど）」を当社が直接補完し、かつてないスケールでの事業成長へと挑戦させます。</p>"
     },
     "trackRecord": {
       "section_title": "TRACK RECORD",
@@ -162,7 +162,7 @@
     },
     "valuesStrength": {
       "section_title": "提供価値",
-      "headline": "共に事業を成長させるための<br />3つの価値行動",
+      "headline": "共に事業を成長させるための<br class='hidden md:block' />3つの価値行動",
       "description": "私たちは単なる外部アドバイザーではありません。クライアントとリスクを共有し、圧倒的な当事者意識で事業価値の最大化にコミットします。",
       "cards": [
         {
@@ -252,17 +252,17 @@
       "employees_label": "Employees",
       "employees_value": "50名（グループ150名）",
       "hq_label": "Headquarters",
-      "hq_value": "〒105-0014<br />東京都港区芝3丁目1番14号 芝公園阪神ビル5階",
+      "hq_value": "〒105-0014<br class='hidden md:block' />東京都港区芝3丁目1番14号 芝公園阪神ビル5階",
       "contact_label": "Contact",
-      "contact_value": "TEL : 03-6453-9008<br />FAX : 03-6453-9007",
+      "contact_value": "TEL : 03-6453-9008<br class='hidden md:block' />FAX : 03-6453-9007",
       "business_label": "Business",
       "business_value": "<ol class=\"list-decimal pl-4 space-y-1\"><li>事業投資等、子会社を通じた投資ファンドの運営</li><li>M&Aアドバイザリー、企業間パートナーシップに関するアドバイザリー事業</li><li>海外進出、及び事業開発支援事業</li><li>経営人材・グローバル人材のヘッドハンティング</li><li>地方創生・事業承継支援</li></ol>",
       "group_label": "Group Companies",
-      "group_value": "株式会社Tryfunds Investment<br />株式会社TF Power<br />合同会社TF Growth<br />合同会社TF Ventures<br />株式会社エンセンテン<br />Ongaeshi Capital<br />にいがたサステナブル地域創生投資事業有限責任組合",
+      "group_value": "株式会社Tryfunds Investment<br class='hidden md:block' />株式会社TF Power<br class='hidden md:block' />合同会社TF Growth<br class='hidden md:block' />合同会社TF Ventures<br class='hidden md:block' />株式会社エンセンテン<br class='hidden md:block' />Ongaeshi Capital<br class='hidden md:block' />にいがたサステナブル地域創生投資事業有限責任組合",
       "banks_label": "Banks",
-      "banks_value": "みずほ銀行 小舟町支店<br />三井住友銀行 日比谷法人営業第二部",
+      "banks_value": "みずほ銀行 小舟町支店<br class='hidden md:block' />三井住友銀行 日比谷法人営業第二部",
       "licenses_label": "Licenses",
-      "licenses_value": "宅地建物取引業免許 東京都知事（１）第112791号<br />有料職業紹介事業許可証 13-ユ-315351（子会社である株式会社TFXが保持）"
+      "licenses_value": "宅地建物取引業免許 東京都知事（１）第112791号<br class='hidden md:block' />有料職業紹介事業許可証 13-ユ-315351（子会社である株式会社TFXが保持）"
     },
     "history": {
       "title": "沿革",
@@ -328,7 +328,7 @@
     "block3": {
       "mission_label": "MISSION",
       "headline": "世界で戦える事業を<br class=\"hidden lg:block\" />生み出す。",
-      "desc": "国境を越えた視点でビジネスを見つめ、圧倒的なクオリティとスピードで結果を出す。<br />失敗を恐れず、常に「どうすればできるか」を問い続ける。経営者と肩を組み、事業投資・ハンズオン支援を通じて、次世代の産業モデルを社会に実装します。"
+      "desc": "国境を越えた視点でビジネスを見つめ、圧倒的なクオリティとスピードで結果を出す。<br class='hidden md:block' />失敗を恐れず、常に「どうすればできるか」を問い続ける。経営者と肩を組み、事業投資・ハンズオン支援を通じて、次世代の産業モデルを社会に実装します。"
     },
     "values": {
       "label": "提供価値",
@@ -354,7 +354,7 @@
     },
     "leadership": {
       "label": "TRYFUNDS 6 LEADERSHIP PRINCIPLES",
-      "desc": "これらの行動指針は、評価指標のみならず、パフォーマンスマネジメントサイクルにおけるフィードバックの軸となります。<br />高いスキルと共に、経営人材として不可欠な「マインドセット」をこの6軸を通じて高めていきます。",
+      "desc": "これらの行動指針は、評価指標のみならず、パフォーマンスマネジメントサイクルにおけるフィードバックの軸となります。<br class='hidden md:block' />高いスキルと共に、経営人材として不可欠な「マインドセット」をこの6軸を通じて高めていきます。",
       "principles": [
         {
           "title": "革新的な発想",
@@ -391,7 +391,7 @@
   },
   "trackRecordPage": {
     "title": "TRACK RECORD",
-    "desc": "自らの事業と出資先の成長にコミットすることで生み出してきた、<br/>唯一無二の実績をご紹介します。"
+    "desc": "自らの事業と出資先の成長にコミットすることで生み出してきた、<br class='hidden md:block' />唯一無二の実績をご紹介します。"
   },
   "servicesPage": {
     "header": {
@@ -401,14 +401,14 @@
     },
     "envision": {
       "label": "THE TRYFUNDS MODEL",
-      "title": "Envision &<br />Missing Parts Completion",
+      "title": "Envision &<br class='hidden md:block' />Missing Parts Completion",
       "p1": "私たちが提供するサービスの根幹にあるのが、<strong>「Envision（目標の再定義）」</strong>と<strong>「Missing Parts Completion（欠落要素の補完）」</strong>という独自の事業推進モデルです。",
       "p2": "まず、クライアントと共に現状の延長線上にはない、より高みを目指す強力なビジョンと戦略（Envision）を描き出します。",
       "p3": "そして、その途方もない目標を現実のものにするために不足している要素—<strong class=\"text-white\">【資金】【人材】【ネットワーク】【技術】</strong>—を、机上の空論ではなく「Tryfunds自身が直接供給・補完」します。このサイクルを高速回転させることで、クライアントに非連続な成長をもたらします。"
     },
     "fee": {
       "label": "フィー体系",
-      "title": "事業成功への<br />コミットメント",
+      "title": "事業成功への<br class='hidden md:block' />コミットメント",
       "p1": "Tryfundsは単なる外部アドバイザリーとしてではなく、共同事業運営者としての立ち位置を重視しています。当社自らが主体となって運営した場合においても、確実に成果を上げられると確信した案件を中心にプロジェクト化することを前提としています。",
       "p2": "そのため、事業成功に向けて同じ方向性で尽力する証として、成功時の果実の一部を共有する契約形態を積極的に採用しています。",
       "model1_title": "ベースフィー ＋ アップサイド享受型:",
@@ -418,7 +418,7 @@
     },
     "capabilities": {
       "label": "提供機能",
-      "title": "できることが多いのではない。<br />勝たせるために、必要なことを全部やる。",
+      "title": "できることが多いのではない。<br class='hidden md:block' />勝たせるために、必要なことを全部やる。",
       "desc": "戦略から実行、ファイナンスからテクノロジーまで。事業成長に必要なあらゆる機能を内製化し、シームレスに提供します。",
       "items": [
         {
@@ -538,7 +538,7 @@
   "members": {
     "title": "PROFESSIONALS",
     "subtitle": "Management Members",
-    "headerDesc": "Tryfunds Groupの経営を牽引する、<br class='hidden md:block' />マネジメントメンバー。<br />それぞれ異なる高度な専門性を持つ人材が結集し、<br class='hidden md:block' />意志ある挑戦を共に実現します。",
+    "headerDesc": "Tryfunds Groupの経営を牽引する、<br class='hidden md:block' />マネジメントメンバー。<br class='hidden md:block' />それぞれ異なる高度な専門性を持つ人材が結集し、<br class='hidden md:block' />意志ある挑戦を共に実現します。",
     "metaTitle": "Members | Tryfunds",
     "metaDesc": "Tryfunds Groupのプロフェッショナルメンバーのご紹介"
   },
@@ -591,9 +591,9 @@
     },
     "mindset": {
       "subtitle": "PERSONA",
-      "title": "求めるのは<br />「事業家としての<br />マインドセット」<br />を持つ人。",
+      "title": "求めるのは<br class='hidden md:block' />「ストリートスマート」な<br class='hidden md:block' />人材。",
       "paragraphs": [
-        "Tryfundsが求めるのは、領域を問わず、やれるまでやり切る人材です。<br />当社は、コンサルティング収益だけで成立するモデルではなく、事業収益を前提としたポートフォリオを構築しています。",
+        "Tryfundsが求めるのは、領域を問わず、やれるまでやり切る人材です。<br class='hidden md:block' />戦略・財務などの論理的思考力（Book Smart）を備えていることは前提として、それ以上に私たちが重んじるのは、現場で泥臭く活路を見出し、想定外の事態でも機転を利かせて道を切り拓く「ストリートスマート」としての圧倒的な突破力です。<br class='hidden md:block' />当社は、コンサルティング収益だけで成立するモデルではなく、事業収益を前提としたポートフォリオを構築しています。",
         "だからこそ、戦略・財務は基本プロトコルとして身につけた上で、数字と向き合い、収益を上げることに執念を持てる人が必要です。"
       ],
       "must": {
@@ -602,7 +602,8 @@
           "数字で語れる（売上、粗利、回収、KPI）",
           "自分でキャッチアップできる（未経験領域でも調べて前に進める）",
           "顧客相対ができる（意思決定者に向き合える）",
-          "やり切る（最後まで責任を持つ）"
+          "やり切る（最後まで責任を持つ）",
+          "ストリートスマートである（正解のない混沌とした現場でも、泥臭くサバイブして結果を出す突破力）"
         ]
       },
       "niceToHave": {
@@ -694,8 +695,8 @@
   "careers": {
     "header": {
       "subtitle": "Careers & Philosophy",
-      "title": "経営人材としての<br />真のキャリアパス",
-      "description": "高給なコンサルタントで満足するか、実業を牽引する経営人材・ファンドマネージャーへと昇華するか。<br />Tryfundsは、圧倒的なプロフェッショナリズムと「泥臭い手触り感」を通じて、本番環境で戦える絶対的なリーダー層を育成します。",
+      "title": "経営人材としての<br class='hidden md:block' />真のキャリアパス",
+      "description": "高給なコンサルタントで満足するか、実業を牽引する経営人材・ファンドマネージャーへと昇華するか。<br class='hidden md:block' />Tryfundsは、圧倒的なプロフェッショナリズムと「泥臭い手触り感」を通じて、本番環境で戦える絶対的なリーダー層を育成します。",
       "backBtn": "Back to Recruit"
     },
     "flow": {
@@ -891,24 +892,24 @@
       "title": "意志ある挑戦を創造する。"
     },
     "manifesto": {
-      "p1": "かつて、日本は世界の中心にいた。<br />Japan as Number One と呼ばれ、経済と技術で時代を牽引した。<br />その後は “Cool Japan” として文化が評価され、世界から注目を集めた。",
-      "p2": "しかし現在、日本はどう見られているか。<br />成熟、停滞、リスクを取らない国。<br />かつての成功体験の延長線上にとどまり、<br />世界の競争から一歩引いている存在。",
+      "p1": "かつて、日本は世界の中心にいた。<br class='hidden md:block' />Japan as Number One と呼ばれ、経済と技術で時代を牽引した。<br class='hidden md:block' />その後は “Cool Japan” として文化が評価され、世界から注目を集めた。",
+      "p2": "しかし現在、日本はどう見られているか。<br class='hidden md:block' />成熟、停滞、リスクを取らない国。<br class='hidden md:block' />かつての成功体験の延長線上にとどまり、<br class='hidden md:block' />世界の競争から一歩引いている存在。",
       "p3": "そう語られる場面も少なくない。",
       "p4": "だが、本質はそこではない。",
-      "p5": "日本には依然として、世界水準の技術がある。<br />圧倒的な現場力がある。<br />緻密な思考と実行の積み重ねがある。<br />そして、世界で戦える可能性を持つ企業と人材が確実に存在している。",
-      "p6": "足りないのは能力ではない。<br />意志である。<br /><br />そして、意志を現実に変える構造である。",
-      "p7": "世界で勝つ覚悟を持つ人はいる。<br />だが、その挑戦を戦略・資本・組織・実装で支える機能は十分ではない。<br />情熱だけでは、世界市場では勝てない。<br />構造がなければ、挑戦は持続しない。",
+      "p5": "日本には依然として、世界水準の技術がある。<br class='hidden md:block' />圧倒的な現場力がある。<br class='hidden md:block' />緻密な思考と実行の積み重ねがある。<br class='hidden md:block' />そして、世界で戦える可能性を持つ企業と人材が確実に存在している。",
+      "p6": "足りないのは能力ではない。<br class='hidden md:block' />意志である。<br /><br />そして、意志を現実に変える構造である。",
+      "p7": "世界で勝つ覚悟を持つ人はいる。<br class='hidden md:block' />だが、その挑戦を戦略・資本・組織・実装で支える機能は十分ではない。<br class='hidden md:block' />情熱だけでは、世界市場では勝てない。<br class='hidden md:block' />構造がなければ、挑戦は持続しない。",
       "p8": "だから、トライファンズがいる。",
-      "p9": "私たちは、挑戦を偶然に委ねない。<br />意志を戦略に変え、<br />戦略を資本で加速させ、<br />実行を伴う組織へと設計する。",
-      "p10": "ときに投資家として、<br />ときにパートナーとして、<br />ときにCxOとして現場に入り込み、<br />成果に対して責任を持つ。",
-      "p11": "志を語るだけではなく、<br />世界で勝てる企業を共に創る。",
-      "p12": "私たちが目指すのは、<br />単なるコンサルティングでも、単なる投資でもない。",
-      "p13": "世界基準で戦う人材を生み出し、<br />世界基準で戦う企業を創造すること。",
-      "p14": "日本には、まだ可能性がある。<br />磨かれていない才能がある。<br />構造化されていない知がある。<br />世界を変えうる意志がある。",
-      "p15": "その意志を、挑戦へ。<br />その挑戦を、勝利へ。"
+      "p9": "私たちは、挑戦を偶然に委ねない。<br class='hidden md:block' />意志を戦略に変え、<br class='hidden md:block' />戦略を資本で加速させ、<br class='hidden md:block' />実行を伴う組織へと設計する。",
+      "p10": "ときに投資家として、<br class='hidden md:block' />ときにパートナーとして、<br class='hidden md:block' />ときにCxOとして現場に入り込み、<br class='hidden md:block' />成果に対して責任を持つ。",
+      "p11": "志を語るだけではなく、<br class='hidden md:block' />世界で勝てる企業を共に創る。",
+      "p12": "私たちが目指すのは、<br class='hidden md:block' />単なるコンサルティングでも、単なる投資でもない。",
+      "p13": "世界基準で戦う人材を生み出し、<br class='hidden md:block' />世界基準で戦う企業を創造すること。",
+      "p14": "日本には、まだ可能性がある。<br class='hidden md:block' />磨かれていない才能がある。<br class='hidden md:block' />構造化されていない知がある。<br class='hidden md:block' />世界を変えうる意志がある。",
+      "p15": "その意志を、挑戦へ。<br class='hidden md:block' />その挑戦を、勝利へ。"
     },
     "mission": {
-      "text": "挑戦を孤独にしない。<br />挑戦を再現可能にする。<br />挑戦を構造化する。<br /><br />意志ある挑戦を創造する。",
+      "text": "挑戦を孤独にしない。<br class='hidden md:block' />挑戦を再現可能にする。<br class='hidden md:block' />挑戦を構造化する。<br /><br />意志ある挑戦を創造する。",
       "sub": "それが、トライファンズの使命である。"
     },
     "ourTry": {
@@ -977,14 +978,14 @@
       "freeText": "自由記述",
       "freeTextPlaceholder": "具体的なご相談内容や背景がございましたらご記入ください",
       "submit": "SEND REQUEST",
-      "note": "送信することで、当社のプライバシーポリシーに同意したものとみなされます。<br />競合他社様からのご請求はお断りさせていただく場合がございます。",
+      "note": "送信することで、当社のプライバシーポリシーに同意したものとみなされます。<br class='hidden md:block' />競合他社様からのご請求はお断りさせていただく場合がございます。",
       "emailError": "フリーメールアドレス（gmail等）はご利用いただけません。会社（法人）ドメインのメールアドレスをご入力ください。",
       "success": "送信シミュレーション：完了しました"
     }
   },
   "contactForm": {
     "title": "CONTACT",
-    "description": "未踏の事業領域への挑戦、M&A、並びに当事者としての事業投資・再生に関するディスカッションを承ります。<br />貴社の事業を飛躍させるパートナーとして、まずは本気の対話をはじめませんか。",
+    "description": "未踏の事業領域への挑戦、M&A、並びに当事者としての事業投資・再生に関するディスカッションを承ります。<br class='hidden md:block' />貴社の事業を飛躍させるパートナーとして、まずは本気の対話をはじめませんか。",
     "form": {
       "company": "御社名",
       "name": "お名前",
