@@ -9,7 +9,7 @@ export function ContactClient({ dict }: { dict: any }) {
     const [errorMsg, setErrorMsg] = useState("");
 
     const [formData, setFormData] = useState({
-        company: "",
+        companyName: "",
         name: "",
         email: "",
         message: ""
@@ -36,7 +36,7 @@ export function ContactClient({ dict }: { dict: any }) {
             }
 
             setIsSuccess(true);
-            setFormData({ company: "", name: "", email: "", message: "" });
+            setFormData({ companyName: "", name: "", email: "", message: "" });
         } catch (err) {
             setErrorMsg(dict.form.error || "送信に失敗しました。時間をおいて再度お試しください。");
         } finally {
@@ -75,8 +75,8 @@ export function ContactClient({ dict }: { dict: any }) {
                             <label className="block text-sm text-gray-400 mb-2">{dict.form.company}</label>
                             <input
                                 required
-                                name="company"
-                                value={formData.company}
+                                name="companyName"
+                                value={formData.companyName}
                                 onChange={handleChange}
                                 type="text"
                                 className="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white focus:outline-none focus:border-white/30"

@@ -1,0 +1,445 @@
+Retrieving project…
+Deploying yusuke-tannos-projects/antigravity
+Uploading [--------------------] (0.0B/38.5KB)
+Uploading [============--------] (23.6KB/38.5KB)
+Uploading [============--------] (24.8KB/38.5KB)
+Uploading [====================] (38.5KB/38.5KB)
+Inspect: https://vercel.com/yusuke-tannos-projects/antigravity/4eeVwz6VTeT2yjcA9aRY89f4nds3 [4s]
+Production: https://antigravity-bl6bicsig-yusuke-tannos-projects.vercel.app [4s]
+https://antigravity-bl6bicsig-yusuke-tannos-projects.vercel.appBuilding...
+Building...
+Building: Running build in Portland, USA (West) – pdx1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Downloading 238 deployment files...
+Building: Restored build cache from previous deployment (CAsHzPfvb5Rimmp5ACs5dL5ccL2w)
+Building: Running "vercel build"
+Building: Vercel CLI 50.28.0
+Building: Installing dependencies...
+Building: up to date in 890ms
+Building: 151 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 14.2.35
+Building: Running "npm run build"
+Building: > antigravity@0.1.0 build
+Building: > next build
+Building: ▲ Next.js 14.2.35
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully
+Building: Skipping validation of types
+Building: Skipping linting
+Building: Collecting page data ...
+Building: microCMS config missing. Using fallback data generation.
+Building: microCMS config missing. Using fallback data generation.
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Generating static pages (0/55) ...
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/app/sitemap.xml/route.js:1:5973
+Building: at /vercel/path0/.next/server/app/sitemap.xml/route.js:1:3369
+Building: at Object.next (/vercel/path0/.next/server/app/sitemap.xml/route.js:1:3474)
+Building: at f (/vercel/path0/.next/server/app/sitemap.xml/route.js:1:717)
+Building: at a (/vercel/path0/.next/server/app/sitemap.xml/route.js:1:914)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/app/sitemap.xml/route.js:1:5973
+Building: at /vercel/path0/.next/server/app/sitemap.xml/route.js:1:3369
+Building: at Object.next (/vercel/path0/.next/server/app/sitemap.xml/route.js:1:3474)
+Building: at f (/vercel/path0/.next/server/app/sitemap.xml/route.js:1:717)
+Building: at a (/vercel/path0/.next/server/app/sitemap.xml/route.js:1:914)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Generating static pages (13/55)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Generating static pages (27/55)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+Building: at /vercel/path0/.next/server/chunks/563.js:1:6980
+Building: at /vercel/path0/.next/server/chunks/563.js:1:4626
+Building: at Object.next (/vercel/path0/.next/server/chunks/563.js:1:4731)
+Building: at s (/vercel/path0/.next/server/chunks/563.js:1:1974)
+Building: at u (/vercel/path0/.next/server/chunks/563.js:1:2171)
+Building: at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Building: Generating static pages (41/55)
+Building: ✓ Generating static pages (55/55)
+Building: Finalizing page optimization ...
+Building: Collecting build traces ...
+Building: Route (app)                                       Size     First Load JS
+Building: ┌ ○ /_not-found                                   873 B          88.2 kB
+Building: ├ ƒ /[lang]                                       23.1 kB         175 kB
+Building: ├ ƒ /[lang]/case-study                            2.62 kB         104 kB
+Building: ├ ● /[lang]/case-study/[id]                       186 B           101 kB
+Building: ├   ├ /ja/case-study/sustech
+Building: ├   ├ /ja/case-study/general-oyster
+Building: ├   ├ /ja/case-study/warehouse-dx
+Building: ├   └ [+15 more paths]
+Building: ├ ƒ /[lang]/company                               3.47 kB         139 kB
+Building: ├ ƒ /[lang]/contact                               2.3 kB         89.6 kB
+Building: ├ ƒ /[lang]/document                              3.91 kB         130 kB
+Building: ├ ƒ /[lang]/members                               1.86 kB         154 kB
+Building: ├ ƒ /[lang]/news                                  195 B           147 kB
+Building: ├ ● /[lang]/news/[id]                             195 B           147 kB
+Building: ├   ├ /ja/news/2026-02-16-nigata-fund
+Building: ├   ├ /ja/news/2025-11-10-license
+Building: ├   ├ /ja/news/2025-09-08-sme-cert
+Building: ├   └ [+9 more paths]
+Building: ├ ƒ /[lang]/opengraph-image                       0 B                0 B
+Building: ├ ƒ /[lang]/philosophy                            3.08 kB         130 kB
+Building: ├ ƒ /[lang]/portfolio                             834 B           141 kB
+Building: ├ ƒ /[lang]/projects                              142 B          87.5 kB
+Building: ├ ƒ /[lang]/recruit                               2.5 kB          138 kB
+Building: ├ ƒ /[lang]/recruit/careers                       3.76 kB         150 kB
+Building: ├ ƒ /[lang]/recruit/future                        3.02 kB         143 kB
+Building: ├ ● /[lang]/recruit/jobs/[id]                     177 B          96.2 kB
+Building: ├   ├ /ja/recruit/jobs/advisor-analyst-associate
+Building: ├   ├ /ja/recruit/jobs/advisor-em-vp
+Building: ├   ├ /ja/recruit/jobs/advisor-principal-md
+Building: ├   └ [+15 more paths]
+Building: ├ ƒ /[lang]/recruit/persona                       1.99 kB         128 kB
+Building: ├ ƒ /[lang]/services                              2.93 kB         150 kB
+Building: ├ ƒ /[lang]/track-record                          1.48 kB         128 kB
+Building: ├ ƒ /api/contact                                  0 B                0 B
+Building: ├ ○ /robots.txt                                   0 B                0 B
+Building: └ ○ /sitemap.xml                                  0 B                0 B
+Building: + First Load JS shared by all                     87.3 kB
+Building: ├ chunks/117-ea738a636dc559b9.js                31.7 kB
+Building: ├ chunks/fd9d1056-1f1f859026f5f0fa.js           53.6 kB
+Building: └ other shared chunks (total)                   1.97 kB
+Building: ƒ Middleware                                      35.4 kB
+Building: ○  (Static)   prerendered as static content
+Building: ●  (SSG)      prerendered as static HTML (uses getStaticProps)
+Building: ƒ  (Dynamic)  server-rendered on demand
+Building: Traced Next.js server files in: 32.857ms
+Building: Created all serverless functions in: 131.089ms
+Building: Collected static files (public/, static/, .next/static): 26.857ms
+Building: Build Completed in /vercel/output [23s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://antigravity-bl6bicsig-yusuke-tannos-projects.vercel.app [42s]
+Completing...
+Aliased: https://antigravity-sand-six.vercel.app [42s]

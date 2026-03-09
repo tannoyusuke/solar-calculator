@@ -1,70 +1,69 @@
-import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
-// Initialize Resend with placeholder API key if not set
-const resend = new Resend(process.env.RESEND_API_KEY || 're_placeholder_key');
-const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL || '';
+// Vercel environment checks
+const resendKey = process.env.RESEND_API_KEY;
+const resend = resendKey ? new Resend(resendKey) : null;
 
 export async function POST(request: Request) {
+    if (!resend) {
+        console.error("RESEND_API_KEY is not configured.");
+        return NextResponse.json(
+            { error: "Server configuration error." },
+            { status: 500 }
+        );
+    }
+
     try {
-        const payload = await request.json();
+        const body = await request.json();
+        const { companyName, name, email, role, inquiryType, message } = body;
 
         // Basic validation
-        if (!payload.name || !payload.email || !payload.message) {
-            return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+        if (!name || !email || !message) {
+            return NextResponse.json(
+                { error: "First Name, Email, and Message are required." },
+                { status: 400 }
+            );
         }
 
-        const isRecruit = payload.type === 'recruit' || payload.type === 'casual';
-        const isDocument = payload.type === 'document';
+        // Prepare the email HTML content
+        const htmlContent = `
+      <h2>New Inquiry from Tryfunds.com</h2>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+      <p><strong>Company:</strong> ${companyName || 'N/A'}</p>
+      <p><strong>Role:</strong> ${role || 'N/A'}</p>
+      <p><strong>Inquiry Type:</strong> ${inquiryType || 'General Inquiry'}</p>
+      <br />
+      <h3>Message:</h3>
+      <p style="white-space: pre-wrap;">${message}</p>
+      <hr />
+      <p><small>This email was sent automatically from the corporate website contact form.</small></p>
+    `;
 
-        const subjectType = isRecruit ? '【採用に関するお問合せ】' : isDocument ? '【資料請求】' : '【コーポレートサイトからのお問合せ】';
-        const subject = `${subjectType} ${payload.name}様より`;
+        // Send the email using Resend
+        const data = await resend.emails.send({
+            from: "Tryfunds System <onboarding@resend.dev>", // We use the default test domain until a custom domain is verified in Resend.
+            to: ["info@tryfunds.com"], // Delivery target
+            subject: `[Web Inquiry] ${inquiryType || 'General'} - ${name}`,
+            replyTo: email,
+            html: htmlContent,
+        });
 
-        const emailContent = `
-TRYFUNDS WEBSITE 様
-
-コーポレートサイトから以下のお問合せがありました。
-
-【種別】 ${payload.type}
-【お名前】 ${payload.name}
-【会社名・所属】 ${payload.company || '未入力'}
-【メールアドレス】 ${payload.email}
-【電話番号】 ${payload.phone || '未入力'}
-【お問合せ内容】
-${payload.message}
-
--- 
-This email was sent automatically from the Tryfunds Corporate Website.
-        `.trim();
-
-        // 1. Send Email to info@tryfunds.com via Resend
-        // If no real API key is provided, we skip actual sending to avoid crashing during development
-        if (process.env.RESEND_API_KEY) {
-            await resend.emails.send({
-                from: 'Tryfunds Website <noreply@tryfunds.com>', // Requires verified domain in Resend
-                to: ['info@tryfunds.com'],
-                subject: subject,
-                text: emailContent,
-                replyTo: payload.email,
-            });
+        if (data.error) {
+            console.error("Resend API Error:", data.error);
+            return NextResponse.json(
+                { error: "Failed to send email." },
+                { status: 500 }
+            );
         }
 
-        // 2. Send Slack Notification
-        if (SLACK_WEBHOOK_URL) {
-            const slackMessage = {
-                text: `🔔 *コーポレートサイトから新しいお問合せ*\n\n*種別:* ${payload.type}\n*お名前:* ${payload.name}\n*会社名:* ${payload.company || '-'}\n*Email:* ${payload.email}\n*内容:*\n${payload.message}`
-            };
-
-            await fetch(SLACK_WEBHOOK_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(slackMessage),
-            }).catch(e => console.error("Slack Webhook failed:", e));
-        }
-
-        return NextResponse.json({ success: true, message: 'Message sent successfully.' }, { status: 200 });
+        return NextResponse.json({ success: true, id: data.data?.id }, { status: 200 });
     } catch (error) {
-        console.error('Contact API Error:', error);
-        return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+        console.error("Contact API Route Error:", error);
+        return NextResponse.json(
+            { error: "Internal Server Error" },
+            { status: 500 }
+        );
     }
 }
