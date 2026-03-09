@@ -32,3 +32,11 @@ Failed to fetch news from microCMS, falling back to local data. Error: fetch API
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
  GET /ja 200 in 1487ms
  GET /favicon.ico 200 in 23ms
+ ✓ Compiled in 514ms (788 modules)
+Failed to fetch news from microCMS, falling back to local data. Error: fetch API response status: 404
+    at eval (webpack-internal:///(rsc)/./node_modules/microcms-js-sdk/dist/esm/microcms-js-sdk.js:8:5811)
+    at s (webpack-internal:///(rsc)/./node_modules/microcms-js-sdk/dist/esm/microcms-js-sdk.js:8:3773)
+    at Object.eval [as next] (webpack-internal:///(rsc)/./node_modules/microcms-js-sdk/dist/esm/microcms-js-sdk.js:8:3064)
+    at n (webpack-internal:///(rsc)/./node_modules/microcms-js-sdk/dist/esm/microcms-js-sdk.js:8:234)
+    at a (webpack-internal:///(rsc)/./node_modules/microcms-js-sdk/dist/esm/microcms-js-sdk.js:8:445)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
