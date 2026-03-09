@@ -44,7 +44,7 @@ export async function POST(request: Request) {
         // Send the email using Resend
         const data = await resend.emails.send({
             from: "Tryfunds System <onboarding@resend.dev>", // We use the default test domain until a custom domain is verified in Resend.
-            to: ["info@tryfunds.com"], // Delivery target
+            to: ["tanno_yusuke@tryfunds.com"], // Delivery target (Must be your registered Resend email until your domain is verified!)
             subject: `[Web Inquiry] ${inquiryType || 'General'} - ${name}`,
             replyTo: email,
             html: htmlContent,
