@@ -30,21 +30,29 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
         </div>
 
-        <div className="z-10 text-left px-4 md:px-12 lg:px-24 max-w-[1600px] mx-auto w-full flex flex-col items-start justify-center h-full relative pb-48 md:pb-[20vh] pt-20">
+        <div className="z-10 text-left px-6 md:px-12 lg:px-24 max-w-[1600px] mx-auto w-full flex flex-col items-start justify-center h-full relative pb-48 md:pb-[20vh] pt-32">
 
           {/* Main Title - 1 Line "TRY to All" */}
-          <h1 className="text-[14vw] sm:text-8xl md:text-[8rem] lg:text-[10rem] xl:text-[12rem] font-sans font-bold tracking-tight mb-2 md:mb-6 leading-none text-white drop-shadow-2xl animate-fade-in-up relative whitespace-nowrap">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] xl:text-[9rem] font-sans font-bold tracking-tight mb-6 md:mb-8 leading-none text-white drop-shadow-2xl animate-fade-in-up relative whitespace-nowrap">
             TRY to All
           </h1>
 
-          {/* Subtitles matching the exact reference */}
-          <div className="flex flex-col gap-1 md:gap-3 mt-2 md:mt-4 ml-1 md:ml-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-sans font-medium tracking-[0.15em] text-white drop-shadow-md uppercase">
-              EMPOWERING GLOBAL GROWTH.
+          {/* Subtitles (Japanese Text) */}
+          <div className="flex flex-col mt-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-sm md:text-base lg:text-lg font-sans font-medium tracking-[0.15em] text-white drop-shadow-md leading-[2.2] md:leading-[2.4]">
+              最新のテクノロジーと圧倒的な実行力を融合し、<br />
+              未踏の事業領域を開拓する。<br />
+              <br className="my-1 md:my-2" />
+              私たちは単なるアドバイザリーの枠を超え、<br />
+              自らリスクを取り、すべての挑戦を具現化する<br />
+              次世代の事業運営会社です。
             </p>
-            <p className="text-xs sm:text-base md:text-xl lg:text-2xl font-sans font-medium tracking-[0.15em] text-white drop-shadow-md uppercase">
-              INNOVATING FOR THE FUTURE.
-            </p>
+
+            <div className="mt-8 md:mt-10">
+              <Link href={`/${params.lang}/contact`} className="inline-flex items-center justify-center border border-white text-white hover:bg-white hover:text-black transition-colors duration-300 px-6 py-3 w-fit tracking-widest text-xs font-bold backdrop-blur-sm">
+                CONTACT US <span className="ml-3 font-mono transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+            </div>
           </div>
         </div>
 
