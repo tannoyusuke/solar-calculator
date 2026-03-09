@@ -5,6 +5,7 @@
       "items": {
         "philosophy": "Philosophy",
         "company": "Company Profile",
+        "message": "CEO Message",
         "access": "Access"
       }
     },
@@ -117,9 +118,9 @@
     },
     "uniqueValueProposition": {
       "section_title": "OUR UNIQUE APPROACH",
-      "title_line1": "Why We Are Chosen.",
+      "title_line1": "Promising Overwhelming Results.",
       "title_line2": "A One-of-a-Kind Hybrid Model",
-      "description": "Overwhelming execution power and commitment that sets us apart from ordinary consulting firms and investment funds.",
+      "description": "Going beyond the advisory framework to take business risks ourselves. An overwhelming sense of ownership and commitment that sets us apart from ordinary consulting firms and investment funds.",
       "cards": [
         {
           "label": "01",
@@ -231,7 +232,7 @@
       "btn_projects": "VIEW PROJECTS",
       "recruit_label": "Join Our Team",
       "recruit_title": "JOIN OUR TRY",
-      "recruit_desc": "We are looking for members to accomplish unprecedented businesses together. Let's start by exchanging information about your future career and our challenges.",
+      "recruit_desc": "Taking risks ourselves to build businesses from scratch. We seek professionals ready to bring transformation to society as next-generation 'Management Professionals' alongside us.",
       "btn_careers": "CAREERS / RECRUIT",
       "btn_interview": "CASUAL INTERVIEW"
     }
@@ -557,7 +558,7 @@
     "top": {
       "title": "JOIN OUR TRY",
       "subtitle": "Careers / Recruit",
-      "description": "Tryfunds is looking for ambitious individuals to accomplish unprecedented businesses together.<br class='hidden md:block' />We offer an environment where you can experience tremendous growth and launch businesses on a global scale.",
+      "description": "Taking risks ourselves to build businesses from scratch. We seek professionals ready to bring transformation to society as next-generation 'Management Professionals' alongside us.",
       "actions": {
         "document": {
           "title": "Download Pitch Deck",
@@ -983,7 +984,7 @@
   },
   "contactForm": {
     "title": "CONTACT",
-    "description": "Please feel free to contact us regarding new business creation, M&A, business investments, or any other inquiries.<br />Our representative will get back to you shortly.",
+    "description": "We welcome discussions regarding challenges in uncharted business domains, M&A, and principal business investments or turnarounds.<br />Why not start a serious dialogue with us as a partner to leap your business forward?",
     "form": {
       "company": "Company Name",
       "name": "Name",

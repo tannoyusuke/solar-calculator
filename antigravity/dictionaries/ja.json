@@ -5,6 +5,7 @@
       "items": {
         "philosophy": "企業理念",
         "company": "会社概要",
+        "message": "代表メッセージ",
         "access": "アクセス"
       }
     },
@@ -117,9 +118,9 @@
     },
     "uniqueValueProposition": {
       "section_title": "独自のアプローチ",
-      "title_line1": "なぜ、私たちが選ばれるのか。",
+      "title_line1": "圧倒的な結果を約束する、",
       "title_line2": "唯一無二のハイブリッドモデル",
-      "description": "一般的なコンサルティングファームや投資ファンドとは一線を画す、圧倒的な実行力とコミットメント。",
+      "description": "アドバイザリーの枠を超え、自らも事業リスクを取る。一般的なコンサルティングファームや投資ファンドとは一線を画す、圧倒的な当事者意識とコミットメント。",
       "cards": [
         {
           "label": "01",
@@ -231,7 +232,7 @@
       "btn_projects": "VIEW PROJECTS",
       "recruit_label": "Join Our Team",
       "recruit_title": "JOIN OUR TRY",
-      "recruit_desc": "共に前人未到の事業を成し遂げる仲間を募集しています。これからのキャリアや我々の挑戦について、まずは情報交換からはじめませんか。",
+      "recruit_desc": "自らリスクを取り、ゼロから事業を創り上げる。次世代の「経営人材」として、我々と共に社会に変革をもたらす覚悟のあるプロフェッショナルを求めています。",
       "btn_careers": "CAREERS / RECRUIT",
       "btn_interview": "CASUAL INTERVIEW"
     }
@@ -557,7 +558,7 @@
     "top": {
       "title": "JOIN OUR TRY",
       "subtitle": "Careers / Recruit",
-      "description": "Tryfundsは、共に前人未到の事業を成し遂げる仲間を募集しています。<br class='hidden md:block' />圧倒的な成長と、世界基準での事業立ち上げを経験できる環境があります。",
+      "description": "自らリスクを取り、ゼロから事業を創り上げる。次世代の「経営人材」として、我々と共に社会に変革をもたらす覚悟のあるプロフェッショナルを求めています。",
       "actions": {
         "document": {
           "title": "採用資料ダウンロード",
@@ -983,7 +984,7 @@
   },
   "contactForm": {
     "title": "CONTACT",
-    "description": "新規事業創出、M&A、事業投資に関するご相談など、お気軽にお問い合わせください。<br />後日、担当者よりご連絡させていただきます。",
+    "description": "未踏の事業領域への挑戦、M&A、並びに当事者としての事業投資・再生に関するディスカッションを承ります。<br />貴社の事業を飛躍させるパートナーとして、まずは本気の対話をはじめませんか。",
     "form": {
       "company": "御社名",
       "name": "お名前",

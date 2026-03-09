@@ -25,7 +25,8 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: string }) {
             subItems: [
                 { name: dict.navigation.about.items.philosophy, href: `/${lang}/philosophy` },
                 { name: dict.navigation.about.items.company, href: `/${lang}/company` },
-                { name: dict.navigation.about.items.access, href: `/${lang}/company#access` },
+                { name: dict.navigation.about.items.message, href: `/${lang}/message` },
+                { name: dict.navigation.about.items.access, href: `/${lang}/access` },
             ]
         },
         {
