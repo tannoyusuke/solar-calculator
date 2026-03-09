@@ -30,8 +30,8 @@ export function HeroBackgroundSlider() {
                     sizes="100vw"
                     quality={100}
                     priority={index === 0}
-                    className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-60 z-[-1]" : "opacity-0 z-[-2]"
-                        } mix-blend-luminosity`}
+                    className={`object-cover object-center transition-opacity duration-1000 ease-in-out ${index === currentIndex ? "opacity-90 z-[-1]" : "opacity-0 z-[-2]"
+                        }`}
                 />
             ))}
         </>

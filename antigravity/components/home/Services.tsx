@@ -43,8 +43,8 @@ export function Services({ dict }: { dict: any }) {
                                 href={`/services#${service.url_hash}`}
                                 className="group flex flex-col justify-between p-10 bg-white/[0.02] border border-white/10 hover:border-white/30 transition-all duration-500 hover:-translate-y-2 cursor-pointer h-full backdrop-blur-sm relative overflow-hidden hover:bg-white/[0.04] hover:shadow-[0_15px_40px_rgba(255,255,255,0.05)]"
                             >
-                                {/* Hover Glow Effect */}
-                                <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/20 rounded-full blur-[40px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                                {/* Structural Accent */}
+                                <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/[0.02] border border-white/10 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700 pointer-events-none" />
 
                                 <div className="relative z-10 flex flex-col flex-grow">
                                     <div className="mb-6 inline-block self-start">
@@ -53,7 +53,7 @@ export function Services({ dict }: { dict: any }) {
                                         </span>
                                     </div>
 
-                                    <h3 className="text-2xl font-display font-medium tracking-widest mb-4 text-white group-hover:text-shadow-[0_0_10px_rgba(255,255,255,0.5)] transition-all">
+                                    <h3 className="text-2xl font-display font-medium tracking-widest mb-4 text-white group-hover:text-white/80 transition-all">
                                         {service.title}
                                     </h3>
 

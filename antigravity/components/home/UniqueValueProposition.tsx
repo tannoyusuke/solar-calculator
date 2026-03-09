@@ -7,9 +7,6 @@ export function UniqueValueProposition({ dict }: { dict: any }) {
     const cards = dict.cards || [];
     return (
         <section className="relative py-32 bg-background overflow-hidden border-t border-white/5">
-            {/* Background Glow */}
-            <div className="absolute top-0 right-0 w-1/2 h-[500px] bg-primary/5 blur-[150px] pointer-events-none" />
-
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
 
                 {/* Header — Left-aligned, asymmetric */}
@@ -27,7 +24,7 @@ export function UniqueValueProposition({ dict }: { dict: any }) {
                         </div>
                         <h3 className="text-3xl md:text-5xl font-display font-medium tracking-tight text-white mb-6 leading-tight">
                             {dict.title_line1}<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-corp-gray">
+                            <span className="text-white">
                                 {dict.title_line2}
                             </span>
                         </h3>
@@ -80,7 +77,7 @@ export function UniqueValueProposition({ dict }: { dict: any }) {
                                 {/* Detail list for missing parts card */}
                                 {card.details && (
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-white/10">
-                                        {card.details.map((d, idx) => (
+                                        {card.details.map((d: any, idx: number) => (
                                             <div key={idx} className="flex flex-col gap-1">
                                                 <span className="text-xs font-display tracking-[0.3em] text-primary-light uppercase font-bold">{d.key}</span>
                                                 <span className="text-xs text-gray-400 font-sans leading-relaxed">{d.value}</span>

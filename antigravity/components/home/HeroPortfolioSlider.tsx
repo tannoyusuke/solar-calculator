@@ -67,7 +67,7 @@ export function HeroPortfolioSlider({ lang }: { lang: Locale }) {
             <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
             <div className="mb-4 text-left px-8">
-                <span className="text-[10px] tracking-[0.3em] font-display text-primary-light uppercase border-b border-primary/30 pb-1">
+                <span className="text-[10px] tracking-[0.3em] font-display text-gray-500 uppercase border-b border-white/10 pb-1">
                     Portfolio & Track Record
                 </span>
             </div>

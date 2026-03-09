@@ -1,21 +1,20 @@
 import Link from "next/link";
+import { TryfundsLogo } from "@/components/ui/TryfundsLogo";
 import { ArrowRight } from "lucide-react";
 import type { Dictionary } from "@/lib/dictionary";
 
 export function Footer({ dict, lang }: { dict: Dictionary; lang: string }) {
     return (
         <footer className="bg-black/95 border-t border-white/10 pt-20 pb-10 w-full mt-auto relative overflow-hidden">
-            {/* Decorative Glow */}
-            <div className="absolute top-0 right-1/4 w-96 h-96 bg-white/5 blur-[100px] pointer-events-none" />
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
 
                     {/* Logo & Vision */}
                     <div className="col-span-1 md:col-span-2">
                         <Link href="/" className="inline-block mb-6 group">
-                            <span className="text-3xl font-display font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 group-hover:to-white transition-colors duration-500">
-                                TRYFUNDS
-                            </span>
+                            <div className="opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+                                <TryfundsLogo className="h-6 md:h-7 w-auto" variant="light" />
+                            </div>
                         </Link>
                         <p className="text-gray-400 text-sm md:text-base leading-relaxed tracking-wider font-sans max-w-sm whitespace-pre-line">
                             {dict.footer.vision}

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { WhoWeAre } from "@/components/home/WhoWeAre";
@@ -18,73 +19,70 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
 
   return (
     <main className="flex min-h-screen flex-col w-full overflow-hidden">
-      {/* Hero Section */}
-      <section className="w-full h-screen flex flex-col items-center justify-center relative z-0">
+      <section className="relative h-screen min-h-[800px] w-full bg-[#050A0F] overflow-hidden flex flex-col md:flex-row">
 
-        {/* Background Overlay effect */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] bg-white/5 blur-[100px] md:blur-[120px] pointer-events-none animate-pulse-slow" />
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 blur-[100px] pointer-events-none animate-float" />
+        {/* Left Panel: Intelligent Authority Corporate Identity */}
+        <div className="w-full md:w-[50%] lg:w-[45%] h-[50vh] md:h-full relative z-20 flex flex-col justify-start px-6 md:pl-16 lg:pl-[12%] xl:pl-[15%] pr-12 bg-[#050A0F] border-r border-white/5 pt-28 md:pt-[19vh] lg:pt-[19vh]">
 
-        <div className="absolute inset-0 w-full h-full z-[-2]">
-          <HeroBackgroundSlider />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
-        </div>
+          <div className="max-w-[600px] animate-fade-in-up">
+            {/* Title - The one moment of strong assertion */}
+            <h1 className="text-[44px] md:text-[56px] lg:text-[60px] font-sans font-bold tracking-tight mb-8 md:mb-10 leading-[1.05] text-white whitespace-nowrap drop-shadow-lg">
+              TRY to All
+            </h1>
 
-        <div className="z-10 text-left px-6 md:px-12 lg:px-24 max-w-[1600px] mx-auto w-full flex flex-col items-start justify-center h-full relative pb-48 md:pb-[20vh] pt-32">
+            {/* Core Mission - Highly disciplined typography */}
+            <div className="flex flex-col">
+              <p className="text-[15px] md:text-[17px] font-sans font-medium tracking-[0.1em] text-white/90 leading-[2.2] md:leading-[2.4]">
+                最新のテクノロジーと圧倒的な実行力を融合し、<br className="hidden md:block" />
+                未踏の事業領域を開拓する。<br />
+                <br className="my-2 md:my-3" />
+                私たちは単なるアドバイザリーの枠を超え、<br className="hidden md:block" />
+                自らリスクを取り、すべての挑戦を具現化する<br className="hidden md:block" />
+                次世代の事業運営会社です。
+              </p>
 
-          {/* Main Title - 1 Line "TRY to All" */}
-          <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] xl:text-[9rem] font-sans font-bold tracking-tight mb-6 md:mb-8 leading-none text-white drop-shadow-2xl animate-fade-in-up relative whitespace-nowrap">
-            TRY to All
-          </h1>
-
-          {/* Subtitles (Japanese Text) */}
-          <div className="flex flex-col mt-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <p className="text-sm md:text-base lg:text-lg font-sans font-medium tracking-[0.15em] text-white drop-shadow-md leading-[2.2] md:leading-[2.4]">
-              最新のテクノロジーと圧倒的な実行力を融合し、<br />
-              未踏の事業領域を開拓する。<br />
-              <br className="my-1 md:my-2" />
-              私たちは単なるアドバイザリーの枠を超え、<br />
-              自らリスクを取り、すべての挑戦を具現化する<br />
-              次世代の事業運営会社です。
-            </p>
-
-            <div className="mt-8 md:mt-10">
-              <Link href={`/${params.lang}/contact`} className="inline-flex items-center justify-center border border-white text-white hover:bg-white hover:text-black transition-colors duration-300 px-6 py-3 w-fit tracking-widest text-xs font-bold backdrop-blur-sm">
-                CONTACT US <span className="ml-3 font-mono transition-transform group-hover:translate-x-1">→</span>
-              </Link>
+              {/* Extremely restrained CTA */}
+              <div className="mt-12 md:mt-16">
+                <Link href={`/${params.lang}/contact`} className="group inline-flex items-center justify-center border border-white/30 text-white hover:border-white transition-all duration-500 px-8 py-3 md:px-10 md:py-4 w-fit tracking-[0.2em] text-[11px] md:text-xs font-bold bg-white/5 hover:bg-white/10 backdrop-blur-sm">
+                  CONTACT US <span className="ml-4 font-mono font-light text-white/50 group-hover:text-white transition-colors duration-500">→</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Hero Auto-scrolling Slider (Portfolio) - Positioned at bottom of screen, full width */}
-        <div className="absolute bottom-6 md:bottom-8 left-0 w-full animate-fade-in-up z-20" style={{ animationDelay: '0.6s' }}>
+        {/* Right Panel: Multiple Business Portfolio & Capital Flow Visuals */}
+        <div className="w-full md:w-[50%] lg:w-[55%] h-[50vh] md:h-full relative z-10 overflow-hidden bg-[#0A1017]">
+
+          {/* Subtle structural grid lines overlay to convey 'structure' and 'portfolio' */}
+          <div className="absolute inset-0 z-20 pointer-events-none opacity-20 md:opacity-40 mix-blend-overlay">
+            {/* Center horizontal line */}
+            <div className="absolute top-[45%] w-full border-t border-white/20" />
+            {/* Dynamic vertical split */}
+            <div className="absolute left-[30%] h-full border-l border-white/20" />
+            <div className="absolute left-[70%] h-full border-l border-white/20" />
+          </div>
+
+          <HeroBackgroundSlider />
+
+          {/* Edge and Bottom gradients for seamless blending */}
+          <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-[#050A0F] to-transparent z-10 hidden md:block pointer-events-none" />
+          <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-[#050A0F]/90 via-[#050A0F]/40 to-transparent z-10 pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-[#050A0F] via-[#050A0F]/50 to-transparent z-10 pointer-events-none" />
+        </div>
+
+        {/* Hero Auto-scrolling Slider (Portfolio) - Positioned at bottom of screen, overlapping both panels smoothly */}
+        <div className="absolute bottom-0 md:bottom-6 left-0 w-full animate-fade-in-up z-30 pointer-events-auto" style={{ animationDelay: '0.6s' }}>
           <HeroPortfolioSlider lang={params.lang} />
         </div>
 
-        {/* Decorative Side Element (Left Vertical Text) */}
-        <div className="absolute top-[40vh] -translate-y-1/2 left-4 md:left-8 lg:left-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.6s' }}>
-          <span className="text-[10px] tracking-[0.4em] lg:tracking-[0.5em] text-white/50 font-display uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
-            Advanced Consulting & Investment
-          </span>
-          <div className="w-px h-16 md:h-24 bg-white/20" />
-        </div>
-
-        {/* Desktop scroll indicator - Centered vertically on right side to mirror left text */}
-        <div className="absolute top-[40vh] -translate-y-1/2 right-4 md:right-8 lg:right-12 hidden md:flex flex-col items-center gap-6 animate-fade-in-up opacity-60 hover:opacity-100 transition-opacity cursor-default z-30" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[10px] font-display tracking-[0.4em] lg:tracking-[0.5em] text-white uppercase whitespace-nowrap" style={{ writingMode: 'vertical-rl' }}>{dict.home.hero.scroll}</span>
-          <div className="w-px h-16 md:h-24 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
-        </div>
-
-        {/* Mobile scroll indicator */}
-        <div className="absolute bottom-[25vh] sm:bottom-[28vh] left-0 right-0 md:hidden flex flex-col items-center justify-center gap-4 animate-fade-in-up opacity-60 z-30" style={{ animationDelay: '0.8s' }}>
-          <span className="text-[9px] font-display tracking-[0.3em] uppercase text-white text-center pl-[0.3em]">{dict.home.hero.scroll}</span>
-          <div className="w-px h-12 bg-gradient-to-b from-white/80 to-transparent animate-pulse" />
-        </div>
       </section>
 
       {/* Main Content Sections */}
       <WhoWeAre dict={dict.home.whoWeAre} />
-      <LatestNews dict={dict.home.latestNews} />
+      <Suspense fallback={<div className="h-[400px] w-full flex items-center justify-center text-white/50 text-sm tracking-widest bg-background">LOADING NEWS...</div>}>
+        <LatestNews dict={dict.home.latestNews} lang={params.lang} />
+      </Suspense>
       <OurPhilosophy dict={dict.home.ourPhilosophy} />
       <TrackRecord dict={dict.home.trackRecord} />
       <UniqueValueProposition dict={dict.home.uniqueValueProposition} />
@@ -94,6 +92,6 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
       {/* Conversion Section */}
       <ConversionCTA dict={dict.shared?.conversionCTA} />
 
-    </main>
+    </main >
   );
 }

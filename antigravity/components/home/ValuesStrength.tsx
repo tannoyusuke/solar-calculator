@@ -7,10 +7,6 @@ export function ValuesStrength({ dict }: { dict: any }) {
     const values = dict.cards || [];
     return (
         <section className="relative py-32 bg-[#020202] overflow-hidden">
-            {/* Decorative Lights */}
-            <div className="absolute top-0 right-0 w-1/3 h-[500px] bg-primary/5 blur-[150px] pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-1/2 h-[500px] bg-primary-dark/5 blur-[150px] pointer-events-none" />
-
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
                 {/* Values Section (Asymmetric Layout) */}
@@ -29,7 +25,7 @@ export function ValuesStrength({ dict }: { dict: any }) {
                             <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans">{dict.section_title}</h2>
                         </div>
                         <p
-                            className="text-3xl md:text-5xl font-sans font-bold tracking-tight mb-8 text-white drop-shadow-md leading-tight"
+                            className="text-3xl md:text-5xl font-sans font-bold tracking-tight mb-8 text-white leading-tight"
                             dangerouslySetInnerHTML={{ __html: dict.headline }}
                         />
                         <p className="text-gray-400 font-sans leading-relaxed tracking-wide mb-8">
@@ -50,8 +46,7 @@ export function ValuesStrength({ dict }: { dict: any }) {
                             >
                                 {/* Structural Accent */}
                                 <div className="absolute top-0 left-0 w-0 h-[2px] bg-white/50 group-hover:w-full transition-all duration-700 ease-in-out" />
-                                <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-primary/30 group-hover:border-primary transition-colors" />
-                                <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                                <div className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-white/20 group-hover:border-white/50 transition-colors" />
 
                                 <div className="relative z-10 w-full flex flex-col md:flex-row gap-8 items-start">
                                     {/* Number instead of icon */}
@@ -82,11 +77,11 @@ export function ValuesStrength({ dict }: { dict: any }) {
                     className="relative border border-primary/20 overflow-hidden hover:border-primary/40 transition-all duration-700 group grid grid-cols-1 lg:grid-cols-2"
                 >
                     {/* Content Side */}
-                    <div className="p-10 md:p-16 lg:p-20 bg-gradient-to-br from-primary-dark/20 via-primary/10 to-transparent relative z-10 flex flex-col justify-center">
-                        <h2 className="text-sm tracking-[0.3em] text-primary-light font-bold font-sans mb-6 inline-block border-b border-primary/30 pb-2">
+                    <div className="p-10 md:p-16 lg:p-20 bg-[#050A0F] relative z-10 flex flex-col justify-center border-r border-white/5">
+                        <h2 className="text-sm tracking-[0.3em] pl-4 border-l-2 border-white/30 text-white font-bold font-sans mb-6 inline-block pb-1">
                             コアとなる強み
                         </h2>
-                        <h3 className="text-3xl md:text-5xl font-sans font-bold tracking-widest mb-8 leading-tight text-white drop-shadow-lg leading-snug">
+                        <h3 className="text-3xl md:text-5xl font-sans font-bold tracking-widest mb-8 leading-tight text-white leading-snug">
                             政権中枢から財閥トップへ至る<br className="hidden md:block" />真に強固なネットワーク
                         </h3>
                         <p className="text-gray-400 text-base leading-relaxed tracking-wide font-sans">
@@ -103,10 +98,9 @@ export function ValuesStrength({ dict }: { dict: any }) {
                             alt="Core Power Network"
                             fill
                             sizes="(max-width: 1024px) 100vw, 50vw"
-                            className="object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[20%]"
+                            className="object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[40%]"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent" />
-                        <div className="absolute inset-0 bg-primary-dark/20 mix-blend-overlay" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-[#050A0F] via-[#050A0F]/50 to-transparent" />
                     </div>
                 </motion.div>
 

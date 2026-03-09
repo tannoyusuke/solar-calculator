@@ -8,8 +8,6 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 export function WhoWeAre({ dict }: { dict: any }) {
     return (
         <section className="relative py-32 bg-background overflow-hidden">
-            {/* Background glow */}
-            <div className="absolute top-1/2 -left-1/4 w-[500px] h-[500px] bg-primary-dark/10 blur-[120px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-16">
                 <ScrollReveal delay={0.2} className="w-full md:w-[55%] lg:w-[50%]">
@@ -17,21 +15,14 @@ export function WhoWeAre({ dict }: { dict: any }) {
                         <div className="h-px w-12 bg-primary/50" />
                         <h2 className="text-sm tracking-[0.3em] text-primary-light font-display">{dict.section_title}</h2>
                     </div>
-                    <h3 className="text-[2rem] md:text-4xl lg:text-5xl font-display font-medium tracking-widest mb-8 leading-tight text-white drop-shadow-lg pr-4">
+                    <h3 className="text-[2rem] md:text-4xl lg:text-5xl font-display font-medium tracking-widest mb-8 leading-tight text-white pr-4">
                         <span className="whitespace-nowrap">{dict.title_line1}</span><br className="hidden md:block" />
-                        <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500 mt-2 md:mt-0 whitespace-nowrap">{dict.title_line2}</span>
+                        <span className="inline-block text-white mt-2 md:mt-0 whitespace-nowrap">{dict.title_line2}</span>
                     </h3>
                     <p
                         className="text-gray-400 leading-loose tracking-wide font-sans text-lg [&>strong]:text-white [&>strong]:font-medium mb-10"
                         dangerouslySetInnerHTML={{ __html: dict.description }}
                     />
-                    <Link
-                        href="#"
-                        className="inline-flex items-center gap-3 text-primary-light hover:text-primary transition-colors duration-300 group"
-                    >
-                        <span className="text-lg font-medium">{dict.learn_more}</span>
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                    </Link>
                 </ScrollReveal>
 
                 <ScrollReveal delay={0.4} direction="left" className="w-full md:w-[45%] lg:w-[50%] hidden md:block relative h-[600px]">
@@ -42,7 +33,7 @@ export function WhoWeAre({ dict }: { dict: any }) {
                                 hidden: { opacity: 0, x: -30 },
                                 visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
-                            className="bg-transparent border border-white/10 p-10 hover:border-primary/40 backdrop-blur-sm relative group overflow-hidden transition-all duration-500"
+                            className="bg-transparent border border-white/10 p-10 hover:border-white/30 backdrop-blur-sm relative group overflow-hidden transition-all duration-500"
                         >
                             <div className="absolute top-0 left-0 w-0 h-[2px] bg-primary-light group-hover:w-full transition-all duration-700 ease-in-out" />
                             <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -59,7 +50,7 @@ export function WhoWeAre({ dict }: { dict: any }) {
                                 hidden: { opacity: 0, x: 30 },
                                 visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
                             }}
-                            className="bg-white/[0.02] border border-white/20 p-10 hover:border-primary/40 relative overflow-hidden group shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-all duration-500"
+                            className="bg-white/[0.02] border border-white/10 p-10 hover:border-primary/40 relative overflow-hidden group shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-all duration-500"
                         >
                             <div className="absolute top-0 left-0 w-0 h-[2px] bg-primary-light group-hover:w-full transition-all duration-700 ease-in-out" />
                             <div className="absolute top-0 right-0 w-64 h-64 bg-primary-dark/10 blur-[80px] group-hover:bg-primary-dark/20 transition-colors duration-700 pointer-events-none" />

@@ -1,12 +1,13 @@
-"use client";
 
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { newsData } from "@/data/news";
+import { getNewsData } from "@/lib/news";
+import type { Locale } from "@/lib/i18n-config";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ui/ScrollReveal";
 
-export function LatestNews({ dict }: { dict: any }) {
-    // Get top 3 latest news
+export async function LatestNews({ dict, lang }: { dict: any; lang: Locale }) {
+    // Fetch news data asynchronously from CMS (or local fallback)
+    const newsData = await getNewsData(lang);
     const latestNews = [...newsData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
 
     return (
@@ -37,12 +38,12 @@ export function LatestNews({ dict }: { dict: any }) {
                                 >
                                     <div className="flex items-center gap-4 mb-2 md:mb-0 md:w-48 shrink-0">
                                         <span className="text-xs font-sans tracking-widest text-gray-400">{item.date}</span>
-                                        <span className="text-[9px] font-bold tracking-widest px-2 py-1 bg-white/5 border border-white/10 text-white/70 uppercase">
+                                        <span className="text-[9px] font-bold tracking-widest px-2 py-1 bg-white/5 text-white/50 uppercase">
                                             {item.category}
                                         </span>
                                     </div>
                                     <div className="w-full">
-                                        <h3 className="text-base font-sans text-gray-200 group-hover:text-primary-light transition-colors leading-relaxed line-clamp-2 md:line-clamp-1">
+                                        <h3 className="text-base font-sans text-gray-200 group-hover:text-white transition-colors leading-relaxed line-clamp-2 md:line-clamp-1">
                                             {item.title}
                                         </h3>
                                     </div>

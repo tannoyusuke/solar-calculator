@@ -74,8 +74,7 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: string }) {
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
                 <Link href={`/${lang}`} className="group relative flex items-center">
-                    <div className="absolute -inset-2 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
-                    <TryfundsLogo className="h-6 md:h-7 relative z-10 transition-transform duration-300 group-hover:scale-105" />
+                    <TryfundsLogo className="h-6 md:h-7 relative z-10 transition-transform duration-300 group-hover:opacity-80" />
                 </Link>
 
                 {/* Desktop Nav */}
@@ -105,7 +104,7 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: string }) {
                             ) : (
                                 <Link
                                     href={item.href!}
-                                    className="text-sm font-sans tracking-widest text-gray-300 hover:text-white transition-all relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-white after:shadow-[0_0_8px_rgba(255,255,255,0.8)] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:after:origin-left hover:text-shadow-[0_0_10px_rgba(255,255,255,0.5)] py-4"
+                                    className="text-sm font-sans tracking-widest text-gray-300 hover:text-white transition-all relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-right hover:after:origin-left py-4"
                                 >
                                     {item.name}
                                 </Link>

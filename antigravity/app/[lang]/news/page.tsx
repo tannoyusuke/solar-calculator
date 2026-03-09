@@ -1,4 +1,4 @@
-import { getNewsData } from "@/lib/data";
+import { getNewsData } from "@/lib/news";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
@@ -12,7 +12,7 @@ export const metadata = {
 
 export default async function NewsPage({ params: { lang } }: { params: { lang: Locale } }) {
     const dict = await getDictionary(lang);
-    const newsData = getNewsData(lang);
+    const newsData = await getNewsData(lang);
     // Sort all news by date descending
     const allNews = [...newsData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 

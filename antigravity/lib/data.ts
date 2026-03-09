@@ -1,5 +1,6 @@
 import { portfolioData as portfolioJa } from "@/data/portfolio.ja";
 import { portfolioData as portfolioEn } from "@/data/portfolio.en";
+
 import { fullPortfolios as fullPortfolioJa } from "@/data/portfolioList.ja";
 import { fullPortfolios as fullPortfolioEn } from "@/data/portfolioList.en";
 
@@ -29,9 +30,6 @@ export const getMembersData = (lang: Locale) => {
     return lang === "en" ? membersEn : membersJa;
 };
 
-export const getNewsData = (lang: Locale) => {
-    return lang === "en" ? newsEn : newsJa;
-};
 
 export const getJobsData = (lang: Locale) => {
     return lang === "en" ? jobsEn : jobsJa;

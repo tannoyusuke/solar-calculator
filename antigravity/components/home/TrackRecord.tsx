@@ -6,7 +6,6 @@ export function TrackRecord({ dict }: { dict: any }) {
     const records = dict.records || [];
     return (
         <section className="relative py-32 bg-background overflow-hidden border-t border-white/5">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[800px] bg-primary/5 blur-[200px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
                 <motion.div
@@ -31,8 +30,8 @@ export function TrackRecord({ dict }: { dict: any }) {
                     className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
                 >
                     <div>
-                        <h3 className="text-5xl md:text-7xl font-display font-medium tracking-tighter mb-4 text-white drop-shadow-md leading-tight">
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-corp-gray">{dict.stats_value}</span>
+                        <h3 className="text-5xl md:text-7xl font-display font-medium tracking-tighter mb-4 text-white leading-tight">
+                            <span className="text-white">{dict.stats_value}</span>
                             <span className="text-3xl md:text-4xl text-white tracking-widest ml-2">{dict.stats_unit1}</span>
                             <br className="hidden md:block" />
                             <span className="text-3xl md:text-5xl text-white tracking-widest mt-2 block">{dict.stats_unit2}</span>
@@ -76,13 +75,10 @@ export function TrackRecord({ dict }: { dict: any }) {
                             }}
                             className="bg-white/[0.02] border border-white/10 p-8 hover:bg-white/5 hover:border-primary/50 transition-all duration-500 group relative overflow-hidden flex flex-col h-full"
                         >
-                            {/* Accent top bar on hover */}
                             <div className="absolute top-0 left-0 w-0 h-[2px] bg-white/50 group-hover:w-full transition-all duration-700 ease-in-out" />
-                            {/* Highlight effect */}
-                            <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
                             <div className="mb-4 flex-grow flex items-baseline flex-wrap">
-                                <span className="text-4xl md:text-5xl font-display font-bold tracking-tighter text-white group-hover:text-primary-light transition-colors">
+                                <span className="text-4xl md:text-5xl font-display font-bold tracking-tighter text-white group-hover:text-white/80 transition-colors">
                                     {record.value}
                                 </span>
                                 <span className="text-sm font-sans text-gray-400 ml-1 font-medium whitespace-nowrap">

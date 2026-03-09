@@ -7,8 +7,6 @@ import { EnvisionGraphic } from "@/components/ui/EnvisionGraphic";
 export function OurPhilosophy({ dict }: { dict: any }) {
     return (
         <section className="relative pt-32 pb-12 bg-background overflow-hidden border-t border-white/5">
-            {/* Background elements */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-dark/10 blur-[120px] rounded-full mix-blend-screen" />
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 flex flex-col items-center text-center">
 
@@ -35,7 +33,7 @@ export function OurPhilosophy({ dict }: { dict: any }) {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="max-w-4xl mx-auto mb-6"
                 >
-                    <h3 className="text-4xl md:text-6xl font-sans font-bold tracking-widest leading-tight text-white mb-8 drop-shadow-md">
+                    <h3 className="text-3xl md:text-5xl font-sans font-bold tracking-widest leading-tight text-white mb-8">
                         {dict.headline}
                     </h3>
 

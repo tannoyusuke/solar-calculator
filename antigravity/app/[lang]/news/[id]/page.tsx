@@ -1,4 +1,4 @@
-import { getNewsData } from "@/lib/data";
+import { getNewsData } from "@/lib/news";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -6,12 +6,15 @@ import { ConversionCTA } from "@/components/layout/ConversionCTA";
 import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/lib/i18n-config";
 
-export function generateStaticParams() {
-    const jaParams = getNewsData("ja").map((news) => ({
+export async function generateStaticParams() {
+    const jaData = await getNewsData("ja") || [];
+    const enData = await getNewsData("en") || [];
+
+    const jaParams = jaData.map((news: any) => ({
         lang: "ja",
         id: news.id,
     }));
-    const enParams = getNewsData("en").map((news) => ({
+    const enParams = enData.map((news: any) => ({
         lang: "en",
         id: news.id,
     }));
@@ -19,8 +22,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { lang: Locale, id: string } }) {
-    const newsData = getNewsData(params.lang);
-    const news = newsData.find((n) => n.id === params.id);
+    const newsData = await getNewsData(params.lang) || [];
+    const news = newsData.find((n: any) => n.id === params.id);
 
     if (!news) return { title: "News Not Found | Tryfunds" };
 
@@ -46,8 +49,8 @@ export async function generateMetadata({ params }: { params: { lang: Locale, id:
 
 export default async function NewsDetailPage({ params }: { params: { id: string, lang: Locale } }) {
     const dict = await getDictionary(params.lang);
-    const newsData = getNewsData(params.lang);
-    const news = newsData.find((n) => n.id === params.id);
+    const newsData = await getNewsData(params.lang) || [];
+    const news = newsData.find((n: any) => n.id === params.id);
 
     if (!news) {
         notFound();
