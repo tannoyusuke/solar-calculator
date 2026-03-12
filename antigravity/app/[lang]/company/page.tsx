@@ -7,7 +7,12 @@ export const metadata = {
     description: "Tryfunds Groupの会社概要と沿革",
 };
 
+import { getHistoryData } from "@/lib/history";
+
+export const revalidate = 60;
+
 export default async function AboutPage({ params: { lang } }: { params: { lang: Locale } }) {
     const dict = await getDictionary(lang);
-    return <CompanyClient dict={dict} />;
+    const historyData = await getHistoryData(lang);
+    return <CompanyClient dict={dict} historyData={historyData} />;
 }

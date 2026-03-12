@@ -5,7 +5,7 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 
 
-export function CompanyClient({ dict }: { dict: any }) {
+export function CompanyClient({ dict, historyData }: { dict: any, historyData: any[] }) {
     return (
         <div className="pt-32 pb-24 min-h-screen bg-background relative overflow-hidden">
             {/* Background Atmosphere */}
@@ -91,7 +91,7 @@ export function CompanyClient({ dict }: { dict: any }) {
                             </h3>
 
                             <div className="relative pl-6 md:pl-8 border-l border-white/10 space-y-12">
-                                {dict.company.history.events.map((item: any, idx: number) => (
+                                {historyData.map((item: any, idx: number) => (
                                     <div key={idx} className="relative group">
                                         {/* Timeline Node */}
                                         <div className="absolute -left-[29px] md:-left-[37px] top-1.5 w-3 h-3 rounded-full border-2 border-background bg-primary-light group-hover:scale-150 transition-transform duration-300" />

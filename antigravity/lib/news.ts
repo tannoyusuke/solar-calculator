@@ -19,10 +19,10 @@ export const getNewsData = async (lang: Locale) => {
 
                 return {
                     id: item.id,
-                    title: item.title,
+                    title: lang === 'en' && item.title_en ? item.title_en : item.title,
                     date: isoDate,
-                    category: item.category ? item.category[0] : "Notice",
-                    content: item.content || "",
+                    category: item.category ? (Array.isArray(item.category) ? item.category[0] : item.category) : "Notice",
+                    content: lang === 'en' && item.content_en ? item.content_en : item.content || "",
                 };
             });
         }
