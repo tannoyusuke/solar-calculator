@@ -5,6 +5,6 @@ import CaseStudyClient from "./CaseStudyClient";
 
 export default async function CaseStudyPage({ params }: { params: { lang: Locale } }) {
     const dict = await getDictionary(params.lang);
-    const caseStudies = getCaseStudiesData(params.lang);
+    const caseStudies = await getCaseStudiesData(params.lang);
     return <CaseStudyClient dict={dict.caseStudy} caseStudies={caseStudies} lang={params.lang} />;
 }

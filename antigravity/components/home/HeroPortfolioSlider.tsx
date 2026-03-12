@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { getPortfolioData, getCaseStudiesData, getFullPortfolioList } from "@/lib/data";
 import { Locale } from "@/lib/i18n-config";
 
 type SliderItem = {
@@ -14,11 +13,14 @@ type SliderItem = {
     link: string;
 };
 
-export function HeroPortfolioSlider({ lang }: { lang: Locale }) {
-    const portfolioData = getPortfolioData(lang);
-    const caseStudies = getCaseStudiesData(lang);
-    const portfolioListRaw = getFullPortfolioList(lang);
+type Props = {
+    lang: Locale;
+    portfolioData: any[];
+    caseStudies: any[];
+    portfolioListRaw: any[];
+};
 
+export function HeroPortfolioSlider({ lang, portfolioData, caseStudies, portfolioListRaw }: Props) {
     // Transform and merge data
     const mappedPortfolio: SliderItem[] = portfolioData.map(p => ({
         id: `p-${p.id}`,

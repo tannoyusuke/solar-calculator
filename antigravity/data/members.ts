@@ -25,7 +25,7 @@ export const members: Member[] = [
     id: '30',
     name: '久保 伊求馬',
     nameEn: 'Ikuma Kubo',
-    role: 'プリンシパル<br />Tryfunds Investment 取締役',
+    role: 'プリンシパル<br class=\'hidden md:block\' />Tryfunds Investment 取締役',
     imageUrl: '/images/members/mem_30.jpg',
     description: `アーサー・アンダーセンにて、事業ポートフォリオの再構築、企業価値評価、投融資支援、企業再生業務に従事。その後、同社財務戦略部門がスピンアウトしたブティック系コンサルティングファームにおいて、主に事業化支援、投融資支援、企業再生、企業価値評価業務に従事。EYアドバイザリー・アンド・コンサルティングでは、上場企業の海外統括本社設立業務、事業戦略立案支援業務、事業化支援業務、投融資戦略立案支援業務、企業再生業務、ビジネス・デューディリジェンス、M&A支援業務に従事。Tryfundsではコンサルティング事業の統括及び事業開発の企画・推進を担当。
 
@@ -137,7 +137,7 @@ Salzburg Global（オーストリア）フェロー`
     id: '41',
     name: '秋山 寛次',
     nameEn: 'Hirotsugu Akiyama',
-    role: 'エンゲージメント・マネージャー<br />Tryfunds Investment 取締役',
+    role: 'エンゲージメント・マネージャー<br class=\'hidden md:block\' />Tryfunds Investment 取締役',
     imageUrl: '/images/members/mem_41.jpg',
     description: `三菱UFJ銀行にて、中小・中堅企業の財務再構築、事業承継を支援した後、上場企業を含む大・中堅企業やPEファンドに対する買収ファイナンス、シンジケートローン等のストラクチャードファイナンス組成を主導。また、支店の営業企画統括として、支店全体の予算管理や企画立案・推進業務にも従事。Tryfundsでは、上場企業から地方中堅企業まで幅広いクライアントに対する事業開発支援に従事。2023年に株式会社Tryfunds Investmentの取締役に就任し、投資・ファンド事業をリードしている。
 

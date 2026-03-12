@@ -14,6 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/services',
         '/track-record',
         '/portfolio',
+        '/case-study',
         '/news',
         '/recruit',
         '/recruit/persona',
@@ -59,6 +60,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         })
     } catch (error) {
         console.error("Sitemap generation error for news:", error)
+    }
+
+    // Fetch dynamic case studies
+    try {
+        const jaCaseStudies = await getCaseStudiesData('ja') || []
+        jaCaseStudies.forEach((item: any) => {
+            sitemap.push({
+                url: `${baseUrl}/ja/case-study/${item.id}`,
+                lastModified: new Date(),
+                changeFrequency: 'monthly',
+                priority: 0.7,
+            })
+        })
+
+        const enCaseStudies = await getCaseStudiesData('en') || []
+        enCaseStudies.forEach((item: any) => {
+            sitemap.push({
+                url: `${baseUrl}/en/case-study/${item.id}`,
+                lastModified: new Date(),
+                changeFrequency: 'monthly',
+                priority: 0.7,
+            })
+        })
+    } catch (error) {
+        console.error("Sitemap generation error for case studies:", error)
     }
 
     return sitemap

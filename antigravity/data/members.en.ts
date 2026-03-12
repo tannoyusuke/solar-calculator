@@ -25,7 +25,7 @@ Representative Director & President, Sustech Inc.`
     id: '30',
     name: 'Ikuma Kubo',
     nameEn: 'Ikuma Kubo',
-    role: 'Principal<br />Director, Tryfunds Investment',
+    role: 'Principal<br class=\'hidden md:block\' />Director, Tryfunds Investment',
     imageUrl: '/images/members/mem_30.jpg',
     description: `At Arthur Andersen, he engaged in business portfolio restructuring, corporate valuation, investment/financing support, and corporate turnaround. Subsequently, at a boutique consulting firm spun out from Arthur Andersen's financial strategy division, he primarily handled commercialization support, investment/financing support, turnaround, and corporate valuation. At EY Advisory & Consulting, he engaged in establishing overseas regional headquarters for listed companies, business strategy formulation support, commercialization support, investment/financing strategy formulation support, corporate turnaround, business due diligence, and M&A support. At Tryfunds, he oversees the consulting business and is responsible for planning and promoting business development.
 
@@ -135,7 +135,7 @@ Founding Member, Tryfunds Inc.`
     id: '41',
     name: 'Hirotsugu Akiyama',
     nameEn: 'Hirotsugu Akiyama',
-    role: 'Engagement Manager<br />Director, Tryfunds Investment',
+    role: 'Engagement Manager<br class=\'hidden md:block\' />Director, Tryfunds Investment',
     imageUrl: '/images/members/mem_41.jpg',
     description: `At MUFG Bank, after supporting the financial restructuring and business succession of SMEs and mid-sized companies, he led the origination of structured finance such as acquisition finance and syndicated loans for large/mid-sized companies and PE funds. Also, as head of sales planning at a branch office, he engaged in budget management and planning/promotion operations for the entire branch. At Tryfunds, he engages in business development support for a wide range of clients from listed companies to regional mid-sized companies. He assumed the position of Director at Tryfunds Investment Inc. in 2023, leading the investment and fund business.
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default async function PortfolioPage({ params: { lang } }: { params: { lang: Locale } }) {
-    const portfolios = getFullPortfolioList(lang);
+    const portfolios = await getFullPortfolioList(lang);
     const dict = await getDictionary(lang);
 
     return (

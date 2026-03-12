@@ -12,10 +12,14 @@ import { LatestNews } from "@/components/home/LatestNews";
 import { HeroPortfolioSlider } from "@/components/home/HeroPortfolioSlider";
 import { HeroBackgroundSlider } from "@/components/home/HeroBackgroundSlider";
 import { getDictionary } from "@/lib/dictionary";
+import { getPortfolioData, getCaseStudiesData, getFullPortfolioList } from "@/lib/data";
 import type { Locale } from "@/lib/i18n-config";
 
 export default async function Home({ params }: { params: { lang: Locale } }) {
   const dict = await getDictionary(params.lang);
+  const portfolioData = await getPortfolioData(params.lang);
+  const caseStudies = await getCaseStudiesData(params.lang);
+  const portfolioListRaw = await getFullPortfolioList(params.lang);
 
   return (
     <main className="flex min-h-screen flex-col w-full overflow-hidden">
@@ -73,7 +77,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
 
         {/* Hero Auto-scrolling Slider (Portfolio) - Positioned at bottom of screen, overlapping both panels smoothly */}
         <div className="absolute bottom-0 md:bottom-6 left-0 w-full animate-fade-in-up z-30 pointer-events-auto" style={{ animationDelay: '0.6s' }}>
-          <HeroPortfolioSlider lang={params.lang} />
+          <HeroPortfolioSlider lang={params.lang} portfolioData={portfolioData} caseStudies={caseStudies} portfolioListRaw={portfolioListRaw} />
         </div>
 
       </section>

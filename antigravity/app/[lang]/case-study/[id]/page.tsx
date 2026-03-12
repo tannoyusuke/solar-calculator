@@ -7,7 +7,7 @@ import { Locale } from "@/lib/i18n-config";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }: { params: { lang: Locale, id: string } }): Promise<Metadata> {
-    const caseStudies = getCaseStudiesData(params.lang);
+    const caseStudies = await getCaseStudiesData(params.lang);
     const study = caseStudies.find(s => s.id === params.id);
 
     if (!study) return { title: "Not Found" };
@@ -40,20 +40,22 @@ export async function generateMetadata({ params }: { params: { lang: Locale, id:
     };
 }
 
-export function generateStaticParams() {
-    const jaParams = getCaseStudiesData("ja").map((study) => ({
+export async function generateStaticParams() {
+    const jaData = await getCaseStudiesData("ja");
+    const enData = await getCaseStudiesData("en");
+    const jaParams = jaData.map((study: any) => ({
         lang: "ja",
         id: study.id,
     }));
-    const enParams = getCaseStudiesData("en").map((study) => ({
+    const enParams = enData.map((study: any) => ({
         lang: "en",
         id: study.id,
     }));
     return [...jaParams, ...enParams];
 }
 
-export default function CaseStudyDetail({ params }: { params: { lang: Locale, id: string } }) {
-    const caseStudies = getCaseStudiesData(params.lang);
+export default async function CaseStudyDetail({ params }: { params: { lang: Locale, id: string } }) {
+    const caseStudies = await getCaseStudiesData(params.lang);
     const study = caseStudies.find(s => s.id === params.id);
 
     if (!study) {
