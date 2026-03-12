@@ -10,6 +10,8 @@ export const metadata = {
     description: "Tryfunds Groupの最新ニュースとお知らせ",
 };
 
+export const revalidate = 60;
+
 export default async function NewsPage({ params: { lang } }: { params: { lang: Locale } }) {
     const dict = await getDictionary(lang);
     const newsData = await getNewsData(lang);

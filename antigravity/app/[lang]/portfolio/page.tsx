@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     description: "Tryfunds Group全体での主なポートフォリオ（投資・インキュベーション案件）をご紹介します。",
 };
 
+export const revalidate = 60;
+
 export default async function PortfolioPage({ params: { lang } }: { params: { lang: Locale } }) {
     const portfolios = await getFullPortfolioList(lang);
     const dict = await getDictionary(lang);
@@ -40,7 +42,7 @@ export default async function PortfolioPage({ params: { lang } }: { params: { la
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {portfolios.map((item, i) => (
+                    {portfolios.map((item: any, i: number) => (
                         <div
                             key={i}
                             className="bg-white/[0.02] border border-white/10 relative overflow-hidden group hover:border-primary/40 transition-all duration-500 hover:-translate-y-1 h-[280px] flex flex-col"
