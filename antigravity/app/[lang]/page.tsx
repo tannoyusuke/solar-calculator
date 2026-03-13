@@ -4,7 +4,6 @@ import Link from "next/link";
 import { WhoWeAre } from "@/components/home/WhoWeAre";
 import { OurPhilosophy } from "@/components/home/OurPhilosophy";
 import { ValuesStrength } from "@/components/home/ValuesStrength";
-import { TrackRecord } from "@/components/home/TrackRecord";
 import { Services } from "@/components/home/Services";
 import { UniqueValueProposition } from "@/components/home/UniqueValueProposition";
 import { ConversionCTA } from "@/components/layout/ConversionCTA";
@@ -90,7 +89,6 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
         <LatestNews dict={dict.home.latestNews} lang={params.lang} />
       </Suspense>
       <OurPhilosophy dict={dict.home.ourPhilosophy} />
-      <TrackRecord dict={dict.home.trackRecord} />
       <UniqueValueProposition dict={dict.home.uniqueValueProposition} />
       <ValuesStrength dict={dict.home.valuesStrength} />
       <Services dict={dict.home.services} />
