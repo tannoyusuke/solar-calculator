@@ -9,6 +9,7 @@ export const getCaseStudiesData = async (lang: Locale) => {
             endpoint: "case-studies",
             queries: {
                 limit: 100,
+                orders: "order",
             },
         });
 

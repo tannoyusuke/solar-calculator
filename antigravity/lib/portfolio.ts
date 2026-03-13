@@ -11,6 +11,7 @@ export const getPortfolioData = async (lang: Locale) => {
             endpoint: "portfolio",
             queries: {
                 limit: 100,
+                orders: "order",
             },
         });
 
@@ -42,6 +43,7 @@ export const getFullPortfolioList = async (lang: Locale) => {
             endpoint: "portfolio",
             queries: {
                 limit: 100,
+                orders: "order",
             },
         });
 
