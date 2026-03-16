@@ -11,6 +11,7 @@ export const getCaseStudiesData = async (lang: Locale) => {
                 limit: 100,
                 orders: "order",
             },
+            customRequestInit: { next: { revalidate: 60 } }
         });
 
         if (response && response.contents && response.contents.length > 0) {

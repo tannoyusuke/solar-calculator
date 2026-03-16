@@ -13,6 +13,7 @@ export const getPortfolioData = async (lang: Locale) => {
                 limit: 100,
                 orders: "order",
             },
+            customRequestInit: { next: { revalidate: 60 } }
         });
 
         if (response && response.contents && response.contents.length > 0) {
@@ -45,6 +46,7 @@ export const getFullPortfolioList = async (lang: Locale) => {
                 limit: 100,
                 orders: "order",
             },
+            customRequestInit: { next: { revalidate: 60 } }
         });
 
         if (response && response.contents && response.contents.length > 0) {
