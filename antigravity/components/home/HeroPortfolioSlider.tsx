@@ -88,6 +88,7 @@ export function HeroPortfolioSlider({ lang, portfolioData, caseStudies, portfoli
                                 src={item.image || "/images/portfolio_shared_bg.png"}
                                 alt={item.title}
                                 fill
+                                unoptimized={true}
                                 className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-60 group-hover/card:opacity-80"
                                 priority={false}
                                 sizes="(max-width: 768px) 240px, 320px"
@@ -124,6 +125,7 @@ export function HeroPortfolioSlider({ lang, portfolioData, caseStudies, portfoli
                                 src={item.image || "/images/portfolio_shared_bg.png"}
                                 alt={item.title}
                                 fill
+                                unoptimized={true}
                                 className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-60 group-hover/card:opacity-80"
                                 priority={false}
                                 sizes="(max-width: 768px) 240px, 320px"
