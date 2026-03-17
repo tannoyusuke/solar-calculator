@@ -84,15 +84,11 @@ export function HeroPortfolioSlider({ lang, portfolioData, caseStudies, portfoli
                             className={`relative flex-shrink-0 w-[240px] sm:w-[280px] md:w-[320px] aspect-[4/3] sm:aspect-[16/9] rounded-lg overflow-hidden flex flex-col justify-end group/card cursor-pointer shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-500`}
                         >
                             {/* Background Image */}
-                            <Image
+                            <img
                                 src={item.image || "/images/portfolio_shared_bg.png"}
                                 alt={item.title}
-                                fill
-                                unoptimized={true}
-                                className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-90 group-hover/card:opacity-100"
-                                priority={false}
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-90 group-hover/card:opacity-100"
                                 loading="eager"
-                                sizes="(max-width: 768px) 240px, 320px"
                             />
                             {/* Gradient Overlay tailored for text readability */}
                             <div className="absolute inset-0 bg-gradient-to-t from-[#111624]/90 via-[#111624]/40 to-transparent transition-opacity duration-500 group-hover/card:from-black/70 group-hover/card:via-black/30"></div>
@@ -122,15 +118,11 @@ export function HeroPortfolioSlider({ lang, portfolioData, caseStudies, portfoli
                             href={item.link}
                             className={`relative flex-shrink-0 w-[240px] sm:w-[280px] md:w-[320px] aspect-[4/3] sm:aspect-[16/9] rounded-lg overflow-hidden flex flex-col justify-end group/card cursor-pointer shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-500`}
                         >
-                            <Image
+                            <img
                                 src={item.image || "/images/portfolio_shared_bg.png"}
                                 alt={item.title}
-                                fill
-                                unoptimized={true}
-                                className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-90 group-hover/card:opacity-100"
-                                priority={false}
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-90 group-hover/card:opacity-100"
                                 loading="eager"
-                                sizes="(max-width: 768px) 240px, 320px"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#111624]/90 via-[#111624]/40 to-transparent transition-opacity duration-500 group-hover/card:from-black/70 group-hover/card:via-black/30"></div>
 
