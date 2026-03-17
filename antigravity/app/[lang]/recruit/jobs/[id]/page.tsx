@@ -1,16 +1,19 @@
-import { getJobsData } from "@/lib/data";
+import { getRecruitById, getRecruits } from "@/lib/recruit";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/lib/i18n-config";
 
-export function generateStaticParams() {
-    const jaParams = getJobsData("ja").map((job) => ({
+export async function generateStaticParams() {
+    const jaJobs = await getRecruits("ja");
+    const enJobs = await getRecruits("en");
+    
+    const jaParams = jaJobs.map((job) => ({
         lang: "ja",
         id: job.id,
     }));
-    const enParams = getJobsData("en").map((job) => ({
+    const enParams = enJobs.map((job) => ({
         lang: "en",
         id: job.id,
     }));
@@ -19,8 +22,7 @@ export function generateStaticParams() {
 
 export default async function JobDescriptionPage({ params }: { params: { lang: Locale, id: string } }) {
     const dict = await getDictionary(params.lang);
-    const jobsData = getJobsData(params.lang);
-    const job = jobsData.find((j) => j.id === params.id);
+    const job = await getRecruitById(params.id, params.lang);
 
     if (!job) {
         notFound();
