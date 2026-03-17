@@ -14,7 +14,7 @@ import { getDictionary } from "@/lib/dictionary";
 import { getPortfolioData, getCaseStudiesData, getFullPortfolioList } from "@/lib/data";
 import type { Locale } from "@/lib/i18n-config";
 
-export const revalidate = 60;
+export const revalidate = 0; // Force dynamic to clear stale Vercel cache
 
 export default async function Home({ params }: { params: { lang: Locale } }) {
   const dict = await getDictionary(params.lang);
