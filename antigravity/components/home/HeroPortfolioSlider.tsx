@@ -89,13 +89,13 @@ export function HeroPortfolioSlider({ lang, portfolioData, caseStudies, portfoli
                                 alt={item.title}
                                 fill
                                 unoptimized={true}
-                                className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-60 group-hover/card:opacity-80"
+                                className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-90 group-hover/card:opacity-100"
                                 priority={false}
                                 loading="eager"
                                 sizes="(max-width: 768px) 240px, 320px"
                             />
                             {/* Gradient Overlay tailored for text readability */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#111624] via-[#111624]/60 to-transparent transition-opacity duration-500 group-hover/card:from-black/90 group-hover/card:via-black/50"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#111624]/90 via-[#111624]/40 to-transparent transition-opacity duration-500 group-hover/card:from-black/70 group-hover/card:via-black/30"></div>
 
                             {/* Content Container */}
                             <div className="absolute inset-0 p-5 sm:p-6 flex flex-col justify-end h-full">
@@ -127,12 +127,12 @@ export function HeroPortfolioSlider({ lang, portfolioData, caseStudies, portfoli
                                 alt={item.title}
                                 fill
                                 unoptimized={true}
-                                className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-60 group-hover/card:opacity-80"
+                                className="object-cover transition-transform duration-700 group-hover/card:scale-110 opacity-90 group-hover/card:opacity-100"
                                 priority={false}
                                 loading="eager"
                                 sizes="(max-width: 768px) 240px, 320px"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#111624] via-[#111624]/60 to-transparent transition-opacity duration-500 group-hover/card:from-black/90 group-hover/card:via-black/50"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#111624]/90 via-[#111624]/40 to-transparent transition-opacity duration-500 group-hover/card:from-black/70 group-hover/card:via-black/30"></div>
 
                             <div className="absolute inset-0 p-5 sm:p-6 flex flex-col justify-end h-full">
                                 <div className="mb-2 w-full translate-y-2 group-hover/card:translate-y-0 opacity-80 group-hover/card:opacity-100 transition-all duration-300">
