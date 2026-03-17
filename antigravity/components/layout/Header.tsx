@@ -33,7 +33,6 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: string }) {
             name: dict.navigation.business.title,
             subItems: [
                 { name: dict.navigation.business.items.services, href: `/${lang}/services` },
-                { name: dict.navigation.business.items.portfolio, href: `/${lang}/portfolio` },
                 { name: dict.navigation.business.items.caseStudy, href: `/${lang}/case-study` },
             ]
         },
@@ -90,8 +89,11 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: string }) {
                                     {/* Dropdown Menu */}
                                     <div className="absolute top-full left-0 pt-6 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300">
                                         <div className="bg-[#0A1017] border border-white/10 p-6 shadow-2xl min-w-[200px] flex flex-col gap-3 font-sans text-sm tracking-widest backdrop-blur-xl">
-                                            <Link href={`/${lang}/services`} className="block text-gray-400 hover:text-white transition-colors py-1">{dict.navigation.business.items.services}</Link>
-                                            <Link href={`/${lang}/case-study`} className="block text-gray-400 hover:text-white transition-colors py-1">{dict.navigation.business.items.caseStudy}</Link>
+                                            {item.subItems.map((sub) => (
+                                                <Link key={sub.name} href={sub.href} className="block text-gray-400 hover:text-white transition-colors py-1">
+                                                    {sub.name}
+                                                </Link>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +144,6 @@ export function Header({ dict, lang }: { dict: Dictionary; lang: string }) {
                                         </div>
                                         <div className="flex flex-col flex-wrap items-center gap-4 mb-4">
                                             {item.subItems
-                                                .filter(sub => sub.name !== dict.navigation.business.items.portfolio) // Filter out "Track Record" (Portfolio)
                                                 .map(sub => (
                                                     <Link
                                                         key={sub.name}
